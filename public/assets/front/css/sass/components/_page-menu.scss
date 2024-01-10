@@ -1,0 +1,19 @@
+.pageMenuList{
+    list-style: none;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-radius: 30px;
+
+    li{
+        border-bottom:2px solid rgba(124, 124, 124, 0.08);
+        a{
+            font-family: 'baloo_2semibold';
+            font-size:39.24px;
+            color:#282828;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
