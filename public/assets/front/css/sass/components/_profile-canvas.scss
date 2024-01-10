@@ -6,65 +6,37 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-end;
-    padding-left: 95px;
+    padding-left: 60px;
     padding-bottom: 40px;
-    border-bottom-right-radius: 24px;
+    border-bottom-right-radius: 100px;
     overflow: hidden;
-
-    @media screen and (min-width:768px) and (min-height:1200px) {
-        padding-left: 95px;
-        padding-bottom: 40px;
-        border-bottom-right-radius: 100px;
-    }
 
     .name {
         color: #ffffff;
         font-family: "baloo_2regular";
-        font-size: 16px;
-        line-height: 18px;
-
-        @media screen and (min-width:768px) and (min-height:1200px) {
-            font-size: 46.79px;
-            line-height: 46px;
-        }
-
+        font-size: 46.79px;
+        line-height: 46px;
         strong {
             font-family: "baloo_2extrabold";
-            font-size: 17px;
+            font-size: 51.86px;
             display: block;
-
-            @media screen and (min-width:768px) and (min-height:1200px) {
-                font-size: 51.86px;
-            }
         }
     }
-
     a {
         color: #ffffff;
         font-family: "baloo_2regular";
-        font-size: 14px;
-        margin-top: 0;
-
-        @media screen and (min-width:768px) and (min-height:1200px) {
-            font-size: 38.25px;
-            margin-top: 10px;
-        }
+        font-size: 38.25px;
+        margin-top: 10px;
     }
 }
-
 .profileContent {
     position: relative;
-    height: 75vh;
-    padding: 5px 25px 60px 25px;
+    height: calc(100% - 390px);
+    padding: 0 60px 60px 60px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    @media screen and (min-width:768px) and (min-height:1200px) {
-        padding: 20px 72px 60px 72px;
-    }
-
     .profileMenu {
         a {
             display: flex;
@@ -72,68 +44,53 @@
             justify-content: flex-start;
             font-family: "baloo_2semibold";
             border: 1px solid #e1e1e1;
-            padding-left: 10px;
-            padding-right: 10px;
-            height: 50px;
-            border-radius: 5px;
-            margin-top: 12px;
+            padding-left: 16px;
+            padding-right: 16px;
+            height: 45px;
+            border-radius: 30px;
+            margin-top: 30px;
 
             @media screen and (min-width:768px) and (min-height:1200px) {
                 border: 3px solid #e1e1e1;
                 padding-left: 32px;
                 padding-right: 32px;
-                height: 145px; 
-                border-radius: 30px;
-                margin-top: 30px;
+                height: 145px;
             }
-
-            &.plus {
-                span {
+            &.plus{
+                span{
                     margin-left: -0.5rem;
                 }
             }
-
-            &.language {
+            &.language{
                 display: inline-flex;
                 aspect-ratio: 2/2;
                 justify-content: center;
-
-                span {
-                    color: #1b1b1b;
+                span{
+                    color:#1b1b1b;
                     opacity: 0.34;
                 }
             }
-
-            img {
-                width: 20px;
-                margin-right: 10px;
-
+            img{
+                margin-right: 8px;
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     margin-right: 24px;
-                    width: auto;
                 }
 
             }
-
             span {
                 font-family: "baloo_2semibold";
-                font-size: 12px;
+                font-size: 36px;
                 color: #0a3c60;
-
-                @media screen and (min-width:768px) and (min-height:1200px) {
-                    font-size: 36px;
-                }
+         
             }
         }
     }
-
-    .bottom {
-        span {
-            color: #0a3d61;
+    .bottom{
+        span{
+            color:#0a3d61;
         }
     }
-
-    .logoBgBottom {
+    .logoBgBottom{
         right: 0;
         z-index: -1;
         left: -26%;
@@ -143,75 +100,19 @@
     }
 }
 
-&.menuCanvas {
-    width: 86%;
-
-    .profileInfo {
-        div {
+&.menuCanvas{
+    .profileInfo{
+        div{
             display: flex;
             align-items: center;
-
-            img {
-                margin-right: 18px;
-                width: 25px;
-                @media screen and (min-width:768px) and (min-height:1200px) {
-                    width: 64px;
-                }
+            img{
+                margin-right: 10px;
             }
-
-            span {
-                font-family: 'baloo_2extrabold';
+            span{
+               font-family: 'baloo_2extrabold';
                 color: #ffffff;
-                font-size: 18px;
-                @media screen and (min-width:768px) and (min-height:1200px) {
-                    font-size: 66.62px;
-                }
+                font-size: 66.62px;
             }
-        }
-    }
-    .profileContent{
-        padding: 20px 60px 60px 30px;
-        @media screen and (min-width:768px) and (min-height:1200px) {
-            padding: 20px 60px 60px 67px;
-        }
-        .profileMenu{
-            a {
-                height: 135px;
-                span{
-                    font-size:16px;
-                    @media screen and (min-width:768px) and (min-height:1200px) {
-                        font-size: 32px;   
-                    }
-                    &.icon{
-                        margin-right: 32px;
-                    }
-                }
-            }
-        }
-    }
-    .accMenu{
-        .accContent{
-            margin-top: -10px;
-
-            ul{
-                padding: 0 0 0 111px;
-                a{
-                    padding-bottom: 10px;
-                }
-            }
-        }
-    }
-}
-
-&.profileCanvas {
-    .profileInfo {
-        height: 25vh;
-        padding-left: 35px;
-        padding-bottom: 12px;
-
-        @media screen and (min-width:768px) and (min-height:1200px) {
-            padding-left: 95px;
-            padding-bottom: 40px;
         }
     }
 }
