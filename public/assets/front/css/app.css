@@ -1195,7 +1195,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .off-canvas .profileContent {
   position: relative;
-  height: calc(100% - 390px);
+  height: 75vh;
   padding: 0 60px 60px 60px;
   overflow: hidden;
   display: flex;
@@ -1390,6 +1390,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   right: 0;
   width: calc(100% + 80px);
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
 }
 
 .accMenu .accButton {
