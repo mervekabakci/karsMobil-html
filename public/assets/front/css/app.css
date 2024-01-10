@@ -1294,25 +1294,62 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   filter: invert(1) grayscale(1) opacity(0.28);
   height: 24vh;
 }
+.off-canvas.menuCanvas {
+  width: 86%;
+}
 .off-canvas.menuCanvas .profileInfo div {
   display: flex;
   align-items: center;
 }
 .off-canvas.menuCanvas .profileInfo div img {
-  margin-right: 10px;
+  margin-right: 18px;
+  width: 25px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.menuCanvas .profileInfo div img {
+    width: 64px;
+  }
 }
 .off-canvas.menuCanvas .profileInfo div span {
   font-family: "baloo_2extrabold";
   color: #ffffff;
-  font-size: 66.62px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.menuCanvas .profileInfo div span {
+    font-size: 66.62px;
+  }
 }
 .off-canvas.menuCanvas .profileContent {
   padding: 20px 60px 60px 30px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileContent {
-    padding: 20px 60px 60px 30px;
+    padding: 20px 60px 60px 67px;
   }
+}
+.off-canvas.menuCanvas .profileContent .profileMenu a {
+  height: 135px;
+}
+.off-canvas.menuCanvas .profileContent .profileMenu a span {
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.menuCanvas .profileContent .profileMenu a span {
+    font-size: 32px;
+  }
+}
+.off-canvas.menuCanvas .profileContent .profileMenu a span.icon {
+  margin-right: 32px;
+}
+.off-canvas.menuCanvas .accMenu .accContent {
+  margin-top: -10px;
+}
+.off-canvas.menuCanvas .accMenu .accContent ul {
+  padding: 0 0 0 111px;
+}
+.off-canvas.menuCanvas .accMenu .accContent ul a {
+  padding-bottom: 10px;
 }
 .off-canvas.profileCanvas .profileInfo {
   height: 25vh;
