@@ -1302,8 +1302,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   align-items: center;
 }
 .off-canvas.menuCanvas .profileInfo div img {
-  margin-right: 18px;
-  width: 25px;
+  margin-right: 8px;
+  width: 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileInfo div img {
@@ -1313,7 +1313,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .off-canvas.menuCanvas .profileInfo div span {
   font-family: "baloo_2extrabold";
   color: #ffffff;
-  font-size: 18px;
+  font-size: 22px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileInfo div span {
@@ -1329,7 +1329,15 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   }
 }
 .off-canvas.menuCanvas .profileContent .profileMenu a {
-  height: 135px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.menuCanvas .profileContent .profileMenu a {
+    height: 135px;
+  }
 }
 .off-canvas.menuCanvas .profileContent .profileMenu a span {
   font-size: 16px;
@@ -1369,9 +1377,14 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .off-canvas.end {
   left: auto;
-  border-radius: 86px 0 0 86px;
+  border-radius: 0 30px 30px 0;
   right: 0;
   transform: translateX(100%);
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.end {
+    border-radius: 0 86px 86px 0;
+  }
 }
 .off-canvas.end .logoBg {
   left: 0;
@@ -1382,9 +1395,18 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   margin-left: auto;
 }
 .off-canvas.end .profileInfo {
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 30px;
   border-bottom-right-radius: 0;
   overflow: hidden;
+  padding-left: 35px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.end .profileInfo {
+    padding-left: 95px;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 100px;
+  }
 }
 .off-canvas.active {
   transform: translateX(0);

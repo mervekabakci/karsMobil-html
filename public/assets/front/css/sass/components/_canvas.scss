@@ -21,7 +21,10 @@
     }
     &.end {
         left: auto;
-        border-radius: 86px 0 0 86px;
+        border-radius: 0 30px 30px 0;
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            border-radius: 0 86px 86px 0;
+        }
         right: 0;
         transform: translateX(100%);
         .logoBg {
@@ -33,9 +36,16 @@
             margin-left: auto;
         }
         .profileInfo {
-            border-bottom-left-radius: 100px;
+            border-bottom-left-radius: 30px;
             border-bottom-right-radius: 0;
             overflow: hidden;
+            padding-left: 35px;
+            padding-bottom: 12px;
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                padding-left: 95px;
+            padding-bottom: 40px;
+            border-bottom-left-radius: 100px;
+            }
         }
     }
 
