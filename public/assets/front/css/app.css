@@ -1156,13 +1156,13 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
   -webkit-box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
-  border-radius: 0 86px 86px 0;
+  border-radius: 0 30px 30px 0;
   overflow: hidden;
   transition: transform 0.3s linear;
   z-index: 999;
 }
 .off-canvas .profileInfo {
-  height: 25vh;
+  height: 20vh;
   position: relative;
   z-index: 1;
   display: flex;
@@ -1171,34 +1171,63 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   justify-content: flex-end;
   padding-left: 95px;
   padding-bottom: 40px;
-  border-bottom-right-radius: 100px;
+  border-bottom-right-radius: 24px;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .profileInfo {
+    padding-left: 95px;
+    padding-bottom: 40px;
+    border-bottom-right-radius: 100px;
+  }
 }
 .off-canvas .profileInfo .name {
   color: #ffffff;
   font-family: "baloo_2regular";
-  font-size: 46.79px;
-  line-height: 46px;
+  font-size: 16px;
+  line-height: 18px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .profileInfo .name {
+    font-size: 46.79px;
+    line-height: 46px;
+  }
 }
 .off-canvas .profileInfo .name strong {
   font-family: "baloo_2extrabold";
-  font-size: 51.86px;
+  font-size: 17px;
   display: block;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .profileInfo .name strong {
+    font-size: 51.86px;
+  }
 }
 .off-canvas .profileInfo a {
   color: #ffffff;
   font-family: "baloo_2regular";
-  font-size: 38.25px;
-  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .profileInfo a {
+    font-size: 38.25px;
+    margin-top: 10px;
+  }
 }
 .off-canvas .profileContent {
   position: relative;
-  height: calc(100% - 537px);
-  padding: 20px 72px 60px 72px;
+  height: 75vh;
+  padding: 5px 25px 60px 25px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .profileContent {
+    padding: 20px 72px 60px 72px;
+  }
 }
 .off-canvas .profileContent .profileMenu a {
   display: flex;
@@ -1206,11 +1235,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   justify-content: flex-start;
   font-family: "baloo_2semibold";
   border: 1px solid #e1e1e1;
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 45px;
-  border-radius: 30px;
-  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 12px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileContent .profileMenu a {
@@ -1218,6 +1247,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     padding-left: 32px;
     padding-right: 32px;
     height: 145px;
+    border-radius: 30px;
+    margin-top: 30px;
   }
 }
 .off-canvas .profileContent .profileMenu a.plus span {
@@ -1233,17 +1264,24 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   opacity: 0.34;
 }
 .off-canvas .profileContent .profileMenu a img {
-  margin-right: 8px;
+  width: 20px;
+  margin-right: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileContent .profileMenu a img {
     margin-right: 24px;
+    width: auto;
   }
 }
 .off-canvas .profileContent .profileMenu a span {
   font-family: "baloo_2semibold";
-  font-size: 36px;
+  font-size: 12px;
   color: #0a3c60;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .profileContent .profileMenu a span {
+    font-size: 36px;
+  }
 }
 .off-canvas .profileContent .bottom span {
   color: #0a3d61;
@@ -1268,6 +1306,30 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   color: #ffffff;
   font-size: 66.62px;
 }
+.off-canvas.menuCanvas .profileContent {
+  padding: 20px 60px 60px 30px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.menuCanvas .profileContent {
+    padding: 20px 60px 60px 30px;
+  }
+}
+.off-canvas.profileCanvas .profileInfo {
+  height: 25vh;
+  padding-left: 35px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.profileCanvas .profileInfo {
+    padding-left: 95px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas {
+    border-radius: 0 86px 86px 0;
+  }
+}
 .off-canvas.end {
   left: auto;
   border-radius: 86px 0 0 86px;
@@ -1290,6 +1352,53 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .off-canvas.active {
   transform: translateX(0);
 }
+.off-canvas .bottom {
+  padding-top: 90px;
+  width: 200px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .bottom {
+    width: 526px;
+    padding-top: 30px;
+  }
+}
+.off-canvas .bottom img {
+  margin-left: -10px;
+  margin-right: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .bottom img {
+    margin-left: -26px;
+    margin-right: 22px;
+  }
+}
+.off-canvas .bottom span {
+  font-size: 15px;
+  line-height: 13px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .bottom span {
+    font-size: 41.72px;
+    line-height: 20px;
+  }
+}
+.off-canvas .bottom span.hashtag {
+  font-size: 27px;
+  line-height: 28px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .bottom span.hashtag {
+    font-size: 74.25px;
+  }
+}
+.off-canvas .bottom > div {
+  line-height: 13px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .bottom > div {
+    line-height: 20px;
+  }
+}
 
 .logoBgBottom {
   position: absolute;
@@ -1310,6 +1419,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   right: 0;
   width: calc(100% + 80px);
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
 }
 
 .accMenu .accButton {

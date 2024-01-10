@@ -1,5 +1,5 @@
 .profileInfo {
-    height: 25vh;
+    height: 20vh;
     position: relative;
     z-index: 1;
     display: flex;
@@ -8,35 +8,63 @@
     justify-content: flex-end;
     padding-left: 95px;
     padding-bottom: 40px;
-    border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 24px;
     overflow: hidden;
+
+    @media screen and (min-width:768px) and (min-height:1200px) {
+        padding-left: 95px;
+        padding-bottom: 40px;
+        border-bottom-right-radius: 100px;
+    }
 
     .name {
         color: #ffffff;
         font-family: "baloo_2regular";
-        font-size: 46.79px;
-        line-height: 46px;
+        font-size: 16px;
+        line-height: 18px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            font-size: 46.79px;
+            line-height: 46px;
+        }
+
         strong {
             font-family: "baloo_2extrabold";
-            font-size: 51.86px;
+            font-size: 17px;
             display: block;
+
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                font-size: 51.86px;
+            }
         }
     }
+
     a {
         color: #ffffff;
         font-family: "baloo_2regular";
-        font-size: 38.25px;
-        margin-top: 10px;
+        font-size: 14px;
+        margin-top: 0;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            font-size: 38.25px;
+            margin-top: 10px;
+        }
     }
 }
+
 .profileContent {
     position: relative;
-    height: calc(100% - 537px);
-    padding: 20px 72px 60px 72px;
+    height: 75vh;
+    padding: 5px 25px 60px 25px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width:768px) and (min-height:1200px) {
+        padding: 20px 72px 60px 72px;
+    }
+
     .profileMenu {
         a {
             display: flex;
@@ -44,75 +72,111 @@
             justify-content: flex-start;
             font-family: "baloo_2semibold";
             border: 1px solid #e1e1e1;
-            padding-left: 16px;
-            padding-right: 16px;
-            height: 45px;
-            border-radius: 30px;
-            margin-top: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 50px;
+            border-radius: 5px;
+            margin-top: 12px;
 
             @media screen and (min-width:768px) and (min-height:1200px) {
                 border: 3px solid #e1e1e1;
                 padding-left: 32px;
                 padding-right: 32px;
-                height: 145px;
+                height: 145px; 
+                border-radius: 30px;
+                margin-top: 30px;
             }
-            &.plus{
-                span{
+
+            &.plus {
+                span {
                     margin-left: -0.5rem;
                 }
             }
-            &.language{
+
+            &.language {
                 display: inline-flex;
                 aspect-ratio: 2/2;
                 justify-content: center;
-                span{
-                    color:#1b1b1b;
+
+                span {
+                    color: #1b1b1b;
                     opacity: 0.34;
                 }
             }
-            img{
-                margin-right: 8px;
+
+            img {
+                width: 20px;
+                margin-right: 10px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     margin-right: 24px;
+                    width: auto;
                 }
 
             }
+
             span {
                 font-family: "baloo_2semibold";
-                font-size: 36px;
+                font-size: 12px;
                 color: #0a3c60;
-         
+
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    font-size: 36px;
+                }
             }
         }
     }
-    .bottom{
-        span{
-            color:#0a3d61;
+
+    .bottom {
+        span {
+            color: #0a3d61;
         }
     }
-    .logoBgBottom{
+
+    .logoBgBottom {
         right: 0;
         z-index: -1;
         left: -26%;
         opacity: 1;
         filter: invert(1) grayscale(1) opacity(0.28);
-        height: 24vh; 
+        height: 24vh;
     }
 }
 
-&.menuCanvas{
-    .profileInfo{
-        div{
+&.menuCanvas {
+    .profileInfo {
+        div {
             display: flex;
             align-items: center;
-            img{
+
+            img {
                 margin-right: 10px;
             }
-            span{
-               font-family: 'baloo_2extrabold';
+
+            span {
+                font-family: 'baloo_2extrabold';
                 color: #ffffff;
                 font-size: 66.62px;
             }
+        }
+    }
+    .profileContent{
+        padding: 20px 60px 60px 30px;
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            padding: 20px 60px 60px 30px;
+        }
+    }
+}
+
+&.profileCanvas {
+    .profileInfo {
+        height: 25vh;
+        padding-left: 35px;
+        padding-bottom: 12px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            padding-left: 95px;
+            padding-bottom: 40px;
         }
     }
 }
