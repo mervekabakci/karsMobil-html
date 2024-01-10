@@ -1,0 +1,261 @@
+.acilis-ekrani {
+    background-color: #0a3c60;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    padding-bottom: 15vh;
+    padding-left: 16px;
+    padding-right: 16px;
+    @media screen and (min-width: 375px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        padding-left: 86px;
+        padding-right: 86px;
+        padding-top: 111px;
+        padding-bottom: 7.7vh;
+    }
+    .acilisBg {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        mix-blend-mode: luminosity;
+        opacity: 17%;
+        z-index: -1;
+    }
+    .acilisBgBottom {
+        position: absolute;
+        min-width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        bottom: 0;
+        right: -465px;
+        z-index: -1;
+    }
+    .langButtons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        a {
+            font-size: 16px;
+            color: #0a3c60;
+            background-color: #ffffff;
+            border-radius: 46px;
+            width: calc(50% - 30px);
+            height: 45px;
+            display: flex;
+            align-items: center;
+            font-family: "baloo_2extrabold";
+            justify-content: center;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                height: 200px;
+                font-size: 46.52px;
+            }
+        }
+    }
+
+
+    &.progression {
+        background-color: rgba(0, 0, 0, 0);
+        padding-bottom: 75px;
+        padding-top: 60px;
+        padding-left: 0;
+        padding-right: 0;
+        @media screen and (max-height: 450px) {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 157px;
+            padding-bottom: 3.9vh;
+        }
+        .acilisBg {
+            opacity: 1;
+        }
+    }
+
+    .skipeButton {
+        color: rgba(39, 39, 39, 0.52);
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "baloo_2bold";
+
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            font-size: 43.52px;
+        }
+    }
+}
+.bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+    width: 220px;
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        width: 60%;
+        padding-top: 50px;
+    }
+    img {
+        margin-left: -13px;
+        margin-right: 17px;
+        width: 42px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            width: 108px;
+        }
+    }
+    span {
+        font-size: 18.52px;
+        line-height: 20px;
+        color: #ffffff;
+        font-family: "baloo_2medium";
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            font-size: 46.52px;
+            line-height: 43px;
+        }
+        strong {
+            font-family: "baloo_2extrabold";
+        }
+    }
+    .hashtag {
+        font-size: 24px;
+        line-height: 28px;
+        font-family: "baloo_2extrabold";
+        padding-top: 5px;
+        display: block;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            font-size: 74.25px;
+            line-height: 78px;
+            padding-top: 17px;
+        }
+    }
+}
+.acilisSlideWrapper {
+    height: calc(100% - 90px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    overflow-y: auto;
+    @media screen and (max-height: 450px) {
+        padding-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        height: calc(100% - 19.270833vh);
+    }
+    .acilisSlide {
+        min-height: 300px;
+        height: calc(100% - 140px);
+        width: 100%;
+        position:relative;
+        .item {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            padding-bottom: 30px;
+            text-align: center;
+            font-size: 18px;
+            position: absolute;
+            top:0;
+            left: 0;
+            right:0;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                height: calc(100% - 100px);
+                padding-bottom: 7.8vh;
+            }
+            &.active{
+                display: flex;
+            }
+            .desc {
+                padding-top:30px;
+                .slideCaption {
+                    font-size: 16px;
+                    padding-bottom: 16px;
+                    color: #0a3c60;
+                    font-family: "baloo_2bold";
+
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 55.31px;
+                        padding-bottom: 26px;
+                    }
+                }
+                p {
+                    color: #272727;
+                    font-family: "baloo_2medium";
+                    white-space: pre-line;
+                    font-size: 14px;
+                    line-height: 20px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 43px;
+                        line-height: 58px;
+                    }
+                }
+            }
+            .imageWrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img {
+                display: block;
+                max-width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .imageWrapper {
+            max-height: 56%;
+            min-height: 100px;
+        }
+    }
+}
+.aciliSlideButton {
+    position: relative;
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        background-color: #e5e5e5;
+        width: 40px;
+        border-radius: 20px;
+        height: 8px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            width: 110px;
+            height: 16px;
+        }
+        & + a{
+            margin-left: 16px !important;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                margin-left: 46px !important;
+            }
+        }
+        &.active {
+            background-color: #e13869;
+        }
+    }
+}

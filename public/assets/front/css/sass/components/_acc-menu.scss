@@ -1,0 +1,123 @@
+.accMenu {
+    .accButton {
+        background-color: #ffffff;
+        border: 3px solid #e1e1e1;
+        padding-left: 32px;
+        padding-right: 32px;
+        height: 145px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        span {
+            font-family: "baloo_2semibold";
+            font-size: 36px;
+            color: #0a3c60;
+            &.icon {
+                border: 3px solid #e1e1e1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 12px;
+                width: 34px;
+                height: 34px;
+                margin-right: 10px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 26px;
+                }
+                &:before {
+                    content: "+";
+                    font-family: "baloo_2bold";
+                    font-size: 18px;
+                    color: #dbdbdb;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+        &.active {
+            background-color: #0a3c60;
+            border-color: #0a3c60;
+            span {
+                color: #ffffff !important;
+                &.icon {
+                    &:before {
+                        content: "-";
+                    }
+                }
+            }
+        }
+    }
+    .accContent {
+        background-color: #ffffff;
+        display: none;
+        &.active {
+            display: block;
+        }
+        ul {
+            list-style-type: none;
+            margin-bottom: 0;
+            padding-top: 20px;
+            li {
+                a {
+                    margin-top: 0 !important;
+                    font-family: "baloo_2medium" !important;
+                    font-size: 33.7px;
+                    color: #0a3c60;
+                    height: auto !important;
+                    border: none !important;
+                    &.active {
+                        font-family: "baloo_2extrabold" !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &.accType2 {
+        .accButton {
+            justify-content: space-between;
+            background-color: rgba(211, 211, 211, 0.17);
+            border: none;
+            span {
+                font-family: "baloo_2medium";
+                font-size: 27.72px;
+                strong {
+                    font-family: "baloo_2extrabold";
+                }
+                &.icon{
+                    background-color: #ffffff;  
+                    border: none;
+                }
+            }
+            & > div {
+                display: flex;
+                align-items: center;
+                transition: all 0.3s linear;
+
+                img {
+                    margin-right: 10px;
+                    opacity: 1;
+                    overflow: visible;
+                    visibility: visible;
+                    transform: translateX(0);
+                    transition: all 0.3s linear;
+                }
+            }
+            &.active {
+                background-color: #0a3c60;
+                & > div {
+                    transform: translateX(-50px);
+                    img {
+                        opacity: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

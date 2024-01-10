@@ -1,0 +1,77 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl:1506px
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl:1600px
+) !default;
+
+$primary:rgba(255, 170, 0, 1);
+
+$enable-negative-margins: true;
+
+@import "../bootstrap/scss/bootstrap";
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+
+@import "../bootstrap/scss/dropdown";
+
+line-clamp {
+    &-1{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+    }
+    &-2{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+    }
+    &-3{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+    }
+  }
+.preLine{
+  white-space: pre-line;
+}
+.rounded-end-0{
+  border-top-right-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+}
+.rounded-start-0{
+  border-top-left-radius: 0!important;
+  border-bottom-left-radius: 0!important;
+}
+.text-justify{
+  text-align: justify;
+}
+

@@ -1,0 +1,44 @@
+.f-button {
+    background-color: rgba(84, 26, 9, 1);
+    opacity: 1!important;
+    margin-top: 15px;
+    &.is-close-btn{
+        width: 37.085px;
+        height: 36.974px;
+        border-radius: 100%;
+        top: -18px!important;
+        right: 45px!important;
+        margin-top: 0;
+        svg{
+            transition: transform .3s linear;
+        }
+        @media screen and (min-width:991.98px) {
+            &:hover{
+                background-color: rgba(84, 26, 9, 1);
+                opacity: 1;
+                svg{
+                    opacity: 1;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    &:hover:not([disabled]){
+        background-color: rgba(84, 26, 9, 1);
+    }
+}
+.fancybox-image{
+    border-radius: 30px;
+}
+.fancybox__container{
+    background: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+    background-color: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+}
+--fancybox-bg{
+    background: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+    background-color: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+}
+
+.fancybox__backdrop{
+    background: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+}

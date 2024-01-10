@@ -1,0 +1,117 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background:#ffffff;
+
+    .preloader-spin {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        img{
+            animation: heartbeat 3s infinite;
+            @media screen and (max-width:768px){
+                width: 75px;
+            }
+            @media screen and (max-height:1024px){
+                width: 75px;
+            }
+        }
+    }
+    @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    #pepperAnimate{
+        position: absolute;
+        transform: translate(125px) scale(0);
+        opacity: 0;
+        z-index: -1;
+        animation: animatePepper1 2s ease-in-out forwards;
+        @media screen and (max-width:991.98px) {
+            transform: translate(18px) scale(0);
+            width: 165px;
+        }
+    }
+    #pepperAnimate2{
+        transform: translate(0);
+        animation: animatePepper2 2s ease-in-out forwards;
+        @media screen and (max-width:991.98px) {
+            width: 180px;
+        }
+    }
+}
+@keyframes animatePepper1 {
+    0%, 100% {
+        opacity: 1;
+        transform: translateX(0) scale(0);
+    }
+    100% {
+        transform: translateX(125px) scale(1);
+    }
+}
+@media screen and (max-width:991.98px) {
+    @keyframes animatePepper1 {
+        0%, 100% {
+            opacity: 1;
+            transform: translateX(0) scale(0);
+        }
+        100% {
+            transform: translate(18px) scale(1);
+        }
+    }
+}
+@keyframes animatePepper2 {
+    0%, 100% {
+        transform: translate(-155px, 116px) rotate(-5deg);
+    }
+    25%, 75% {
+        transform: translate(-155px, 116px) rotate(5deg);
+    }
+    50% {
+        transform: translate(-155px, 116px) rotate(-5deg);
+    }
+    90% {
+        transform: translate(-155px, 116px) rotate(0deg);
+    }
+    
+}
+
+@media screen and (max-width:991.98px) {
+    @keyframes animatePepper2 {
+        0%, 100% {
+            transform: translate(-67px, 58px) rotate(-5deg);
+        }
+        25%, 75% {
+            transform: translate(-67px, 58px) rotate(5deg);
+        }
+        50% {
+            transform: translate(-67px, 58px) rotate(-5deg);
+        }
+        90% {
+            transform: translate(-67px, 58px) rotate(0deg);
+        }
+    }
+}
