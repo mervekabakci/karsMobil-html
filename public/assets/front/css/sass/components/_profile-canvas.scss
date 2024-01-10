@@ -105,14 +105,75 @@
         div{
             display: flex;
             align-items: center;
-            img{
-                margin-right: 10px;
+
+            img {
+                margin-right: 8px;
+                width: 20px;
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    width: 64px;
+                }
             }
+            
             span{
                font-family: 'baloo_2extrabold';
                 color: #ffffff;
-                font-size: 66.62px;
+                font-size: 22px;
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    font-size: 66.62px;
+                }
             }
         }
     }
+    .profileContent{
+        padding: 20px 60px 60px 30px;
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            padding: 20px 60px 60px 67px;
+        }
+        .profileMenu{
+            a {
+                padding-left: 10px;
+            padding-right: 10px;
+            height: 50px;
+            border-radius: 5px;
+               
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    height: 135px;
+                }
+                span{
+                    font-size:16px;
+                    @media screen and (min-width:768px) and (min-height:1200px) {
+                        font-size: 32px;   
+                    }
+                    &.icon{
+                        margin-right: 32px;
+                    }
+                }
+            }
+        }
+    }
+    .accMenu{
+        .accContent{
+            margin-top: -10px;
+
+            ul{
+                padding: 0 0 0 111px;
+                a{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+&.profileCanvas {
+    .profileInfo {
+        height: 25vh;
+        padding-left: 35px;
+        padding-bottom: 12px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            padding-left: 95px;
+            padding-bottom: 40px;
+        }
+    } 
 }
