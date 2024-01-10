@@ -1268,7 +1268,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 
 .off-canvas {
   position: absolute;
-  width: 90%;
+  width: 83%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -1283,14 +1283,14 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   transition: transform 0.3s linear;
 }
 .off-canvas .profileInfo {
-  height: 20vh;
+  height: 25vh;
   position: relative;
   z-index: 1;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-end;
-  padding-left: 60px;
+  padding-left: 95px;
   padding-bottom: 40px;
   border-bottom-right-radius: 100px;
   overflow: hidden;
@@ -1314,8 +1314,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .off-canvas .profileContent {
   position: relative;
-  height: calc(100% - 390px);
-  padding: 0 60px 60px 60px;
+  height: calc(100% - 537px);
+  padding: 20px 72px 60px 72px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
