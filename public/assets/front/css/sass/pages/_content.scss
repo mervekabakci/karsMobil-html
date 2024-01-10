@@ -1,0 +1,131 @@
+#center {
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 90px;
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        height: calc(100vh - 180px);
+        padding-left: 5.5vw;
+        padding-right: 5.5vw;
+        padding-bottom: 200px;
+    }
+    @media screen and (min-width: 1081px) and (min-height: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .titleColumn {
+        padding-top: 20px;
+        padding-bottom: 14px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        .desc {
+            p {
+                font-family: "baloo_2medium";
+                color: #aeaeae;
+                font-size: 14px;
+                margin-bottom: 0;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 30.26px;
+                }
+                strong {
+                    font-family: "baloo_2extrabold";
+                }
+            }
+        }
+        &.afterLine {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 6px;
+                width: 90px;
+                border-radius: 10px;
+                background-color: #e13869;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    width: 215px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+    .kesfetListe {
+        padding-top: 20px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-top: 40px;
+        }
+    }
+}
+.subMain {
+    #center {
+        height: 100vh;
+        overflow-y: hidden;
+        padding: 0;
+    }
+}
+.contentWrapper {
+    width: 80%;
+    height: 70vh;
+    margin: -100px auto 0 auto;
+    background-color: #ffffff;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    .pageMenuButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+        border-radius: 0 0 100px 100px;
+        height: 115px;
+        img{
+            width: 31px;
+            margin-right: 10px;
+        }
+        span {
+            font-family: "baloo_2extrabold";
+            font-size: 27.9px;
+            color: #777777;
+        }
+    }
+    .titleColumn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        position: relative;
+        .backButton{
+            position: absolute;
+            left: 60px;
+            img{
+                transform: rotate(180deg);
+                opacity: 10%;
+                margin-right: 10px;
+            }
+            span{
+                font-family: "baloo_2extrabold";
+                font-size: 24.7px;
+                color: #dbdbdb;
+            }
+        }
+    }
+    .content {
+        height: calc(100% - 300px);
+        .overflow-scroll-auto {
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 30px;
+        }
+    }
+}

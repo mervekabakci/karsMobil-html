@@ -1,0 +1,97 @@
+header{
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e0e0e0;
+        height: 75px;
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            height: 200px;
+        }
+        .userButton,
+        .menuButton{
+            text-align: center;
+            width: 70px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                width: 187px;
+                height: 200px;
+            }
+            img{
+                width: 24px;
+            }
+
+            span{
+                display: block;
+                font-family: "baloo_2extrabold";
+                font-size: 14px;
+                color: #6a6a6a;
+                margin-top: 9px; 
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    font-size: 26.94px;
+                }
+            }
+        }
+        .userButton{
+            border-right: 1px solid #e0e0e0;
+            img{
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                   width: 44px;
+                }
+            }
+        }
+        .menuButton{
+            text-align: right;
+            border-left: 1px solid #e0e0e0;
+            img{
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                   width: 63px;
+                }
+            }
+        }
+        .logoV{
+            width: 90px;
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                width: 294px;
+            }
+            img{
+                width: 100%
+            }
+        }
+    }
+}
+
+.subMain{
+    header{
+        position: absolute;
+        width: 100%;
+        z-index:99;
+        .header{
+            border-color: #ecf0f3;
+            .logo{
+                height: 90px;
+            }
+            .userButton,
+            .menuButton{
+                border-color: #ecf0f3;
+                span{
+                    color: #ffffff;
+                }
+            }
+            .userButton{
+                img{
+                    filter:invert(1) contrast(6.5) brightness(3.5);
+                }
+            }
+            .menuButton{
+                img{
+                    filter: invert(1) brightness(2.5);
+                }
+            }
+        }
+    }
+}
