@@ -7,15 +7,18 @@ $(window).on('load', function () {
 //User Profile Menu button
 $(".userButton").click(function(){
   $("#profileCanvas").addClass("active");
+  $(".overlay").fadeIn(300)
 })
 
 //Menu button
 $(".menuButton").click(function(){
   $("#menuCanvas").addClass("active");
+  $(".overlay").fadeIn(300)
 })
 
 //acık olan canvasların kapanması ıcın
-$("#center").click(function(){
+$(".overlay").click(function(){
+  $(".overlay").fadeOut();
   if($(".off-canvas").hasClass("active")){
     $(".off-canvas").removeClass("active")
   }
@@ -34,6 +37,13 @@ $('.accButton').click(function() {
 
   $('.accMenu .accContent').not(content).slideUp(300).removeClass("active");
 });
+
+$(".pageMenuButton").click(function(){
+  $("#pageMenuPopup").fadeIn(300);
+})
+$(".customPopup .close-btn").click(function(){
+  $(this).closest(".customPopup").fadeOut();
+})
 
 
 if (typeof Fancybox !== 'undefined') {
