@@ -68,7 +68,7 @@
 }
 .contentWrapper {
     width: 80%;
-    height: 70vh;
+    height: calc(70vh + 100px);
     margin: -100px auto 0 auto;
     background-color: #ffffff;
     border-radius: 100px 100px 0 0;
