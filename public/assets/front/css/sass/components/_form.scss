@@ -14,7 +14,7 @@ form {
     input {
         color: rgb(25, 71, 105);
         font-family: "baloo_2medium";
-        border:2px solid #f4f7fe;
+        border: 2px solid #f4f7fe;
         background-color: #f4f7fe;
         text-align: center;
         border: none;
@@ -24,7 +24,7 @@ form {
         border-radius: 16px;
         font-size: 14px;
         height: 45px;
-        @media screen and (min-width: 768px) and (min-height: 1200px) { 
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 27.9px;
             border-radius: 30px;
             height: 115px;
@@ -35,53 +35,52 @@ form {
             box-shadow: none;
         }
     }
-    .inputColumn{
+    .inputColumn {
         position: relative;
-        .eyeButton{
+        .eyeButton {
             position: absolute;
             right: 20px;
             top: 45px;
             width: 24px;
-            img{
+            img {
                 opacity: 0.28;
                 width: 100%;
             }
         }
-        &:not(.show){
-            input[type='password']{
+        &:not(.show) {
+            input[type="password"] {
                 font-size: 38px;
                 letter-spacing: 12.5px;
                 color: rgba(25, 71, 105, 0.2);
             }
         }
     }
-    .form-invalid-message{
+    .form-invalid-message {
         display: none;
         border: 2px solid red;
         color: red;
         align-items: center;
         justify-content: space-between;
-        background-color: rgb(255, 0, 0,0.4);
+        background-color: rgb(255, 0, 0, 0.4);
         padding: 10px;
-        img{
+        img {
             width: 34px;
             margin-right: 10px;
         }
-        span{
+        span {
             line-height: 19px;
         }
     }
-    &.was-validated{
-        .form-invalid-message{
+    &.was-validated {
+        .form-invalid-message {
             display: flex;
         }
 
-        input{
-            &.error{
-                background-color: rgb(255, 0, 0,0.4);
+        input {
+            &.error {
+                background-color: rgb(255, 0, 0, 0.4);
                 color: red;
                 border: 2px solid red;
-
             }
         }
     }
@@ -128,5 +127,42 @@ form {
             width: 100%;
             filter: invert(1) opacity(0.26);
         }
+    }
+}
+
+.fixBtn {
+    background-color: #194769;
+    font-family: "baloo_2bold";
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    height: 45px;
+    border-radius: 16px;
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        font-size: 35.9px;
+        height: 145px;
+        border-radius: 30px;
+    }
+}
+.fixBtn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(214, 214, 214, 0.29);
+    padding: 10px;
+    min-width: 215px;
+    height: 50px;
+    border-radius: 6px;
+    img {
+        margin-right: 30px;
+        opacity: 0.29;
+    }
+    span {
+        font-family: "baloo_2extrabold";
+        color: rgba(24, 24, 24, 0.29);
+        font-size: 21.63px;
     }
 }
