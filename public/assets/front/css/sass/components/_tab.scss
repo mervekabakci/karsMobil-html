@@ -1,0 +1,33 @@
+.tabContainer{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    .tabButtons{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 2px solid #e7e7e7;
+        .tabNavItem{
+            border-bottom: 2px solid #e7e7e7;
+            font-family: 'baloo_2extrabold';
+            font-size: 22.15px;
+            color: #dadada;
+            transition: all .3s linear;
+            margin-bottom: -2px;
+
+            &.active{
+                color: #114367;
+                border-color: #114367;
+            }
+        }
+    }
+    .tabContents{
+        .tabContent{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }  
+    }
+}

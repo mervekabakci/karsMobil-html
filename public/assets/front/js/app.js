@@ -155,6 +155,16 @@ function toggleShareWrapper(button) {
 /**Paylas Butonu bitiş */
 
 
+/*Tab content */
+$(".tabContainer .tabButtons .tabNavItem").click(function(){
+  var tIndex = $(this).index();
+  $(this).siblings().removeClass("active");
+  $(this).addClass("active")
+  console.log(tIndex) 
+
+  $(this).parent().siblings().find(".tabContent").removeClass("active");
+  $(this).parent().siblings().find(".tabContent").eq(tIndex).addClass("active");
+})
 
 
 
