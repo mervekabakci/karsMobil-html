@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="public/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="public/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="public/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="public/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="public/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="public/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="public/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="public/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="public/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="public/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" >
+        <link rel="icon" type="image/png" sizes="96x96" href="public/favicon-96x96.png" >
+        <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" >
+        <link rel="manifest" href="public/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Kars</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <link rel="stylesheet" href="public/assets/front/css/app.css">
+    </head>
+<body>
+
+    <div id="app">
+        <div class="preloader">
+            <div class="preloader-spin">
+                <img src="public/assets/images/statics/logo-dark.png" alt="">
+            </div>
+        </div>
+        <main class="subMain">
+            <header>
+                <div class="header">
+                    <a href="javascript:;" class="userButton">
+                        <img src="public/assets/images/statics/icons/user-icon.png" alt="">
+                        <span>PROFIL</span>
+                    </a>
+                    <a href="javascript:;" class="logo"><img src="public/assets/images/statics/logo-light.png" alt=""></a>
+                    <a href="javascript:;" class="menuButton">
+                        <img src="public/assets/images/statics/icons/menu-btn.png" alt="">
+                        <span>MENU</span>
+                    </a>
+                </div>
+            </header>
+            <div id="center">
+                <div class="bannerWrapper">
+                    <div class="imageBanner">
+                        <img src="public/assets/images/media/gagik-kilisesi.jpg" alt="">
+                    </div>
+                </div>
+                <div class="contentWrapper">
+                    <div class="pageMenuButton">
+                        <img src="public/assets/images/statics/icons/menu-btn.png" alt="">
+                        <span> SAYFA MENÜSÜ</span>
+                    </div>
+                    <div class="content">
+                        <div class="overflow-scroll-auto">
+                            <div class="titleColumn">
+                                <a href="javascript:;" class="backButton" onclick="history.back()"><img src="public/assets/images/statics/icons/left-arrow.png" alt=""><span>GERİ DÖN</span></a>
+                                <h4>Kars Hikayeleri</h4>
+                            </div>
+                            <div class="paragraph text-center">
+                                <p>Asırlardır dillerden düşmeyen, muhteşem ezgi ve nameleriyle dillerimize ve hafızalarımıza kazınmış eşsiz Kars türküleri Kars’ın kültürüel yapısının en önemli temsilci öglerinden biridir.</p>
+                                <p>Dertlere, aşklara, özlemlere, sevinçlere, neşelere ortaklık eden Kars Türküleri sizlerler...</p>
+                            </div>
+
+                            <div class="cards type2 accMenu accType2">
+                                <a href="javascript:;" class="accButton noTrans"><div><img src="public/assets/images/statics/icons/history.png" alt=""><span><strong>ERZURUM'DAN KARS'A GELİYORUM</strong></span> </div><span class="icon"></span></a>
+                                <div class="accContent">
+                                    <div class="paragraph">
+                                        <span>Bizim Kars Merkez’e bağlı Karakaş köyü için herkes “Hayat üniversitesi” der..</span>
+                                        <span>O köyde yaşayanlar, hem uyanık, hem zeki, hem de şakacıdırlar.</span>
+                                        <span>Hatta oğlunu kızını üniversiteye gönderenlere denir ki:</span>
+                                        <span>“Ne gerek var, gönder Karakaş’ta altı ay kalsın yeter”</span>
+                                        <span>İşte o köyden biri otobüsle İstanbul’a gitmek için koltuğuna yerleşir.</span>
+                                        <span>Bir müddet sonra, top sakallı, askılı pantolonlu, elinde gazete kitap biri yanına oturup hemen kitap okumaya başlar.</span>
+                                        <span>Bizimki de içinden:</span>
+                                        <span>“Ohho.. bu adamla bu yol bitmez” der.</span>
+                                        <span>“Merhaba” deyip adamla tanışır. </span>
+                                        <span>Adamın bir profesör olduğunu da öğrenince</span>
+                                        <span>“Ben de köylüyüm ama bu yol böyle bitmez, konuşalım.. Sana sorular sorayım, sen bana sor.. Hatta ödüllü olsun sorularımız.. Ben bilirsem sen 100 lira ver, sen bilirsen ben 50 lira vereyim” der.</span>
+                                        <span>Profesör durumu ilginç bulur.</span>
+                                        <span>“Tamam, olur” der.</span>
+                                        <span>Bizimki ilk soruyu ben sorayım der:</span>
+                                        <span>Hoca "sor " der..</span>
+                                        <span>“Hocam, o nedir ki gökte uçar, 7 başı var, 30 ayağı..”</span>
+                                        <span>Profesör düşünür, dalıp gider, bulamaz..</span>
+                                        <span>“Bilemedim, al 100 liranı” der ve parayı uzatır.</span>
+                                        <span>“Peki nedir?”</span>
+                                        <span>“Valla ben de bilmiyorum, hocam al 50 liranı” </span>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="accButton noTrans"><div><img src="public/assets/images/statics/icons/history.png" alt=""><span><strong>AZIM İLE ŞAMİL</strong></span> </div><span class="icon"></span></a>
+                                <div class="accContent">
+                                    <div class="paragraph">
+                                        <span>Bizim Kars Merkez’e bağlı Karakaş köyü için herkes “Hayat üniversitesi” der..</span>
+                                        <span>O köyde yaşayanlar, hem uyanık, hem zeki, hem de şakacıdırlar.</span>
+                                        <span>Hatta oğlunu kızını üniversiteye gönderenlere denir ki:</span>
+                                        <span>“Ne gerek var, gönder Karakaş’ta altı ay kalsın yeter”</span>
+                                        <span>İşte o köyden biri otobüsle İstanbul’a gitmek için koltuğuna yerleşir.</span>
+                                        <span>Bir müddet sonra, top sakallı, askılı pantolonlu, elinde gazete kitap biri yanına oturup hemen kitap okumaya başlar.</span>
+                                        <span>Bizimki de içinden:</span>
+                                        <span>“Ohho.. bu adamla bu yol bitmez” der.</span>
+                                        <span>“Merhaba” deyip adamla tanışır. </span>
+                                        <span>Adamın bir profesör olduğunu da öğrenince</span>
+                                        <span>“Ben de köylüyüm ama bu yol böyle bitmez, konuşalım.. Sana sorular sorayım, sen bana sor.. Hatta ödüllü olsun sorularımız.. Ben bilirsem sen 100 lira ver, sen bilirsen ben 50 lira vereyim” der.</span>
+                                        <span>Profesör durumu ilginç bulur.</span>
+                                        <span>“Tamam, olur” der.</span>
+                                        <span>Bizimki ilk soruyu ben sorayım der:</span>
+                                        <span>Hoca "sor " der..</span>
+                                        <span>“Hocam, o nedir ki gökte uçar, 7 başı var, 30 ayağı..”</span>
+                                        <span>Profesör düşünür, dalıp gider, bulamaz..</span>
+                                        <span>“Bilemedim, al 100 liranı” der ve parayı uzatır.</span>
+                                        <span>“Peki nedir?”</span>
+                                        <span>“Valla ben de bilmiyorum, hocam al 50 liranı” </span>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="accButton noTrans"><div><img src="public/assets/images/statics/icons/history.png" alt=""><span><strong>VIZ... VIZ...</strong></span> </div><span class="icon"></span></a>
+                                <div class="accContent">
+                                    <div class="paragraph">
+                                        <span>Bizim Kars Merkez’e bağlı Karakaş köyü için herkes “Hayat üniversitesi” der..</span>
+                                        <span>O köyde yaşayanlar, hem uyanık, hem zeki, hem de şakacıdırlar.</span>
+                                        <span>Hatta oğlunu kızını üniversiteye gönderenlere denir ki:</span>
+                                        <span>“Ne gerek var, gönder Karakaş’ta altı ay kalsın yeter”</span>
+                                        <span>İşte o köyden biri otobüsle İstanbul’a gitmek için koltuğuna yerleşir.</span>
+                                        <span>Bir müddet sonra, top sakallı, askılı pantolonlu, elinde gazete kitap biri yanına oturup hemen kitap okumaya başlar.</span>
+                                        <span>Bizimki de içinden:</span>
+                                        <span>“Ohho.. bu adamla bu yol bitmez” der.</span>
+                                        <span>“Merhaba” deyip adamla tanışır. </span>
+                                        <span>Adamın bir profesör olduğunu da öğrenince</span>
+                                        <span>“Ben de köylüyüm ama bu yol böyle bitmez, konuşalım.. Sana sorular sorayım, sen bana sor.. Hatta ödüllü olsun sorularımız.. Ben bilirsem sen 100 lira ver, sen bilirsen ben 50 lira vereyim” der.</span>
+                                        <span>Profesör durumu ilginç bulur.</span>
+                                        <span>“Tamam, olur” der.</span>
+                                        <span>Bizimki ilk soruyu ben sorayım der:</span>
+                                        <span>Hoca "sor " der..</span>
+                                        <span>“Hocam, o nedir ki gökte uçar, 7 başı var, 30 ayağı..”</span>
+                                        <span>Profesör düşünür, dalıp gider, bulamaz..</span>
+                                        <span>“Bilemedim, al 100 liranı” der ve parayı uzatır.</span>
+                                        <span>“Peki nedir?”</span>
+                                        <span>“Valla ben de bilmiyorum, hocam al 50 liranı” </span>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" class="accButton noTrans"><div><img src="public/assets/images/statics/icons/history.png" alt=""><span><strong>PROFESÖR İLE KÖYLÜ</strong></span> </div><span class="icon"></span></a>
+                                <div class="accContent">
+                                    <div class="paragraph">
+                                        <span>Bizim Kars Merkez’e bağlı Karakaş köyü için herkes “Hayat üniversitesi” der..</span>
+                                        <span>O köyde yaşayanlar, hem uyanık, hem zeki, hem de şakacıdırlar.</span>
+                                        <span>Hatta oğlunu kızını üniversiteye gönderenlere denir ki:</span>
+                                        <span>“Ne gerek var, gönder Karakaş’ta altı ay kalsın yeter”</span>
+                                        <span>İşte o köyden biri otobüsle İstanbul’a gitmek için koltuğuna yerleşir.</span>
+                                        <span>Bir müddet sonra, top sakallı, askılı pantolonlu, elinde gazete kitap biri yanına oturup hemen kitap okumaya başlar.</span>
+                                        <span>Bizimki de içinden:</span>
+                                        <span>“Ohho.. bu adamla bu yol bitmez” der.</span>
+                                        <span>“Merhaba” deyip adamla tanışır. </span>
+                                        <span>Adamın bir profesör olduğunu da öğrenince</span>
+                                        <span>“Ben de köylüyüm ama bu yol böyle bitmez, konuşalım.. Sana sorular sorayım, sen bana sor.. Hatta ödüllü olsun sorularımız.. Ben bilirsem sen 100 lira ver, sen bilirsen ben 50 lira vereyim” der.</span>
+                                        <span>Profesör durumu ilginç bulur.</span>
+                                        <span>“Tamam, olur” der.</span>
+                                        <span>Bizimki ilk soruyu ben sorayım der:</span>
+                                        <span>Hoca "sor " der..</span>
+                                        <span>“Hocam, o nedir ki gökte uçar, 7 başı var, 30 ayağı..”</span>
+                                        <span>Profesör düşünür, dalıp gider, bulamaz..</span>
+                                        <span>“Bilemedim, al 100 liranı” der ve parayı uzatır.</span>
+                                        <span>“Peki nedir?”</span>
+                                        <span>“Valla ben de bilmiyorum, hocam al 50 liranı” </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <a href="javascript:;">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/placeholder.png" alt="">
+                        </div>
+                        <span>ROTALAR</span>
+                    </a>
+
+                    <a href="javascript:;">
+                        <span class="budget">3</span>
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/shopping-bag.png" alt="">
+                        </div>
+                        <span>ROTA ÇANTAM</span>
+                    </a>
+
+                    <a href="javascript:;" class="bottom-menu">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/menu-light.png" alt="">
+                        </div>
+                        <span>MENÜ</span>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/picture.png" alt="">
+                        </div>
+                        <span>GALERİ</span>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/bookmark.png" alt="">
+                        </div>
+                        <span>ROTA OLUŞTUR</span>
+                    </a>
+                </div>
+            </footer>
+
+            <!----Profil Ekranı canvas baslangıc-->
+            <div id="profileCanvas" class="profileCanvas off-canvas">
+                <div class="profileInfo">
+                    <img class="logoBg" src="public/assets/images/statics/userTopg.jpg" alt="">
+                    <div class="name">
+                        Hoşgeldin
+                        <strong>Ahmet Yılmaz</strong>
+                    </div>
+                    <a href="javascript:;" class="profile-email">ahmetyilmaz@gmail.com</a>
+                </div>
+                <div class="profileContent">
+                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png" alt="">
+                    <div class="profileMenu">
+                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-user.png" alt=""><span>Profil bilgilerim</span></a>
+                        <a href="javascript:;" class="plus"><img src="public/assets/images/statics/icons/profile-pin-plus.png" alt=""><span>Rota Oluştur</span></a>
+                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-pin.png" alt=""><span>Rotalarım</span></a>
+                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-cikis.png" alt=""><span>Çıkış Yap</span></a>
+                        <a href="javascript:;" class="language"><span>EN</span></a>
+                    </div>
+                    <div class="bottom">
+                        <img src="public/assets/images/statics/icons/favorite.png" alt="">
+                        <div>
+                            <span>Doğu’nun <strong>gizemli</strong> ve <strong>masalsı şehri</strong></span>
+                            <span class="hashtag">#karstayiz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----Profil Ekranı canvas bitiş-->
+
+            <!----Menu Ekranı canvas baslangıc-->
+            <div id="menuCanvas" class="menuCanvas off-canvas end">
+                <div class="profileInfo">
+                    <img class="logoBg" src="public/assets/images/statics/userTopg.jpg" alt="">
+                    <div>
+                        <img src="public/assets/images/statics/icons/menu-light.png" alt="">
+                        <span>Menü</span>
+                    </div>
+                </div>
+                <div class="profileContent">
+                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png" alt="">
+                    <div class="profileMenu accMenu">
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Karsı Tanıyalım</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="javascript:;">Kars Hikayeleri</a></li>
+                                <li><a href="javascript:;">Kars Türküleri</a></li>
+                                <li><a href="javascript:;">Rakamlarla Kars</a></li>
+                                <li><a href="javascript:;">Tarihte Kars</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Faydalı Bilgiler</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="javascript:;">Araç Kiralama</a></li>
+                                <li><a href="javascript:;">Faydalı Linkler</a></li>
+                                <li><a href="javascript:;">Nöbetçi Eczaneler</a></li>
+                                <li><a href="javascript:;">Önemli Telefonlar</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton active"><span class="icon"></span><span>Galeri</span></a>
+                        <div class="accContent active">
+                            <ul>
+                                <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
+                                <li><a href="javascript:;">Video Galerisi</a></li>
+                                <li><a href="javascript:;">Sanal Tur (360)</a></li>
+                                <li><a class="active" href="javascript:;">Basında Kars</a></li>
+                                <li><a href="javascript:;">Şehir Kameraları</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Projemizi Tanı!</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
+                                <li><a href="javascript:;">Video Galerisi</a></li>
+                                <li><a href="javascript:;">Sanal Tur (360)</a></li>
+                                <li><a class="active" href="javascript:;">Basında Kars</a></li>
+                                <li><a href="javascript:;">Şahir Kameraları</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Gizlilik</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
+                                <li><a href="javascript:;">Video Galerisi</a></li>
+                                <li><a href="javascript:;">Sanal Tur (360)</a></li>
+                                <li><a class="active" href="javascript:;">Basında Kars</a></li>
+                                <li><a href="javascript:;">Şahir Kameraları</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img src="public/assets/images/statics/icons/favorite.png" alt="">
+                        <div>
+                            <span>Doğu’nun <strong>gizemli</strong> ve <strong>masalsı şehri</strong></span>
+                            <span class="hashtag">#karstayiz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----Menu Ekranı canvas bitiş-->
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="public/assets/front/js/app.js"></script>
+</body>
+</html>
