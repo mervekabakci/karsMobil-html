@@ -224,14 +224,15 @@
                         <span class="title">Kars'a Hoşgeldin!</span> 
                     </div>
                     <div class="formWrapper">
-                        <form id="kayitolForm" action="action.php" novalidate>
+                        <form id="kayitolForm" action="action.php" novalidate class="type2">
                             <div class="form-invalid-message">
                                 <img src="public/assets/images/statics/icons/danger.png" alt="">
                                 <span class="error-message">Eksik yada hatalı bir e-posta adresi girdiniz.</span>
                             </div> 
                             <div class="inputColumn">
                                 <label for="email">E-Posta Adresiniz</label>
-                                <input type="email" name="email" class="emailMask" placeholder="Lütfen E-Posta Adresinizi Giriniz" required>
+                                <img class="email-icon" src="public/assets/images/statics/icons/email.png" alt="">
+                                <input type="email" name="email" class="emailMask emailInput" placeholder="Lütfen E-Posta Adresinizi Giriniz" required>
                             </div> 
                             <div class="inputColumn">
                                 <label for="password">Parolanız</label>
@@ -240,7 +241,21 @@
                             </div> 
                             <button class="otherButton"><img src="public/assets/images/statics/icons/google.png" alt=""><span>Google Hesabınız İle Kayıt Olun</span></button> 
 
+                            <div class="login-info">
+                                <div class="checkWrapper"> 
+                                    <label class="check-container radio">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                        <span class="text">Beni Hatırla!</span>
+                                    </label> 
+                                </div>
+                                <a href="javascript:;">Şifremi Unuttum</a>
+    
+                            </div>
                             <button class="fixBtn" type="submit">GİRİŞ YAP</button>
+                            <div class="sign-up">
+                                <span>Üye Değil Misin? <a href="javascript:;">Hemen Üye Ol!</a></span>
+                            </div>
                         </form>
                     </div>
                 </div>

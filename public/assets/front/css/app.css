@@ -1248,6 +1248,23 @@ form .inputColumn .eyeButton img {
   opacity: 0.28;
   width: 100%;
 }
+form .inputColumn .email-icon {
+  position: absolute;
+  left: 15px;
+  top: 35px;
+  width: 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form .inputColumn .email-icon {
+    left: 45px;
+    top: 95px;
+    width: 42px;
+  }
+}
+form .inputColumn .email-icon img {
+  opacity: 0.28;
+  width: 100%;
+}
 form .inputColumn .note {
   text-align: center;
   display: flex;
@@ -1266,13 +1283,13 @@ form .inputColumn:not(.show) input[type=password] {
   font-size: 40px;
   letter-spacing: 10.5px;
   color: rgba(25, 71, 105, 0.2);
-  padding: 0 45px;
+  padding-right: 45px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .inputColumn:not(.show) input[type=password] {
     font-size: 100px;
     letter-spacing: 15.5px;
-    padding: 0 110px;
+    padding-right: 110px;
   }
 }
 form .otherButton {
@@ -1350,6 +1367,71 @@ form.was-validated input.error {
   background-color: rgba(251, 85, 85, 0.29);
   color: red;
   border: 2px solid rgba(255, 0, 64, 0.1411764706);
+}
+form.type2 {
+  padding: 75px 0;
+}
+form.type2 label {
+  text-align: left;
+}
+form.type2 input {
+  text-align: start;
+  padding: 0 50px;
+}
+form.type2 input.emailInput {
+  padding-left: 115px;
+}
+form.type2 .inputColumn {
+  padding-bottom: 25px;
+}
+form.type2 .otherButton {
+  background-color: transparent;
+  border: 2px solid #cbcbcb;
+  margin: 55px 0;
+}
+form.type2 .login-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 50px 0;
+}
+form.type2 .login-info .checkWrapper {
+  padding: 0 15px 0;
+}
+form.type2 .login-info .check-container.radio {
+  align-items: center;
+}
+form.type2 .login-info .check-container.radio .text {
+  font-family: "baloo_2extrabold";
+  color: #798086;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .login-info .check-container.radio .text {
+    font-size: 34.5px;
+  }
+}
+form.type2 .login-info .check-container.radio .checkmark {
+  height: 65px;
+  width: 65px;
+  min-width: 65px;
+}
+form.type2 .login-info .check-container.radio .checkmark:after {
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+}
+form.type2 .login-info a {
+  font-family: "baloo_2bold";
+  color: #194769;
+  font-size: 12px;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .login-info a {
+    font-size: 27.5px;
+  }
 }
 
 .searchWrapper {
@@ -1439,17 +1521,6 @@ form.was-validated input.error {
   font-family: "baloo_2extrabold";
   color: rgba(24, 24, 24, 0.29);
   font-size: 21.63px;
-}
-
-#giris-yap form {
-  padding: 75px 0;
-}
-#giris-yap form label {
-  text-align: left;
-}
-#giris-yap form input {
-  text-align: start;
-  padding: 0 50px;
 }
 
 /* Customize the label (the container) */
