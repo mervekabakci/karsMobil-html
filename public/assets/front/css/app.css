@@ -566,9 +566,6 @@
     font-size: 25.53px;
   }
 }
-.cards.type2.type2-1 .card .card-text {
-  padding-left: 0;
-}
 .cards.type2.accType2 .card {
   height: 45px;
 }
@@ -816,6 +813,46 @@
   .cards.type3 .card .audioPlayWrapper img {
     width: 60px;
   }
+}
+.cards.type4 .card {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border-radius: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type4 .card {
+    height: 110px;
+    border-radius: 30px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+.cards.type4 .card:nth-child(even) {
+  background-color: #f4f4f4;
+}
+.cards.type4 .card img {
+  opacity: 0.25;
+  width: 34px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type4 .card img {
+    margin-right: 16px;
+  }
+}
+.cards.type4 .card .card-text span {
+  font-family: "baloo_2semibold";
+  color: #9d9d9d;
+  font-size: 20.21px;
+}
+.cards.type4 .card .card-text span.title {
+  font-family: "baloo_2extrabold";
+  color: #0d3c5f;
+  font-size: 28.8px;
+  display: block;
 }
 
 .shareWrapper {
@@ -1263,6 +1300,11 @@ header .header .logoV img {
 }
 .subMain header .header .logo {
   height: 50px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .subMain header .header .logo {
+    height: 90px;
+  }
 }
 .subMain header .header .userButton,
 .subMain header .header .menuButton {
@@ -2931,7 +2973,15 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .contentWrapper .content {
   height: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
+}
+.contentWrapper .content.noneMenu {
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.noneMenu {
+    padding-top: 50px;
+  }
 }
 .contentWrapper .content .overflow-scroll-auto {
   padding-left: 22px;
@@ -3020,6 +3070,32 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   .contentWrapper .content .overflow-scroll-auto.type5 p {
     line-height: 32px;
   }
+}
+.contentWrapper .content .searchSuccessHead span {
+  font-family: "baloo_2semibold";
+  color: rgba(64, 64, 64, 0.46);
+  font-size: 23.47px;
+}
+.contentWrapper .content .searchSuccessHead span.searchSuccesWord {
+  font-family: "baloo_2extrabold";
+  color: #0d3c5f;
+  font-size: 40.23px;
+  display: block;
+}
+.contentWrapper .content .searchSuccessHead blockquote {
+  background-color: #fffff0;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-family: "baloo_2semibold";
+  font-size: 22.68px;
+  color: #404040;
+  margin: 0;
+}
+.contentWrapper .content .searchSuccessHead blockquote .searchSuccesWord {
+  color: #404040;
+  font-size: 22.68px;
+  font-family: "baloo_2extrabold";
+  display: inline;
 }
 
 .paragraph span {
@@ -3303,4 +3379,8 @@ h5 {
     padding-bottom: 30px;
     font-size: 30px;
   }
+}
+
+.ps-0 {
+  padding-left: 0 !important;
 }/*# sourceMappingURL=app.css.map */

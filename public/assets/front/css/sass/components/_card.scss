@@ -90,14 +90,6 @@
     }
 
     &.type2 {
-        &.type2-1{
-          .card{
-            .card-text{
-                padding-left: 0;
-            }
-          }
-        }
-       
         &.accType2{
             .card{
                 height: 45px;
@@ -148,6 +140,7 @@
                     padding-left: 35px;
                     width: 300px;
                 }
+                
                 .title {
                     font-family: "baloo_2extrabold";
                     font-size: 12px;
@@ -306,6 +299,46 @@
                     width: 24px;
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         width: 60px;
+                    }
+                }
+            }
+        }
+    }
+    &.type4{
+        .card{
+            display: flex;
+            align-items: center;
+            height: 45px;
+            border-radius: 16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                height: 110px;
+                border-radius: 30px;
+                padding-left: 34px;
+                padding-right: 34px;
+            }
+            &:nth-child(even){
+                background-color: #f4f4f4;
+            }
+            img{
+                opacity: 0.25;
+                width: 34px;
+                margin-right: 8px;
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    margin-right: 16px;
+                }
+            }
+            .card-text{
+                span{
+                    font-family: 'baloo_2semibold';
+                    color: #9d9d9d;
+                    font-size: 20.21px;
+                    &.title{
+                        font-family: 'baloo_2extrabold';
+                        color: #0d3c5f;
+                        font-size: 28.8px;
+                        display: block;
                     }
                 }
             }
