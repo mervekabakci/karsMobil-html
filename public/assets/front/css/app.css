@@ -1695,6 +1695,13 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .customPopup .popup-container .popup-content {
   width: 70%;
 }
+.customPopup .popup-container.between .popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  width: 80%;
+}
 .customPopup .popup-head {
   text-align: center;
 }
@@ -1724,6 +1731,48 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     border-radius: 30px;
     font-size: 40.96px;
   }
+}
+.customPopup .alertContainer {
+  background-image: url("../images/modal-content-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup .alertContainer {
+    height: 690px;
+  }
+}
+.customPopup .alertContainer img {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup .alertContainer img {
+    margin-bottom: 30px;
+  }
+}
+.customPopup .alertContainer p {
+  font-family: "baloo_2medium";
+  font-size: 14px;
+  line-height: 16px;
+  color: #404040;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup .alertContainer p {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+.customPopup .alertContainer p strong {
+  font-family: "baloo_2extrabold";
 }
 
 .pageMenuList {
@@ -2364,6 +2413,10 @@ a {
 
 p {
   margin: 0;
+}
+
+.d-block {
+  display: block !important;
 }
 
 .overflow-x-auto {

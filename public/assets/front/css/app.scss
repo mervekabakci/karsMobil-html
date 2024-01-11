@@ -19,6 +19,9 @@ a {
 p{
   margin:0;
 }
+.d-block{
+  display: block!important;
+}
 .overflow-x-auto {
   overflow-x: auto;
   &::-webkit-scrollbar {
