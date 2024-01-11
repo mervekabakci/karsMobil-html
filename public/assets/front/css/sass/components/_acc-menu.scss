@@ -9,10 +9,12 @@
         align-items: center;
         border-radius: 30px;
         margin-bottom: 30px;
+
         span {
             font-family: "baloo_2semibold";
             font-size: 36px;
             color: #0a3c60;
+
             &.icon {
                 border: 3px solid #e1e1e1;
                 display: flex;
@@ -22,27 +24,33 @@
                 width: 34px;
                 height: 34px;
                 margin-right: 10px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     width: 76px;
                     height: 76px;
                     border-radius: 26px;
                 }
+
                 &:before {
                     content: "+";
                     font-family: "baloo_2bold";
                     font-size: 18px;
                     color: #dbdbdb;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 36px;
                     }
                 }
             }
         }
+
         &.active {
             background-color: #0a3c60;
             border-color: #0a3c60;
+
             span {
                 color: #ffffff !important;
+
                 &.icon {
                     &:before {
                         content: "-";
@@ -51,16 +59,20 @@
             }
         }
     }
+
     .accContent {
         background-color: #ffffff;
         display: none;
+
         &.active {
             display: block;
         }
+
         ul {
             list-style-type: none;
             margin-bottom: 0;
             padding-top: 20px;
+
             li {
                 a {
                     margin-top: 0 !important;
@@ -69,51 +81,124 @@
                     color: #0a3c60;
                     height: auto !important;
                     border: none !important;
+
                     &.active {
                         font-family: "baloo_2extrabold" !important;
                     }
                 }
             }
         }
-        .paragraph{
-            padding-bottom:20px
+
+        .paragraph {
+            padding-bottom: 20px
         }
     }
 
     &.accType2 {
+        padding-top: 15px;
+
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-top: 30px;
+        }
+
         .accButton {
             justify-content: space-between;
             background-color: rgba(211, 211, 211, 0.17);
             border: none;
+            height: 35px;
+            border-radius: 5px;
+            padding-right: 0;
+            padding-left: 7px;
+            margin-bottom: 3px;
+
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                height: 75px;
+                padding-left: 24px;
+                margin-bottom: 18px;
+                border-radius: 10px;
+            }
+
             span {
                 font-family: "baloo_2medium";
-                font-size: 27.72px;
+                font-size: 12px;
+
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 20.72px;
+                }
+
                 strong {
                     font-family: "baloo_2extrabold";
                 }
-                &.icon{
-                    background-color: #ffffff;  
+
+                &.icon {
+                    background-color: #ffffff;
                     border: none;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    &:after{
+                        font-size: 14px;
+                    }
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        width: 58px;
+                        height: 58px;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                        &:after{
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
-            & > div {
+
+            &>div {
                 display: flex;
                 align-items: center;
                 transition: all 0.3s linear;
 
                 img {
-                    margin-right: 10px;
+                    width: 12px;
+                    margin-right: 15px;
                     opacity: 1;
                     overflow: visible;
                     visibility: visible;
                     transform: translateX(0);
                     transition: all 0.3s linear;
+
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        width: 30px;
+                        margin-right: 32px;
+                    }
                 }
+            }
+
+            &.type2{
+                height:45px;
+                margin-bottom: 5px;
+                
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    height: 90px;
+                     margin-bottom: 5px;
+                }
+                &>div { 
+                    img {
+                        width: 12px; 
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            width: 45px; 
+                        }
+                    }
+                }
+    
             }
             &.active {
                 background-color: #0a3c60;
-                & > div {
-                    transform: translateX(-50px);
+
+                &>div {
+                    transform: translateX(-25px);
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        transform: translateX(-50px);
+                    }
                     img {
                         opacity: 0;
                         overflow: hidden;
@@ -121,10 +206,12 @@
                     }
                 }
             }
-            &.noTrans{
-                &.active{
-                    & > div {
-                        transform:none;
+
+            &.noTrans {
+                &.active {
+                    &>div {
+                        transform: none;
+
                         img {
                             opacity: 1;
                             overflow: visible;
