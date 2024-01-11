@@ -95,13 +95,7 @@
                 height: 45px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     height: 95px;
-                }
-                .card-text{
-                    width: 200px;
-                    @media screen and (min-width: 768px) and (min-height: 1200px) {
-                       width: 157px;
-                    }
-                }
+                } 
               }
         }
         .card {
@@ -135,10 +129,9 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center; 
-                width: 157px;
+                
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    padding-left: 35px;
-                    width: 300px;
+                    padding-left: 35px; 
                 }
                 
                 .title {
