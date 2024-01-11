@@ -218,7 +218,7 @@
             <!----Menu Ekranı canvas bitiş-->
 
             <!----Kayıt ol canvas baslangıc-->
-            <div id="kayitolCanvas" class="menuCanvas off-canvas bottom active">
+            <div id="kayitolCanvas" class="menuCanvas off-canvas canvas-bottom active">
                 <div class="canvas-body overflow-scroll-auto">
                     <div class="canvas-head">
                         <span class="title">Aramıza Hoşgeldin!</span>
@@ -226,26 +226,32 @@
                             için en doğru yerdesiniz!</p>
                     </div>
                     <div class="formWrapper">
-                        <form id="kayitolForm" action="">
+                        <form id="kayitolForm" action="action.php" novalidate>
+                            <div class="form-invalid-message">
+                                <img src="public/assets/images/statics/icons/danger.png" alt="">
+                                <span class="error-message">Eksik yada hatalı bir e-posta adresi girdiniz.</span>
+                            </div>
                             <div class="inputColumn">
                                 <label for="name">Adınız Soyadınız</label>
-                                <input type="text" name="name" placeholder="Lütfen Adınızı Soyadınızı Giriniz">
+                                <input type="text" name="name" class="textMask" placeholder="Lütfen Adınızı Soyadınızı Giriniz" required>
                             </div>
                             <div class="inputColumn">
                                 <label for="email">E-Posta Adresiniz</label>
-                                <input type="email" name="email" placeholder="Lütfen E-Posta Adresinizi Giriniz">
+                                <input type="email" name="email" class="emailMask" placeholder="Lütfen E-Posta Adresinizi Giriniz" required>
                             </div>
                             <div class="inputColumn">
                                 <label for="phone">Cep Telefonu Numaranız</label>
-                                <input type="text" name="phone" placeholder="Lütfen Cep Telefonu Numaranızı Giriniz">
+                                <input type="text" class="phoneMask" name="phone" placeholder="Lütfen Cep Telefonu Numaranızı Giriniz" required>
                             </div>
                             <div class="inputColumn">
                                 <label for="password">Parolanız</label>
-                                <input type="password" name="password" placeholder="Lütfen Cep Telefonu Numaranızı Giriniz">
+                                <input type="password" class="password" name="password" placeholder="" value="dashsas" required>
+                                <span class="eyeButton"><img src="public/assets/images/statics/icons/eye.png" alt=""></span>
                             </div>
                             <div class="inputColumn">
                                 <label for="passwordagain">Parola Doğrulama</label>
-                                <input type="password" name="passwordagain" placeholder="Lütfen Cep Telefonu Numaranızı Giriniz">
+                                <input type="password" class="password" name="passwordagain" placeholder="" value="dashsas" required>
+                                <span class="eyeButton"><img src="public/assets/images/statics/icons/eye.png" alt=""></span>
                                 <span class="note">Şifreler en az altı karakter uzunluğunda olmalı, hem harf 
                                     hem de rakam içermeli ve boşluk içermemelidir.</span>
                             </div>
@@ -275,6 +281,25 @@
             </div>
             <!----Kayıt ol canvas bitiş-->
 
+
+            <!--Form success Başlangıc-->
+            <div id="successModal" class="customPopup ">
+                <div class="popup-container between">
+                    <div class="popup-content type2">
+                        <div class="popup-body">
+                            <div class="alertContainer">
+                                <img src="public/assets/images/statics/icons/check.png" alt="">
+                                <p>Formunuz Başarılı Bir Şekilde Gönderilmiştir</p>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <div class="close-btn">KAPAT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Form success  Bitiş-->
+
             <div class="overlay"></div>
         </main>
     </div>
@@ -284,6 +309,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
     <script src="public/assets/front/js/app.js"></script>
+    <script src="public/assets/front/js/form.js"></script>
 </body>
 </html>
