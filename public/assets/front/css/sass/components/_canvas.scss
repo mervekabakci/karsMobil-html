@@ -12,7 +12,10 @@
     transition: transform 0.3s linear;
     z-index: 999;
     @import "profile-canvas";
-
+    
+    .searchWrapper{
+        margin-bottom: 40px;
+    }
     &.end {
         left: auto;
         border-radius:30px 0 0 30px;

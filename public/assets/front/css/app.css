@@ -854,6 +854,38 @@
   font-size: 28.8px;
   display: block;
 }
+.cards.type5 .card {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d3d3d3;
+  padding: 10px 50px 10px 30px;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 30px;
+}
+@media screen and (min-width: 768px) and (min-height: 1080px) {
+  .cards.type5 .card {
+    height: 200px;
+    padding: 10px 50px 10px 30px;
+    border-radius: 60px;
+  }
+}
+.cards.type5 .card .imageWrapper {
+  width: 30%;
+}
+.cards.type5 .card .imageWrapper img {
+  height: 80%;
+  width: auto;
+  min-height: 100px;
+}
+.cards.type5 .card .card-text {
+  flex: 1;
+}
+.cards.type5 .card .title {
+  font-family: "baloo_2bold";
+  font-size: 46.4px;
+  color: #194769;
+}
 
 .shareWrapper {
   background-color: rgba(0, 0, 0, 0);
@@ -1904,6 +1936,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   .off-canvas.profileCanvas .profileContent .profileMenu a.plus img {
     width: 55px;
   }
+}
+.off-canvas .searchWrapper {
+  margin-bottom: 40px;
 }
 .off-canvas.end {
   left: auto;
@@ -3383,4 +3418,8 @@ h5 {
 
 .ps-0 {
   padding-left: 0 !important;
+}
+
+.zIndex2 {
+  z-index: 9 !important;
 }/*# sourceMappingURL=app.css.map */
