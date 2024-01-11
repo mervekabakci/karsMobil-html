@@ -267,3 +267,15 @@ form {
         font-size: 21.63px;
     }
 }
+#giris-yap{
+    form{
+        padding: 75px 0;
+        label{
+            text-align: left;
+        }
+        input{
+            text-align: start;
+            padding: 0 50px;
+        }
+    }
+}
