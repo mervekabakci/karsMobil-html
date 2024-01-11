@@ -90,19 +90,19 @@
     }
 
     &.type2 {
-        &.accType2{
-            .card{
+        &.accType2 {
+            .card {
                 height: 45px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     height: 95px;
                 }
-                .card-text{
+                .card-text {
                     width: 200px;
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                       width: 157px;
+                        width: 157px;
                     }
                 }
-              }
+            }
         }
         .card {
             flex-direction: row;
@@ -110,7 +110,7 @@
             height: 50px;
             margin-bottom: 5px;
             border: 2px solid #d3d3d3;
-            border-radius: 6px; 
+            border-radius: 6px;
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 height: 110px;
                 margin-bottom: 20px;
@@ -134,13 +134,13 @@
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center; 
+                justify-content: center;
                 width: 157px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     padding-left: 35px;
                     width: 300px;
                 }
-                
+
                 .title {
                     font-family: "baloo_2extrabold";
                     font-size: 12px;
@@ -163,7 +163,7 @@
                 }
                 .linkName {
                     font-family: "baloo_2regular";
-                    font-size: 12px; 
+                    font-size: 12px;
                     color: #0d3c5f;
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 20.29px;
@@ -204,8 +204,8 @@
             }
         }
     }
-    &.type3{
-        .card{
+    &.type3 {
+        .card {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -214,28 +214,28 @@
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding: 15px 0;
             }
-            .card-buttons{
+            .card-buttons {
                 position: relative;
             }
-            .shareButton{
+            .shareButton {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-family: 'baloo_2extrabold';
+                font-family: "baloo_2extrabold";
                 color: #9d9d9d;
                 font-size: 10px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     font-size: 17.07px;
                     line-height: 23px;
                 }
-                span{
+                span {
                     margin-right: 10px;
                     display: block;
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         margin-right: 14px;
                     }
                 }
-                img{
+                img {
                     opacity: 0.28;
                     width: 12px;
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -243,24 +243,22 @@
                     }
                 }
             }
-            .shareWrapper{
+            .shareWrapper {
                 display: none;
                 position: absolute;
-                bottom:100%;
+                bottom: 100%;
                 right: 0;
-                
-                
             }
-            .card-left{
+            .card-left {
                 display: flex;
                 align-items: center;
             }
-            .card-text{
+            .card-text {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
-                .audioName{
-                    font-family: 'baloo_2extrabold';
+                .audioName {
+                    font-family: "baloo_2extrabold";
                     color: #0d3c5f;
                     font-size: 12px;
                     line-height: 15px;
@@ -269,8 +267,8 @@
                         line-height: 30px;
                     }
                 }
-                .artName{
-                    font-family: 'baloo_2semibold';
+                .artName {
+                    font-family: "baloo_2semibold";
                     color: #9d9d9d;
                     font-size: 11px;
                     line-height: 10px;
@@ -279,8 +277,8 @@
                         line-height: 24px;
                     }
                 }
-                .audioTime{
-                    font-family: 'baloo_2semibold';
+                .audioTime {
+                    font-family: "baloo_2semibold";
                     color: #9d9d9d;
                     font-size: 11px;
                     line-height: 10px;
@@ -290,12 +288,12 @@
                     }
                 }
             }
-            .audioPlayWrapper{
+            .audioPlayWrapper {
                 margin-right: 15px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     margin-right: 30px;
                 }
-                img{
+                img {
                     width: 24px;
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         width: 60px;
@@ -304,38 +302,38 @@
             }
         }
     }
-    &.type4{
-        .card{
+    &.type4 {
+        .card {
             display: flex;
             align-items: center;
             height: 45px;
             border-radius: 16px;
             padding-left: 16px;
             padding-right: 16px;
-            @media screen and (min-width:768px) and (min-height:1200px) {
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
                 height: 110px;
                 border-radius: 30px;
                 padding-left: 34px;
                 padding-right: 34px;
             }
-            &:nth-child(even){
+            &:nth-child(even) {
                 background-color: #f4f4f4;
             }
-            img{
+            img {
                 opacity: 0.25;
                 width: 34px;
                 margin-right: 8px;
-                @media screen and (min-width:768px) and (min-height:1200px) {
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
                     margin-right: 16px;
                 }
             }
-            .card-text{
-                span{
-                    font-family: 'baloo_2semibold';
+            .card-text {
+                span {
+                    font-family: "baloo_2semibold";
                     color: #9d9d9d;
                     font-size: 20.21px;
-                    &.title{
-                        font-family: 'baloo_2extrabold';
+                    &.title {
+                        font-family: "baloo_2extrabold";
                         color: #0d3c5f;
                         font-size: 28.8px;
                         display: block;
@@ -344,12 +342,44 @@
             }
         }
     }
+    &.type5 {
+        .card {
+            display: flex;
+            align-items: center;
+            border: 2px solid #d3d3d3;
+            padding: 10px 50px 10px 30px;
+            margin-top: 20px;
+            height: 50px;
+            border-radius: 30px;            
+            @media screen and (min-width: 768px) and (min-height: 1080px) {
+                height: 200px;
+                padding: 10px 50px 10px 30px;
+                border-radius: 60px;
+            }
+            .imageWrapper {
+                width: 30%;
+                img {
+                    height: 80%;
+                    width: auto;
+                    min-height: 100px;
+                }
+            }
+            .card-text {
+                flex: 1;
+            }
+            .title {
+                font-family: "baloo_2bold";
+                font-size: 46.4px;
+                color: #194769;
+            }
+        }
+    }
 }
-.shareWrapper{
-    background-color: rgba(0,0,0,0);
+.shareWrapper {
+    background-color: rgba(0, 0, 0, 0);
     // bottom:100%;
     // padding-bottom: 40px;
-    .button{
+    .button {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -359,14 +389,14 @@
         outline: 0;
         box-shadow: none;
         color: #ffffff;
-        font-family: 'baloo_2extrabold';
+        font-family: "baloo_2extrabold";
         font-size: 16px;
         margin-bottom: 20px;
         width: 50px;
         height: 50px;
     }
 }
-.audioPlayWrapper{
+.audioPlayWrapper {
     display: flex;
     align-items: flex-start;
 }
