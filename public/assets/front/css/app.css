@@ -2860,6 +2860,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
+  height: calc(100% - 200px);
 }
 .tabContainer .tabButtons {
   display: flex;
@@ -2879,11 +2880,26 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   color: #114367;
   border-color: #114367;
 }
+.tabContainer .tabContents {
+  height: calc(100% - 50px);
+}
 .tabContainer .tabContents .tabContent {
   display: none;
+  height: 100%;
+}
+.tabContainer .tabContents .tabContent .overflow-scroll-auto {
+  padding-left: 0;
 }
 .tabContainer .tabContents .tabContent.active {
   display: block;
+}
+.tabContainer .tabContents .tabContent ul.list li {
+  position: relative;
+  padding-left: 40px;
+}
+.tabContainer .tabContents .tabContent ul.list li:before {
+  position: absolute;
+  left: 0;
 }
 
 .acilis-ekrani {
@@ -3594,7 +3610,7 @@ ul.list li {
   padding-bottom: 10px;
   margin-bottom: 0;
   position: relative;
-  display: inline-block;
+  display: block;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   ul.list li {
@@ -3621,6 +3637,8 @@ ul.list li:before {
   margin-top: 2px;
   margin-right: 10px;
   display: inline-block;
+  position: relative;
+  top: 4px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   ul.list li:before {

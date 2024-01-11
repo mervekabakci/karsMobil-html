@@ -3,6 +3,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
+    height: calc(100% - 200px);
     .tabButtons{
         display: flex;
         align-items: flex-end;
@@ -23,10 +24,27 @@
         }
     }
     .tabContents{
+        height: calc(100% - 50px);
         .tabContent{
             display: none;
+            height: 100%;
+            .overflow-scroll-auto{
+                padding-left: 0;
+            }
             &.active{
                 display: block;
+            }
+            ul{
+                &.list{
+                    li{
+                        position: relative;
+                        padding-left: 40px;
+                        &:before{
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
             }
         }  
     }
