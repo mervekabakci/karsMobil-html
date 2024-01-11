@@ -1408,7 +1408,7 @@ form.was-validated input.error {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .fixBtn {
     font-size: 35.9px;
-    height: 145px;
+    height: 113px;
     border-radius: 30px;
   }
 }
