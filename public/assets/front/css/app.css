@@ -804,6 +804,48 @@
   background-color: var(--Primary-Color, rgba(255, 170, 0, 0.7));
 }
 
+form {
+  padding: 20px 0;
+}
+form label {
+  font-family: "baloo_2bold";
+  color: #194769;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form label {
+    font-size: 36px;
+  }
+}
+form input {
+  color: #194769;
+  font-family: "baloo_2medium";
+  background-color: #f4f7fe;
+  text-align: center;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  width: 100%;
+  border-radius: 16px;
+  font-size: 14px;
+  height: 45px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form input {
+    font-size: 35.9px;
+    border-radius: 30px;
+    height: 145px;
+  }
+}
+form input:focus {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+
 .searchWrapper {
   position: relative;
 }
@@ -914,6 +956,82 @@
 .check-container input:checked ~ .checkmark:after {
   display: block;
   color: #ffffff;
+}
+.check-container.radio {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+.check-container.radio .text {
+  color: #292929;
+  font-family: "baloo_2medium";
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .check-container.radio .text {
+    font-size: 31.33px;
+  }
+}
+.check-container.radio .text strong,
+.check-container.radio .text a {
+  font-family: "baloo_2extrabold";
+  color: #292929;
+}
+.check-container.radio .text a {
+  text-decoration: underline;
+}
+.check-container.radio .checkmark {
+  height: 24px;
+  border-radius: 100%;
+  border-color: #cfcfcf;
+  width: 24px;
+  min-width: 24px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .check-container.radio .checkmark {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    margin-right: 25px;
+  }
+}
+.check-container.radio .checkmark:after {
+  content: "";
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkWrapper {
+  position: relative;
+}
+
+.fixBtn {
+  background-color: #194769;
+  font-family: "baloo_2bold";
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .fixBtn {
+    font-size: 35.9px;
+    height: 145px;
+    border-radius: 30px;
+  }
 }
 
 header .header {
@@ -1487,6 +1605,22 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   -webkit-box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 0 -14px 70px 0 rgba(0, 0, 0, 0.27);
 }
+.off-canvas.bottom {
+  width: 100vw;
+  height: 90%;
+  bottom: 0;
+  top: auto;
+  transform: translateY(100%);
+  border-radius: 100px 100px 0 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.bottom {
+    border-radius: 86px 86px 0 0;
+  }
+}
+.off-canvas.bottom.active {
+  transform: translateY(0);
+}
 
 .logoBgBottom {
   position: absolute;
@@ -1510,6 +1644,44 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 100%;
+}
+
+.canvas-body {
+  padding: 20px 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .canvas-body {
+    padding: 40px 60px;
+  }
+}
+.canvas-body .canvas-head {
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .canvas-body .canvas-head {
+    padding-bottom: 30px;
+  }
+}
+.canvas-body .canvas-head .title {
+  font-family: "baloo_2bold";
+  color: #194769;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .canvas-body .canvas-head .title {
+    font-size: 78.32px;
+  }
+}
+.canvas-body .canvas-head p {
+  font-family: "baloo_2medium";
+  color: #595959;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .canvas-body .canvas-head p {
+    font-size: 30px;
+  }
 }
 
 .accMenu .accButton {
