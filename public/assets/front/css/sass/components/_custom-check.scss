@@ -115,21 +115,3 @@
   position: relative;
   padding: 60px 15px 45px;
 }
-
-.fixBtn{
-  background-color: #194769;
-  font-family: 'baloo_2bold';
-  color: #ffffff;;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size: 16px;
-  height: 45px;
-  border-radius: 16px;
-  @media screen and (min-width: 768px) and (min-height: 1200px) {
-    font-size: 35.9px;
-    height: 113px;
-    border-radius: 30px;
-  }
-}

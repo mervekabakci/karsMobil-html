@@ -227,3 +227,39 @@ form {
         }
     }
 }
+.fixBtn {
+    background-color: #194769;
+    font-family: "baloo_2bold";
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    height: 45px;
+    border-radius: 16px;
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        font-size: 35.9px;
+        height: 113px;
+        border-radius: 30px;
+    }
+}
+.fixBtn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(214, 214, 214, 0.29);
+    padding: 10px;
+    min-width: 215px;
+    height: 50px;
+    border-radius: 6px;
+    img {
+        margin-right: 30px;
+        opacity: 0.29;
+    }
+    span {
+        font-family: "baloo_2extrabold";
+        color: rgba(24, 24, 24, 0.29);
+        font-size: 21.63px;
+    }
+}
