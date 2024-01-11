@@ -86,7 +86,7 @@
         border-radius: 60px 60px 0 0;
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            border-radius: 86px 86px 0 0;
+            border-radius: 100px 100px 0 0;
         }
         .canvas-body{ 
             padding: 30px 45px;
@@ -167,6 +167,16 @@
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 font-size: 30px;
                 line-height: 35px;
+            }
+        }
+    }
+}
+
+#giris-yap{
+    &.off-canvas{
+        &.canvas-bottom {
+            .canvas-body{
+                padding: 120px 100px;
             }
         }
     }

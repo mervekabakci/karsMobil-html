@@ -1133,7 +1133,7 @@ form {
 form label {
   font-family: "baloo_2bold";
   color: #194769;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   display: block;
   padding-bottom: 5px;
@@ -1155,7 +1155,7 @@ form input {
   box-shadow: none;
   width: 100%;
   border-radius: 16px;
-  font-size: 14px;
+  font-size: 12px;
   height: 45px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -1172,12 +1172,17 @@ form input:focus {
 }
 form .inputColumn {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form .inputColumn {
+    padding-bottom: 10px;
+  }
 }
 form .inputColumn .eyeButton {
   position: absolute;
-  right: 25px;
-  top: 45px;
+  right: 15px;
+  top: 35px;
   width: 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -1194,9 +1199,9 @@ form .inputColumn .eyeButton img {
 form .inputColumn .note {
   text-align: center;
   display: flex;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 15px;
-  padding: 10px 40px 20px;
+  padding: 10px 20px 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .inputColumn .note {
@@ -1206,14 +1211,16 @@ form .inputColumn .note {
   }
 }
 form .inputColumn:not(.show) input[type=password] {
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 10.5px;
   color: rgba(25, 71, 105, 0.2);
+  padding: 0 45px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .inputColumn:not(.show) input[type=password] {
     font-size: 100px;
     letter-spacing: 15.5px;
+    padding: 0 110px;
   }
 }
 form .otherButton {
@@ -1221,13 +1228,13 @@ form .otherButton {
   color: #194769;
   border: 2px solid #f4f7fe;
   background-color: #f4f7fe;
-  padding: 0 40px;
+  padding: 0px 15px;
+  font-size: 12px;
   border: none;
   outline: 0;
   box-shadow: none;
   width: 100%;
   border-radius: 16px;
-  font-size: 14px;
   height: 45px;
   display: flex;
   align-items: center;
@@ -1237,10 +1244,11 @@ form .otherButton {
     font-size: 27.5px;
     border-radius: 30px;
     height: 110px;
+    padding: 0 40px;
   }
 }
 form .otherButton img {
-  width: 25px;
+  width: 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .otherButton img {
@@ -1341,6 +1349,17 @@ form.was-validated input.error {
   filter: invert(1) opacity(0.26);
 }
 
+#giris-yap form {
+  padding: 75px 0;
+}
+#giris-yap form label {
+  text-align: left;
+}
+#giris-yap form input {
+  text-align: start;
+  padding: 0 50px;
+}
+
 /* Customize the label (the container) */
 .check-container {
   display: block;
@@ -1414,7 +1433,7 @@ form.was-validated input.error {
 .check-container.radio .text {
   color: #292929;
   font-family: "baloo_2medium";
-  font-size: 14px;
+  font-size: 12px;
   line-height: 15px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -1432,11 +1451,11 @@ form.was-validated input.error {
   text-decoration: underline;
 }
 .check-container.radio .checkmark {
-  height: 24px;
+  height: 15px;
   border-radius: 100%;
   border-color: #cfcfcf;
-  width: 24px;
-  min-width: 24px;
+  width: 15px;
+  min-width: 15px;
   margin-right: 15px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -1451,16 +1470,29 @@ form.was-validated input.error {
   content: "";
   left: 9px;
   top: 5px;
-  width: 5px;
-  height: 10px;
+  width: 3px;
+  height: 5px;
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .check-container.radio .checkmark:after {
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+  }
 }
 
 .checkWrapper {
   position: relative;
-  padding: 60px 15px 45px;
+  padding: 30px 0px 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .checkWrapper {
+    padding: 60px 15px 45px;
+  }
 }
 
 .fixBtn {
@@ -2247,7 +2279,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.canvas-bottom {
-    border-radius: 86px 86px 0 0;
+    border-radius: 100px 100px 0 0;
   }
 }
 .off-canvas.canvas-bottom .canvas-body {
@@ -2334,6 +2366,10 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     font-size: 30px;
     line-height: 35px;
   }
+}
+
+#giris-yap.off-canvas.canvas-bottom .canvas-body {
+  padding: 120px 100px;
 }
 
 .accMenu .accButton {
