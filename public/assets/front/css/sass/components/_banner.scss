@@ -1,7 +1,10 @@
 .bannerWrapper{
-    height: 30vh;
+    height: 40vh;
     max-height: 880px;
     position: relative;
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        height: 39vh;
+    }
     &:before{
         content: "";
         position: absolute;
@@ -13,6 +16,10 @@
         background: rgb(255,255,255);
         background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,54,93,1) 100%);
         z-index: 0;
+        border-radius: 0 0 77px 77px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            border-radius: 0 0 160px 160px;
+        }
     }
     .imageBanner{
         width: 100%;
@@ -21,7 +28,10 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        border-radius: 0 0 100px 100px;
+        border-radius: 0 0 77px 77px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            border-radius: 0 0 160px 160px;
+        }
         img{
             width: 100%;
             min-height: 100%;

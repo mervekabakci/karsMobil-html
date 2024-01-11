@@ -8,7 +8,7 @@ form {
         display: block;
         padding-bottom: 10px;
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            font-size: 36px;
+            font-size: 30px;
         }
     }
     input {
@@ -23,10 +23,10 @@ form {
         border-radius: 16px;
         font-size: 14px;
         height: 45px;
-        @media screen and (min-width: 768px) and (min-height: 1200px) {
-            font-size: 35.9px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) { 
+            font-size: 27.9px;
             border-radius: 30px;
-            height: 145px;
+            height: 115px;
         }
         &:focus {
             border: none;

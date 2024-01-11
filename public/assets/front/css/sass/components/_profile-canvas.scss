@@ -14,29 +14,51 @@
     .name {
         color: #ffffff;
         font-family: "baloo_2regular";
-        font-size: 46.79px;
-        line-height: 46px;
+        font-size: 15px;
+        line-height: 20px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            font-size: 37.79px;
+            line-height: 35px;
+        }
+
         strong {
             font-family: "baloo_2extrabold";
-            font-size: 51.86px;
+            font-size: 17px;
             display: block;
+
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                font-size: 41.86px;
+            }
         }
     }
+
     a {
         color: #ffffff;
         font-family: "baloo_2regular";
-        font-size: 38.25px;
-        margin-top: 10px;
+        font-size: 18px;
+        margin-top: 0;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            font-size: 38.25px;
+            margin-top: 10px;
+        }
     }
 }
+
 .profileContent {
     position: relative;
-    height: 75vh;
+    height: 80vh;
     padding: 0 60px 60px 60px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width:768px) and (min-height:1200px) {
+        height: 72vh;
+    }
+
     .profileMenu {
         a {
             display: flex;
@@ -56,41 +78,84 @@
                 padding-right: 32px;
                 height: 145px;
             }
-            &.plus{
-                span{
+
+            &.plus {
+                span {
                     margin-left: -0.5rem;
                 }
             }
-            &.language{
+
+            &.language {
                 display: inline-flex;
                 aspect-ratio: 2/2;
                 justify-content: center;
-                span{
-                    color:#1b1b1b;
+
+                span {
+                    color: #1b1b1b;
                     opacity: 0.34;
                 }
             }
-            img{
+
+            img {
                 margin-right: 8px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     margin-right: 24px;
                 }
 
             }
+
             span {
                 font-family: "baloo_2semibold";
                 font-size: 36px;
                 color: #0a3c60;
-         
+
             }
         }
     }
-    .bottom{
-        span{
-            color:#0a3d61;
+
+    .bottom {
+        width: 200px;
+        padding-top: 0;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            width: 500px;
+            padding-top: 0;
+        }
+
+        span {
+            color: #0a3d61;
+            font-size: 15px;
+            line-height: 18.5px;
+
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                font-size: 34.52px;
+                line-height: 34px;
+            }
+
+            &.hashtag {
+                font-size: 25px;
+                line-height: 20px;
+
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    font-size: 60px;
+                    line-height: 50px;
+                }
+            }
+        }
+
+        img {
+            width: 40px;
+            margin-right: 10px;
+
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                width: 80px;
+                margin-right: 17px;
+            }
         }
     }
-    .logoBgBottom{
+
+    .logoBgBottom {
         right: 0;
         z-index: -1;
         left: -26%;
@@ -100,65 +165,102 @@
     }
 }
 
-&.menuCanvas{
-    .profileInfo{
-        div{
+&.menuCanvas {
+    width: 86%;
+
+    .profileInfo {
+        div {
             display: flex;
             align-items: center;
 
             img {
                 margin-right: 8px;
                 width: 20px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
-                    width: 64px;
+                    width: 55px;
+                    margin-right: 20px;
                 }
             }
 
-            span{
-               font-family: 'baloo_2extrabold';
+            span {
+                font-family: 'baloo_2extrabold';
                 color: #ffffff;
                 font-size: 22px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
-                    font-size: 66.62px;
+                    font-size: 53.62px;
                 }
             }
         }
     }
-    .profileContent{
-        padding: 20px 60px 60px 30px;
+
+    .profileContent {
+        padding: 0px 20px 60px 20px;
+        height: 77vh;
+
         @media screen and (min-width:768px) and (min-height:1200px) {
-            padding: 20px 60px 60px 67px;
+            padding: 20px 55px 60px 60px;
         }
-        .profileMenu{
+
+        .profileMenu {
             a {
                 padding-left: 10px;
-            padding-right: 10px;
-            height: 50px;
-            border-radius: 5px;
-               
+                padding-right: 10px;
+                height: 45px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
-                    height: 135px;
+                    height: 110px;
+                    border-radius: 25px;
+                    margin-top: 20px;
                 }
-                span{
-                    font-size:16px;
+
+                span {
+                    font-size: 12px;
+
                     @media screen and (min-width:768px) and (min-height:1200px) {
-                        font-size: 32px;   
+                        font-size: 28px;
                     }
-                    &.icon{
-                        margin-right: 32px;
+
+                    &.icon {
+                        margin-right: 10px;
+                        border-radius: 10px;
+                        width: 30px;
+                        height: 30px;
+
+                        @media screen and (min-width:768px) and (min-height:1200px) {
+                            margin-right: 17px;
+                            border-radius: 12px;
+                            width: 34px;
+                            height: 34px;
+                        }
                     }
                 }
             }
         }
     }
-    .accMenu{
-        .accContent{
+
+    .accMenu {
+        .accContent {
             margin-top: -10px;
 
-            ul{
-                padding: 0 0 0 111px;
-                a{
-                    padding-bottom: 10px;
+            ul {
+                padding: 0 0 0 40px;
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    padding: 0 0 0 100px;
+                }
+                a {
+                    margin-bottom: 0;
+                    font-size: 11.7px;
+
+                    @media screen and (min-width:768px) and (min-height:1200px) {
+                        padding-bottom: 5px;
+                        font-size: 26.7px;
+                    }
+
                 }
             }
         }
@@ -167,13 +269,80 @@
 
 &.profileCanvas {
     .profileInfo {
-        height: 25vh;
-        padding-left: 35px;
+        height: 20vh;
+        border-bottom-right-radius: 30px;
         padding-bottom: 12px;
+        padding-left: 35px;
 
         @media screen and (min-width:768px) and (min-height:1200px) {
-            padding-left: 95px;
-            padding-bottom: 40px;
+            height: 25vh;
+            padding-left: 80px;
+            padding-bottom: 32px;
+            border-bottom-right-radius: 80px;
         }
-    } 
+
+        a {
+            font-size: 16px;
+
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                font-size: 30.25px;
+            }
+
+        }
+    }
+
+    .profileContent {
+        padding: 15px 25px 60px 25px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            padding: 10px 60px 60px 60px;
+        }
+
+        .profileMenu {
+            a {
+                height: 50px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                margin-top: 0;
+
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    height: 120px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    margin-bottom: 0;
+                    margin-top: 30px;
+                }
+
+                span {
+                    font-size: 12px;
+
+                    @media screen and (min-width:768px) and (min-height:1200px) {
+                        font-size: 28px;
+                    }
+                }
+
+                img {
+                    margin-right: 12px;
+                    width: 20px;
+
+                    @media screen and (min-width:768px) and (min-height:1200px) {
+                        margin-right: 24px;
+                        width: 40px;
+                    }
+                }
+
+                &.plus {
+                    img {
+                        width: 25px;
+
+                        @media screen and (min-width:768px) and (min-height:1200px) {
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

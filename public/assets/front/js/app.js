@@ -6,8 +6,8 @@ $(window).on('load', function () {
 
 //User Profile Menu button
 $(".userButton").click(function(){
-  $("#kayitolCanvas").addClass("active");
-  // $("#profileCanvas").addClass("active");
+  // $("#kayitolCanvas").addClass("active");
+  $("#profileCanvas").addClass("active");
   $(".overlay").fadeIn(300)
 })
 
