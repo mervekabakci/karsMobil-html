@@ -625,6 +625,123 @@
 .cards.type2 .card .card-buttons .button img {
   max-width: 33px;
 }
+.cards.type3 .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(152, 152, 152, 0.22);
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type3 .card {
+    padding: 30px 0;
+  }
+}
+.cards.type3 .card .card-buttons {
+  position: relative;
+}
+.cards.type3 .card .shareButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "baloo_2extrabold";
+  color: #9d9d9d;
+  font-size: 16.34px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type3 .card .shareButton {
+    font-size: 20.07px;
+    line-height: 24px;
+  }
+}
+.cards.type3 .card .shareButton span {
+  margin-right: 10px;
+  display: block;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type3 .card .shareButton span {
+    margin-right: 20px;
+  }
+}
+.cards.type3 .card .shareButton img {
+  opacity: 0.28;
+}
+.cards.type3 .card .shareWrapper {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+.cards.type3 .card .card-left {
+  display: flex;
+  align-items: center;
+}
+.cards.type3 .card .card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.cards.type3 .card .card-text .audioName {
+  font-family: "baloo_2extrabold";
+  color: #0d3c5f;
+  font-size: 16.34px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type3 .card .card-text .audioName {
+    font-size: 34.4px;
+    line-height: 34px;
+  }
+}
+.cards.type3 .card .card-text .artName {
+  font-family: "baloo_2semibold";
+  color: #9d9d9d;
+  font-size: 14.1px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type3 .card .card-text .artName {
+    font-size: 24.1px;
+    line-height: 24px;
+  }
+}
+.cards.type3 .card .card-text .audioTime {
+  font-family: "baloo_2semibold";
+  color: #9d9d9d;
+  font-size: 14.1px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type3 .card .card-text .audioTime {
+    font-size: 24.1px;
+    line-height: 24px;
+  }
+}
+.cards.type3 .card .audioPlayWrapper {
+  margin-right: 30px;
+}
+
+.shareWrapper {
+  background-color: rgba(0, 0, 0, 0);
+}
+.shareWrapper .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e13869;
+  border-radius: 100%;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  color: #ffffff;
+  font-family: "baloo_2extrabold";
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.audioPlayWrapper {
+  display: flex;
+  align-items: flex-start;
+}
 
 .f-button {
   background-color: rgb(84, 26, 9);
@@ -1472,6 +1589,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .accMenu .accContent ul li a.active {
   font-family: "baloo_2extrabold" !important;
 }
+.accMenu .accContent .paragraph {
+  padding-bottom: 20px;
+}
 .accMenu.accType2 .accButton {
   justify-content: space-between;
   background-color: rgba(211, 211, 211, 0.17);
@@ -1511,6 +1631,14 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   opacity: 0;
   overflow: hidden;
   visibility: hidden;
+}
+.accMenu.accType2 .accButton.noTrans.active > div {
+  transform: none;
+}
+.accMenu.accType2 .accButton.noTrans.active > div img {
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
 }
 
 .bannerWrapper {
@@ -2030,6 +2158,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .contentWrapper .titleColumn .backButton {
   position: absolute;
   left: 0;
+  display: flex;
+  align-items: center;
 }
 .contentWrapper .titleColumn .backButton img {
   transform: rotate(180deg);
@@ -2052,6 +2182,16 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   padding-bottom: 100px;
 }
 
+.paragraph span {
+  font-size: 12px;
+  color: #282828;
+  display: block;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .paragraph span {
+    font-size: 28px;
+  }
+}
 .paragraph p {
   font-family: "baloo_2medium";
   color: #282828;
@@ -2064,6 +2204,13 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     font-size: 28px;
     padding-bottom: 20px;
   }
+}
+.paragraph p strong {
+  display: inline;
+  font-family: "baloo_2extrabold";
+}
+.paragraph.text-center {
+  text-align: center;
 }
 .paragraph .imageWrapper {
   width: 100%;
@@ -2084,6 +2231,116 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .paragraph img {
     border-radius: 60px;
+  }
+}
+
+ul {
+  padding-left: 0;
+}
+ul.list li {
+  font-family: "baloo_2medium";
+  color: #282828;
+  font-size: 12px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  position: relative;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  ul.list li {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+}
+ul.list li::marker {
+  display: none !important;
+}
+ul.list li strong {
+  display: inline;
+  font-family: "baloo_2extrabold";
+}
+ul.list li:before {
+  content: "";
+  background-image: url("../images/nokta.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  margin-right: 10px;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  ul.list li:before {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    margin-top: 8px;
+  }
+}
+
+/*Counter*/
+.counterWrapper .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #dcdcdc;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .counterWrapper .item {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+  }
+}
+.counterWrapper .item img {
+  margin-top: -10px;
+  width: 50px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .counterWrapper .item img {
+    width: 112px;
+    margin-top: -40px;
+  }
+}
+.counterWrapper .item div {
+  font-family: "baloo_2medium";
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(91, 91, 91, 0.55);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .counterWrapper .item div {
+    font-size: 43.7px;
+    line-height: 42px;
+  }
+}
+.counterWrapper .item div strong {
+  font-family: "baloo_2extrabold";
+}
+.counterWrapper .item .counter,
+.counterWrapper .item .counter2 {
+  font-family: "baloo_2extrabold";
+  font-size: 60px;
+  line-height: 40px;
+  margin-top: 20px;
+  color: #0d3c5f;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .counterWrapper .item .counter,
+  .counterWrapper .item .counter2 {
+    font-size: 108.61px;
+    line-height: 80px;
+    margin-top: 50px;
   }
 }
 

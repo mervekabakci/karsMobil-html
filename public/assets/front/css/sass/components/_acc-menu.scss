@@ -75,6 +75,9 @@
                 }
             }
         }
+        .paragraph{
+            padding-bottom:20px
+        }
     }
 
     &.accType2 {
@@ -115,6 +118,18 @@
                         opacity: 0;
                         overflow: hidden;
                         visibility: hidden;
+                    }
+                }
+            }
+            &.noTrans{
+                &.active{
+                    & > div {
+                        transform:none;
+                        img {
+                            opacity: 1;
+                            overflow: visible;
+                            visibility: visible;
+                        }
                     }
                 }
             }

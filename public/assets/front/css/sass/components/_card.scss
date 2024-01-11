@@ -150,4 +150,113 @@
             }
         }
     }
+    &.type3{
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid rgba(152, 152, 152, 0.22);
+            padding: 20px 0;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                padding: 30px 0;
+            }
+            .card-buttons{
+                position: relative;
+            }
+            .shareButton{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'baloo_2extrabold';
+                color: #9d9d9d;
+                font-size: 16.34px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 20.07px;
+                    line-height: 24px;
+                }
+                span{
+                    margin-right: 10px;
+                    display: block;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        margin-right: 20px;
+                    }
+                }
+                img{
+                    opacity: 0.28;
+                }
+            }
+            .shareWrapper{
+                display: none;
+                position: absolute;
+                bottom:100%;
+                right: 0;
+                
+                
+            }
+            .card-left{
+                display: flex;
+                align-items: center;
+            }
+            .card-text{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                .audioName{
+                    font-family: 'baloo_2extrabold';
+                    color: #0d3c5f;
+                    font-size: 16.34px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 34.4px;
+                        line-height: 34px;
+                    }
+                }
+                .artName{
+                    font-family: 'baloo_2semibold';
+                    color: #9d9d9d;
+                    font-size: 14.1px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 24.1px;
+                        line-height: 24px;
+                    }
+                }
+                .audioTime{
+                    font-family: 'baloo_2semibold';
+                    color: #9d9d9d;
+                    font-size: 14.1px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 24.1px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .audioPlayWrapper{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+.shareWrapper{
+    background-color: rgba(0,0,0,0);
+    // bottom:100%;
+    // padding-bottom: 40px;
+    .button{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e13869;
+        border-radius: 100%;
+        border: none;
+        outline: 0;
+        box-shadow: none;
+        color: #ffffff;
+        font-family: 'baloo_2extrabold';
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+.audioPlayWrapper{
+    display: flex;
+    align-items: flex-start;
 }
