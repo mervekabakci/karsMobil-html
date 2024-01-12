@@ -1,4 +1,4 @@
-.customPopup{
+.customPopup {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -10,41 +10,52 @@
     z-index: 99;
     display: none;
     background-color: rgba(4, 32, 51, 0.79);
-    .popup-container{
+
+    .popup-container {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        .popup-content{
+
+        .popup-content {
             width: 66%;
             margin-top: 33px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 margin-top: 100px;
             }
-            &.type2{
+
+            &.type2 {
                 margin-top: 170px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     margin-top: 333px;
                 }
-                .alertContainer{
+
+                .alertContainer {
                     height: 200px;
                     padding: 20px 20px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         height: 488px;
                         padding: 20px 40px;
                     }
-                    img{
+
+                    img {
                         margin-bottom: 28px;
                         width: 50px;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
                             margin-bottom: 100px;
                             width: auto;
                         }
                     }
-                    p{
+
+                    p {
                         font-size: 12px;
                         line-height: 18px;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
                             font-size: 28px;
                             line-height: 35px;
@@ -53,8 +64,9 @@
                 }
             }
         }
-        &.between{
-            .popup-content{
+
+        &.between {
+            .popup-content {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -63,30 +75,37 @@
             }
         }
     }
-    .popup-head{
+
+    .popup-head {
         text-align: center;
         margin-bottom: 22px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             margin-bottom: 25px;
         }
-        .title{
+
+        .title {
             font-family: 'baloo_2extrabold';
             font-size: 16px;
             color: #ffffff;
             text-align: center;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 font-size: 39.24px;
             }
         }
     }
-    .popup-body{
+
+    .popup-body {
         padding: 0 0;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding: 30px 0;
         }
     }
-    .popup-footer{
-        .close-btn{
+
+    .popup-footer {
+        .close-btn {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -97,6 +116,7 @@
             border-radius: 10px;
             height: 45px;
             margin-top: 30px;
+
             @media screen and (min-width:768px) and (min-height:1200px) {
                 height: 145px;
                 border-radius: 45px;
@@ -107,7 +127,7 @@
     }
 
 
-    .alertContainer{
+    .alertContainer {
         background-image: url('../images/modal-content-bg.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -120,27 +140,83 @@
         justify-content: center;
         padding: 20px 40px;
         text-align: center;
+
         @media screen and (min-width:768px) and (min-height:1200px) {
             height: 690px;
         }
-        img{
-            margin-bottom:10px;
+
+        img {
+            margin-bottom: 10px;
+
             @media screen and (min-width:768px) and (min-height:1200px) {
-                margin-bottom:30px;
+                margin-bottom: 30px;
             }
         }
-        p{
+
+        p {
             font-family: 'baloo_2medium';
             font-size: 14px;
             line-height: 16px;
             color: #404040;
+
             @media screen and (min-width:768px) and (min-height:1200px) {
                 font-size: 35px;
                 line-height: 35px;
             }
-            strong{
+
+            strong {
                 font-family: 'baloo_2extrabold';
 
+            }
+        }
+    }
+
+    &.log-out {
+        .popup-container {
+            &.between {
+                .popup-content {
+                    width: 90%;
+
+                    .alertContainer {
+                        padding: 20px 100px;
+                        background: #ffffff;
+                        border-radius: 30px;
+
+                        p {
+                            font-size: 14px;
+                            line-height: 18px;
+                            padding: 0 50px;
+                            @media screen and (min-width:768px) and (min-height:1200px) {
+                                font-size: 36px;
+                                line-height: 35px;
+                            }
+                        }
+
+                        img {
+                            margin-bottom: 60px;
+                        }
+                        .close-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #0a3c60;
+                            font-family: 'baloo_2extrabold';
+                            font-size: 12px;
+                            color: #ffffff;
+                            border-radius: 10px;
+                            height: 45px;
+                            margin-top: 30px;
+
+                            @media screen and (min-width:768px) and (min-height:1200px) {
+                                height: 109px;
+                                border-radius: 25px;
+                                font-size: 25.96px;
+                                margin-top: 60px;
+                                width: 100%;
+                            }
+                        }
+                    } 
+                }
             }
         }
     }
