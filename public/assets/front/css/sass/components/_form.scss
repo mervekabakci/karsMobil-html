@@ -208,9 +208,11 @@ form {
 
     &.type2 {
         padding: 35px 0;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding: 75px 0;
         }
+
         label {
             text-align: left;
         }
@@ -230,6 +232,7 @@ form {
 
         .inputColumn {
             padding-bottom: 10px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding-bottom: 25px;
             }
@@ -239,6 +242,7 @@ form {
             background-color: transparent;
             border: 2px solid #cbcbcb;
             margin: 20px 0 30px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 margin: 55px 0;
             }
@@ -249,11 +253,14 @@ form {
             align-items: center;
             justify-content: space-between;
             padding: 0 0 20px 0;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding: 0 0 50px 0;
             }
+
             .checkWrapper {
                 padding: 0;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     padding: 0 15px 0;
                 }
@@ -277,15 +284,18 @@ form {
                         height: 25px;
                         width: 25px;
                         min-width: 25px;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
                             height: 65px;
                             width: 65px;
                             min-width: 65px;
                         }
+
                         &:after {
                             width: 3px;
-                            height: 6px; 
+                            height: 6px;
                             border-width: 0 2px 2px 0;
+
                             @media screen and (min-width: 768px) and (min-height: 1200px) {
                                 width: 10px;
                                 height: 20px;
@@ -312,9 +322,11 @@ form {
         .letsSignUp {
             text-align: center;
             padding: 12px 0;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding: 35px 0;
             }
+
             span {
                 font-family: "baloo_2medium";
             }
@@ -336,23 +348,28 @@ form {
 
     }
 
-    
+
 
 }
-.formWrapper{
+
+.formWrapper {
     &.type2 {
         padding-top: 40px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding-top: 100px;
         }
+
         .inputColumn {
             padding-bottom: 15px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding-bottom: 30px;
             }
         }
     }
 }
+
 .searchWrapper {
     position: relative;
 
@@ -363,7 +380,7 @@ form {
     input {
         font-family: "baloo_2medium";
         background-color: #f4f7fe;
-        font-size: 14px;
+        font-size: 12px;
         color: #7f7f7f;
         width: 100%;
         height: 50px;
@@ -375,8 +392,8 @@ form {
         padding-right: 46px;
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            font-size: 32.35px;
-            height: 125px;
+            font-size: 27.35px;
+            height: 95px;
             padding-left: 39px;
             padding-right: 120px;
         }
@@ -396,8 +413,12 @@ form {
         }
 
         img {
-            width: 100%;
+            width: 75%;
             filter: invert(1) opacity(0.26);
+
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                width: 100%;
+            }
         }
     }
 }
@@ -427,18 +448,34 @@ form {
     justify-content: center;
     background-color: rgba(214, 214, 214, 0.29);
     padding: 10px;
-    min-width: 215px;
-    height: 50px;
-    border-radius: 6px;
+    min-width: 50px;
+    height: 25px;
+    border-radius: 10px;
+    margin: 5px 0;
+
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        min-width: 179px;
+        height: 50px;
+        border-radius: 20px;
+        margin: 20px 0;
+    }
 
     img {
-        margin-right: 30px;
+        margin-right: 5px;
         opacity: 0.29;
+        width: 10px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            width: 22px;
+            margin-right: 20px;
+        }
     }
 
     span {
         font-family: "baloo_2extrabold";
         color: rgba(24, 24, 24, 0.29);
-        font-size: 21.63px;
+        font-size: 10px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            font-size: 21.63px;
+        }
     }
 }

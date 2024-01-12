@@ -176,10 +176,11 @@
 
     .titleColumn {
         display: flex;
-        align-items: center;
         justify-content: center;
         position: relative;
-
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         .backButton {
             position: absolute;
             left: 0;
@@ -230,6 +231,36 @@
                 padding-left: 55px;
                 padding-right: 30px;
                 padding-top: 10px;
+            }
+            &.type1{ 
+                .titleColumn{
+                    padding-bottom: 5px !important;
+                    padding-top: 5px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        padding-top: 15px;
+                        padding-bottom: 15px !important;
+                    }
+                }
+               
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 15px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding-top: 50px;
+                    padding-left: 40px;
+                    padding-right: 30px;
+                    
+                }
+                p{
+                    font-family: "baloo_2medium";
+                    color: #282828;
+                    font-size: 9.5px;
+                    line-height: 10px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                }
             }
 
             &.type2 {
