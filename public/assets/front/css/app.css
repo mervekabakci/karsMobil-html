@@ -804,20 +804,28 @@
     width: 60px;
   }
 }
+.cards.type4 {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type4 {
+    padding-top: 20px;
+  }
+}
 .cards.type4 .card {
   display: flex;
   align-items: center;
   height: 45px;
-  border-radius: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type4 .card {
-    height: 110px;
-    border-radius: 30px;
-    padding-left: 34px;
-    padding-right: 34px;
+    height: 100px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 .cards.type4 .card:nth-child(even) {
@@ -825,24 +833,45 @@
 }
 .cards.type4 .card img {
   opacity: 0.25;
-  width: 34px;
+  width: 11px;
   margin-right: 8px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type4 .card img {
     margin-right: 16px;
+    width: 22px;
+  }
+}
+.cards.type4 .card .card-text {
+  line-height: 12px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type4 .card .card-text {
+    line-height: normal;
   }
 }
 .cards.type4 .card .card-text span {
   font-family: "baloo_2semibold";
   color: #9d9d9d;
-  font-size: 20.21px;
+  font-size: 11px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type4 .card .card-text span {
+    font-size: 20.21px;
+  }
 }
 .cards.type4 .card .card-text span.title {
   font-family: "baloo_2extrabold";
   color: #0d3c5f;
-  font-size: 28.8px;
+  font-size: 11.5px;
+  line-height: 10px;
   display: block;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type4 .card .card-text span.title {
+    font-size: 22.8px;
+    line-height: 10px;
+  }
 }
 .cards.type5 .card {
   display: flex;
@@ -3733,7 +3762,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   transform: rotate(180deg);
   opacity: 10%;
   margin-right: 5px;
-  width: 12px;
+  width: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .titleColumn .backButton img {
@@ -3743,7 +3772,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .contentWrapper .titleColumn .backButton span {
   font-family: "baloo_2extrabold";
-  font-size: 12px;
+  font-size: 10px;
   color: #dbdbdb;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -3756,11 +3785,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   padding-bottom: 150px;
 }
 .contentWrapper .content.noneMenu {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content.noneMenu {
-    padding-top: 50px;
+    padding-top: 25px;
   }
 }
 .contentWrapper .content .overflow-scroll-auto {
@@ -3854,28 +3883,54 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .contentWrapper .content .searchSuccessHead span {
   font-family: "baloo_2semibold";
   color: rgba(64, 64, 64, 0.46);
-  font-size: 23.47px;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .searchSuccessHead span {
+    font-size: 19.47px;
+  }
 }
 .contentWrapper .content .searchSuccessHead span.searchSuccesWord {
   font-family: "baloo_2extrabold";
   color: #0d3c5f;
-  font-size: 40.23px;
+  font-size: 14px;
+  line-height: 10px;
   display: block;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .searchSuccessHead span.searchSuccesWord {
+    font-size: 28.23px;
+    line-height: 30px;
+    padding-bottom: 0;
+  }
 }
 .contentWrapper .content .searchSuccessHead blockquote {
   background-color: #fffff0;
-  border-radius: 20px;
-  padding: 10px 30px;
+  border-radius: 10px;
+  padding: 10px 15px;
   font-family: "baloo_2semibold";
-  font-size: 22.68px;
+  font-size: 12px;
   color: #404040;
   margin: 0;
 }
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .searchSuccessHead blockquote {
+    font-size: 19.68px;
+    border-radius: 10px;
+    padding: 10px 25px;
+  }
+}
 .contentWrapper .content .searchSuccessHead blockquote .searchSuccesWord {
   color: #404040;
-  font-size: 22.68px;
+  font-size: 10px;
   font-family: "baloo_2extrabold";
   display: inline;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .searchSuccessHead blockquote .searchSuccesWord {
+    font-size: 19.68px;
+  }
 }
 
 .iconsBgTop {
