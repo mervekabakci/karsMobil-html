@@ -877,33 +877,50 @@
   display: flex;
   align-items: center;
   border: 2px solid #d3d3d3;
-  padding: 10px 50px 10px 30px;
-  margin-top: 20px;
-  height: 50px;
-  border-radius: 30px;
+  padding: 10px 20px 10px 5px;
+  margin-top: 15px;
+  height: 70px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1080px) {
   .cards.type5 .card {
-    height: 200px;
-    padding: 10px 50px 10px 30px;
-    border-radius: 60px;
+    height: 175px;
+    padding: 10px 15px 10px 5px;
+    border-radius: 30px;
+    margin-top: 20px;
   }
 }
 .cards.type5 .card .imageWrapper {
   width: 30%;
 }
 .cards.type5 .card .imageWrapper img {
-  height: 80%;
-  width: auto;
-  min-height: 100px;
+  height: 30%;
+  width: 50%;
+  min-height: 40px;
+  max-height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 768px) and (min-height: 1080px) {
+  .cards.type5 .card .imageWrapper img {
+    height: 60%;
+    width: 43%;
+    min-height: 70px;
+    max-height: 100px;
+  }
 }
 .cards.type5 .card .card-text {
   flex: 1;
 }
 .cards.type5 .card .title {
   font-family: "baloo_2bold";
-  font-size: 46.4px;
+  font-size: 14px;
   color: #194769;
+}
+@media screen and (min-width: 768px) and (min-height: 1080px) {
+  .cards.type5 .card .title {
+    font-size: 40.4px;
+  }
 }
 .cards.type6 .card {
   padding: 10px;
@@ -1014,10 +1031,17 @@
 }
 .cards.overlay-info .card .card-top {
   width: 100%;
-  height: 287px;
+  height: 100px;
   overflow: hidden;
-  border-radius: 60px;
+  border-radius: 10px;
   position: relative;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info .card .card-top {
+    width: 100%;
+    height: 245px;
+    border-radius: 30px;
+  }
 }
 .cards.overlay-info .card .card-top .imageWrapper {
   height: 100%;
@@ -1034,28 +1058,54 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 7px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info .card .card-image-overlay {
+    padding: 20px;
+  }
 }
 .cards.overlay-info .card .card-image-overlay .category {
   display: block;
   background-color: #e13869;
   font-family: "baloo_2bold";
-  font-size: 16.84px;
+  font-size: 7px;
   color: #ffffff;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 5px;
+  border-radius: 5px;
+  line-height: 5px;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info .card .card-image-overlay .category {
+    font-size: 15.84px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
 }
 .cards.overlay-info .card .card-image-overlay .title {
   font-family: "baloo_2extrabold";
-  font-size: 27.44px;
+  font-size: 10px;
   color: #ffffff;
+  line-height: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info .card .card-image-overlay .title {
+    font-size: 22.44px;
+    line-height: 20px;
+  }
 }
 .cards.overlay-info .card .card-image-overlay > div span {
   font-family: "baloo_2medium";
-  font-size: 22.19px;
+  font-size: 9px;
   color: rgba(255, 255, 255, 0.42);
   padding-right: 10px;
   display: inline-block;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info .card .card-image-overlay > div span {
+    font-size: 17.19px;
+  }
 }
 .cards.overlay-info .card .card-image-overlay > div span + span {
   border-left: 1px solid rgba(255, 255, 255, 0.42);
@@ -1561,7 +1611,7 @@ form.type2 .letsSignUp a {
 .searchWrapper input {
   font-family: "baloo_2medium";
   background-color: #f4f7fe;
-  font-size: 14px;
+  font-size: 12px;
   color: #7f7f7f;
   width: 100%;
   height: 50px;
@@ -1574,8 +1624,8 @@ form.type2 .letsSignUp a {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .searchWrapper input {
-    font-size: 32.35px;
-    height: 125px;
+    font-size: 27.35px;
+    height: 95px;
     padding-left: 39px;
     padding-right: 120px;
   }
@@ -1595,8 +1645,13 @@ form.type2 .letsSignUp a {
   }
 }
 .searchWrapper .searchButton img {
-  width: 100%;
+  width: 75%;
   filter: invert(1) opacity(0.26);
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .searchWrapper .searchButton img {
+    width: 100%;
+  }
 }
 
 .fixBtn {
@@ -1625,18 +1680,39 @@ form.type2 .letsSignUp a {
   justify-content: center;
   background-color: rgba(214, 214, 214, 0.29);
   padding: 10px;
-  min-width: 215px;
-  height: 50px;
-  border-radius: 6px;
+  min-width: 50px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .fixBtn2 {
+    min-width: 179px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 20px 0;
+  }
 }
 .fixBtn2 img {
-  margin-right: 30px;
+  margin-right: 5px;
   opacity: 0.29;
+  width: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .fixBtn2 img {
+    width: 22px;
+    margin-right: 20px;
+  }
 }
 .fixBtn2 span {
   font-family: "baloo_2extrabold";
   color: rgba(24, 24, 24, 0.29);
-  font-size: 21.63px;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .fixBtn2 span {
+    font-size: 21.63px;
+  }
 }
 
 /* Customize the label (the container) */
@@ -2466,7 +2542,12 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   }
 }
 .off-canvas .searchWrapper {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas .searchWrapper {
+    margin-bottom: 40px;
+  }
 }
 .off-canvas.end {
   left: auto;
@@ -2632,6 +2713,15 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   .canvas-body .canvas-head p {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+
+#anaMenuCanvas.off-canvas.canvas-bottom .canvas-body {
+  padding: 30px 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #anaMenuCanvas.off-canvas.canvas-bottom .canvas-body {
+    padding: 70px 45px;
   }
 }
 
@@ -3748,9 +3838,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .contentWrapper .titleColumn {
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .contentWrapper .titleColumn .backButton {
   position: absolute;
@@ -3803,6 +3895,40 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     padding-left: 55px;
     padding-right: 30px;
     padding-top: 10px;
+  }
+}
+.contentWrapper .content .overflow-scroll-auto.type1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+.contentWrapper .content .overflow-scroll-auto.type1 .titleColumn {
+  padding-bottom: 5px !important;
+  padding-top: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .overflow-scroll-auto.type1 .titleColumn {
+    padding-top: 15px;
+    padding-bottom: 15px !important;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .overflow-scroll-auto.type1 {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+}
+.contentWrapper .content .overflow-scroll-auto.type1 p {
+  font-family: "baloo_2medium";
+  color: #282828;
+  font-size: 9.5px;
+  line-height: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .overflow-scroll-auto.type1 p {
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 .contentWrapper .content .overflow-scroll-auto.type2 {
@@ -4187,6 +4313,21 @@ p {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+}
+
+h1 {
+  font-family: "baloo_2extrabold";
+  font-size: 17px;
+  line-height: 19px;
+  color: #0a3c60;
+  padding: 0px 15px 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0px 90px 15px;
+  }
 }
 
 h3 {

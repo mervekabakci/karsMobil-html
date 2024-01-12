@@ -358,21 +358,31 @@
             display: flex;
             align-items: center;
             border: 2px solid #d3d3d3;
-            padding: 10px 50px 10px 30px;
-            margin-top: 20px;
-            height: 50px;
-            border-radius: 30px;
+            padding: 10px 20px 10px 5px;
+            margin-top: 15px;
+            height: 70px;
+            border-radius: 10px;
             @media screen and (min-width: 768px) and (min-height: 1080px) {
-                height: 200px;
-                padding: 10px 50px 10px 30px;
-                border-radius: 60px;
+                height: 175px;
+                padding: 10px 15px 10px 5px;
+                border-radius: 30px;
+                margin-top: 20px;
             }
             .imageWrapper {
                 width: 30%;
                 img {
-                    height: 80%;
-                    width: auto;
-                    min-height: 100px;
+                    height: 30%;
+                    width: 50%;
+                    min-height: 40px;
+                    max-height: 40px;
+                    object-fit: contain;
+                    @media screen and (min-width: 768px) and (min-height: 1080px) {
+                        height: 60%;
+                        width: 43%;
+                        min-height: 70px;
+                        max-height: 100px;
+                        
+                    }
                 }
             }
             .card-text {
@@ -380,8 +390,11 @@
             }
             .title {
                 font-family: "baloo_2bold";
-                font-size: 46.4px;
+                font-size: 14px;
                 color: #194769;
+                @media screen and (min-width: 768px) and (min-height: 1080px) {
+                    font-size: 40.4px;
+                }
             }
         }
     }
@@ -485,10 +498,15 @@
             margin-top: 20px;
             .card-top{
                 width: 100%;
-                height: 287px;
+                height: 100px;
                 overflow: hidden;
-                border-radius: 60px;
+                border-radius: 10px;
                 position: relative;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    width: 100%;
+                    height: 245px;
+                    border-radius: 30px;
+                }
                 .imageWrapper{
                     height: 100%;
                 }
@@ -505,28 +523,46 @@
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-end;
-                padding: 20px;
+                padding: 7px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 20px;
+                }
                 .category{
                     display: block;
                     background-color: #e13869;
                     font-family: 'baloo_2bold';
-                    font-size: 16.84px;
+                    font-size: 7px;
                     color: #ffffff;
-                    padding: 10px;
-                    border-radius: 6px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    line-height: 5px;
+                    margin-bottom: 5px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 15.84px;
+                        line-height: 14px;
+                        margin-bottom: 10px;
+                    }
                 }
                 .title{
                     font-family: 'baloo_2extrabold';
-                    font-size: 27.44px;
+                    font-size: 10px;
                     color: #ffffff;
+                    line-height: 10px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size:22.44px;
+                        line-height: 20px;
+                    }
                 }
                 & > div{
                     span{
                         font-family: 'baloo_2medium';
-                        font-size: 22.19px;
+                        font-size: 9px;
                         color: rgba(255,255,255,0.42);
                         padding-right: 10px;
                         display: inline-block;
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            font-size: 17.19px;
+                        }
                         & + span{
                             border-left: 1px solid rgba(255,255,255,0.42);
                             padding-left: 10px;

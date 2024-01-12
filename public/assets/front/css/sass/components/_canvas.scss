@@ -14,7 +14,10 @@
     @import "profile-canvas";
     
     .searchWrapper{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            margin-bottom: 40px;
+        }
     }
     &.end {
         left: auto;
@@ -178,6 +181,20 @@
             }
         }
     }
+}
+
+#anaMenuCanvas{
+    &.off-canvas{
+        &.canvas-bottom {
+            .canvas-body{
+                padding: 30px 15px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 70px 45px;
+                }
+            }
+        }
+    }
+  
 }
 
 #giris-yap{ 
