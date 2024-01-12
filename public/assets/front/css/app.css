@@ -1455,6 +1455,13 @@ form.type2 .letsSignUp a {
   }
 }
 
+.formWrapper.type2 {
+  padding-top: 100px;
+}
+.formWrapper.type2 .inputColumn {
+  padding-bottom: 30px;
+}
+
 .searchWrapper {
   position: relative;
 }
@@ -1518,7 +1525,7 @@ form.type2 .letsSignUp a {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .fixBtn {
-    font-size: 35.9px;
+    font-size: 29.9px;
     height: 113px;
     border-radius: 30px;
   }
@@ -2537,6 +2544,38 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 
 #giris-yap.off-canvas.canvas-bottom .canvas-body {
   padding: 120px 100px;
+}
+
+#sifremi-unuttum {
+  overflow: visible;
+}
+#sifremi-unuttum.off-canvas.canvas-bottom .canvas-body {
+  padding: 145px 100px;
+}
+#sifremi-unuttum.off-canvas.canvas-bottom .canvas-head p {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 0 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #sifremi-unuttum.off-canvas.canvas-bottom .canvas-head p {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 0 50px;
+  }
+}
+#sifremi-unuttum .question-icon {
+  position: absolute;
+  top: -65px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #sifremi-unuttum .question-icon {
+    width: 130px;
+  }
 }
 
 .accMenu .accButton {
