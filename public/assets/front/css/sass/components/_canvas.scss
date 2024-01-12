@@ -196,7 +196,18 @@
     }
   
 }
-
+#rotaCantamCanvas{
+    &.off-canvas{
+        &.canvas-bottom {
+            .canvas-body{
+                padding: 20px 20px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 50px 45px;
+                }
+            }
+        }
+    }
+}
 #giris-yap{ 
     &.off-canvas{
         &.canvas-bottom {
@@ -210,8 +221,7 @@
     }
    
 }
-#sifremi-unuttum{
-   
+#sifremi-unuttum{ 
     overflow: visible;
     &.off-canvas{
         &.canvas-bottom {
