@@ -2994,6 +2994,49 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .customPopup .alertContainer p strong {
   font-family: "baloo_2extrabold";
 }
+.customPopup.log-out .popup-container.between .popup-content {
+  width: 90%;
+}
+.customPopup.log-out .popup-container.between .popup-content .alertContainer {
+  padding: 20px 100px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+.customPopup.log-out .popup-container.between .popup-content .alertContainer p {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 50px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup.log-out .popup-container.between .popup-content .alertContainer p {
+    font-size: 36px;
+    line-height: 35px;
+  }
+}
+.customPopup.log-out .popup-container.between .popup-content .alertContainer img {
+  margin-bottom: 60px;
+}
+.customPopup.log-out .popup-container.between .popup-content .alertContainer .close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a3c60;
+  font-family: "baloo_2extrabold";
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 10px;
+  height: 45px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup.log-out .popup-container.between .popup-content .alertContainer .close-btn {
+    height: 109px;
+    border-radius: 25px;
+    font-size: 25.96px;
+    margin-top: 60px;
+    width: 100%;
+  }
+}
 
 .pageMenuList {
   list-style: none;
