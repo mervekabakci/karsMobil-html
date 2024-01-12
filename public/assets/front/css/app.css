@@ -2966,6 +2966,26 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   padding: 20px 40px;
   text-align: center;
 }
+.customPopup .alertContainer.none-bg {
+  background: transparent !important;
+  padding: 20px 0 !important;
+}
+.customPopup .alertContainer.none-bg span,
+.customPopup .alertContainer.none-bg strong,
+.customPopup .alertContainer.none-bg a,
+.customPopup .alertContainer.none-bg p {
+  color: #ffffff;
+}
+.customPopup .alertContainer.none-bg img {
+  margin-bottom: 30px;
+  width: 80px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup .alertContainer.none-bg img {
+    width: 135px;
+    margin-bottom: 80px;
+  }
+}
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup .alertContainer {
     height: 690px;
@@ -2993,6 +3013,29 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .customPopup .alertContainer p strong {
   font-family: "baloo_2extrabold";
+}
+.customPopup .alertContainer p.title {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "baloo_2extrabold";
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup .alertContainer p.title {
+    font-size: 75px !important;
+    line-height: 35px;
+  }
+}
+.customPopup .alertContainer p.desc {
+  padding: 25px 0 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup .alertContainer p.desc {
+    font-size: 36px;
+    line-height: 50px;
+    padding: 55px 0 0 !important;
+  }
 }
 .customPopup.log-out .popup-container.between .popup-content {
   width: 90%;
