@@ -76,7 +76,7 @@ form {
         .email-icon {
             position: absolute;
             left: 15px;
-            top: 35px;
+            top: 40px;
             width: 20px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -207,8 +207,10 @@ form {
     }
 
     &.type2 {
-        padding: 75px 0;
-
+        padding: 35px 0;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding: 75px 0;
+        }
         label {
             text-align: left;
         }
@@ -218,28 +220,43 @@ form {
             padding: 0 50px;
 
             &.emailInput {
-                padding-left: 115px;
+                padding-left: 45px;
+
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding-left: 115px;
+                }
             }
         }
 
         .inputColumn {
-            padding-bottom: 25px;
+            padding-bottom: 10px;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                padding-bottom: 25px;
+            }
         }
 
         .otherButton {
             background-color: transparent;
             border: 2px solid #cbcbcb;
-            margin: 55px 0;
+            margin: 20px 0 30px;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                margin: 55px 0;
+            }
         }
 
         .login-info {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 0 50px 0;
-
+            padding: 0 0 20px 0;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                padding: 0 0 50px 0;
+            }
             .checkWrapper {
-                padding: 0 15px 0;
+                padding: 0;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 0 15px 0;
+                }
             }
 
             .check-container {
@@ -257,15 +274,24 @@ form {
                     }
 
                     .checkmark {
-                        height: 65px;
-                        width: 65px;
-                        min-width: 65px;
-
+                        height: 25px;
+                        width: 25px;
+                        min-width: 25px;
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            height: 65px;
+                            width: 65px;
+                            min-width: 65px;
+                        }
                         &:after {
-                            width: 10px;
-                            height: 20px;
-                            border: solid white;
-                            border-width: 0 5px 5px 0;
+                            width: 3px;
+                            height: 6px; 
+                            border-width: 0 2px 2px 0;
+                            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                                width: 10px;
+                                height: 20px;
+                                border: solid white;
+                                border-width: 0 5px 5px 0;
+                            }
                         }
                     }
                 }
@@ -285,8 +311,10 @@ form {
 
         .letsSignUp {
             text-align: center;
-            padding: 35px 0;
-
+            padding: 12px 0;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                padding: 35px 0;
+            }
             span {
                 font-family: "baloo_2medium";
             }
@@ -313,9 +341,15 @@ form {
 }
 .formWrapper{
     &.type2 {
-        padding-top: 100px;
+        padding-top: 40px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-top: 100px;
+        }
         .inputColumn {
-            padding-bottom: 30px;
+            padding-bottom: 15px;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                padding-bottom: 30px;
+            }
         }
     }
 }

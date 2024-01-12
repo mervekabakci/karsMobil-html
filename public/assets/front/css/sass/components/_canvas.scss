@@ -109,8 +109,10 @@
         }
         &.mid{
             &.active{
-                transform: translateY(180px);
-                
+                transform: translateY(75px);
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    transform: translateY(180px);
+                } 
             }
         }
 
@@ -182,7 +184,10 @@
     &.off-canvas{
         &.canvas-bottom {
             .canvas-body{
-                padding: 120px 100px;
+                padding: 50px 45px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 120px 100px;
+                }
             }
         }
     }
@@ -194,7 +199,10 @@
     &.off-canvas{
         &.canvas-bottom {
             .canvas-body{
-                padding: 145px 100px;
+                padding: 57px 44px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 145px 100px;
+                }
             }
             .canvas-head{
                 p{
@@ -211,14 +219,15 @@
         }
     }
     .question-icon {
-        position: absolute;
-        top: -65px;
+        position: absolute; 
         left: 0;
         right: 0;
         margin: 0 auto;
-        width: 50px;
+        top: -30px;
+        width: 55px;
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             width: 130px;
+            top: -65px;
         }
     }
 }

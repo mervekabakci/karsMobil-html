@@ -1251,7 +1251,7 @@ form .inputColumn .eyeButton img {
 form .inputColumn .email-icon {
   position: absolute;
   left: 15px;
-  top: 35px;
+  top: 40px;
   width: 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -1369,7 +1369,12 @@ form.was-validated input.error {
   border: 2px solid rgba(255, 0, 64, 0.1411764706);
 }
 form.type2 {
-  padding: 75px 0;
+  padding: 35px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 {
+    padding: 75px 0;
+  }
 }
 form.type2 label {
   text-align: left;
@@ -1379,24 +1384,49 @@ form.type2 input {
   padding: 0 50px;
 }
 form.type2 input.emailInput {
-  padding-left: 115px;
+  padding-left: 45px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 input.emailInput {
+    padding-left: 115px;
+  }
 }
 form.type2 .inputColumn {
-  padding-bottom: 25px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .inputColumn {
+    padding-bottom: 25px;
+  }
 }
 form.type2 .otherButton {
   background-color: transparent;
   border: 2px solid #cbcbcb;
-  margin: 55px 0;
+  margin: 20px 0 30px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .otherButton {
+    margin: 55px 0;
+  }
 }
 form.type2 .login-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 50px 0;
+  padding: 0 0 20px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .login-info {
+    padding: 0 0 50px 0;
+  }
 }
 form.type2 .login-info .checkWrapper {
-  padding: 0 15px 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .login-info .checkWrapper {
+    padding: 0 15px 0;
+  }
 }
 form.type2 .login-info .check-container.radio {
   align-items: center;
@@ -1412,15 +1442,29 @@ form.type2 .login-info .check-container.radio .text {
   }
 }
 form.type2 .login-info .check-container.radio .checkmark {
-  height: 65px;
-  width: 65px;
-  min-width: 65px;
+  height: 25px;
+  width: 25px;
+  min-width: 25px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .login-info .check-container.radio .checkmark {
+    height: 65px;
+    width: 65px;
+    min-width: 65px;
+  }
 }
 form.type2 .login-info .check-container.radio .checkmark:after {
-  width: 10px;
-  height: 20px;
-  border: solid white;
-  border-width: 0 5px 5px 0;
+  width: 3px;
+  height: 6px;
+  border-width: 0 2px 2px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .login-info .check-container.radio .checkmark:after {
+    width: 10px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+  }
 }
 form.type2 .login-info a {
   font-family: "baloo_2bold";
@@ -1435,7 +1479,12 @@ form.type2 .login-info a {
 }
 form.type2 .letsSignUp {
   text-align: center;
-  padding: 35px 0;
+  padding: 12px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .letsSignUp {
+    padding: 35px 0;
+  }
 }
 form.type2 .letsSignUp span {
   font-family: "baloo_2medium";
@@ -1456,10 +1505,20 @@ form.type2 .letsSignUp a {
 }
 
 .formWrapper.type2 {
-  padding-top: 100px;
+  padding-top: 40px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .formWrapper.type2 {
+    padding-top: 100px;
+  }
 }
 .formWrapper.type2 .inputColumn {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .formWrapper.type2 .inputColumn {
+    padding-bottom: 30px;
+  }
 }
 
 .searchWrapper {
@@ -2475,7 +2534,12 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   transform: translateY(0);
 }
 .off-canvas.canvas-bottom.mid.active {
-  transform: translateY(180px);
+  transform: translateY(75px);
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.canvas-bottom.mid.active {
+    transform: translateY(180px);
+  }
 }
 
 .logoBgBottom {
@@ -2543,14 +2607,24 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 
 #giris-yap.off-canvas.canvas-bottom .canvas-body {
-  padding: 120px 100px;
+  padding: 50px 45px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #giris-yap.off-canvas.canvas-bottom .canvas-body {
+    padding: 120px 100px;
+  }
 }
 
 #sifremi-unuttum {
   overflow: visible;
 }
 #sifremi-unuttum.off-canvas.canvas-bottom .canvas-body {
-  padding: 145px 100px;
+  padding: 57px 44px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #sifremi-unuttum.off-canvas.canvas-bottom .canvas-body {
+    padding: 145px 100px;
+  }
 }
 #sifremi-unuttum.off-canvas.canvas-bottom .canvas-head p {
   font-size: 12px;
@@ -2566,15 +2640,16 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 #sifremi-unuttum .question-icon {
   position: absolute;
-  top: -65px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 50px;
+  top: -30px;
+  width: 55px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   #sifremi-unuttum .question-icon {
     width: 130px;
+    top: -65px;
   }
 }
 
@@ -2977,8 +3052,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   color: #ffffff;
 }
 .customPopup .alertContainer.none-bg img {
-  margin-bottom: 30px;
-  width: 80px;
+  margin-bottom: 25px;
+  width: 55px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup .alertContainer.none-bg img {
@@ -3015,7 +3090,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   font-family: "baloo_2extrabold";
 }
 .customPopup .alertContainer p.title {
-  font-size: 16px;
+  font-size: 30px;
   line-height: 16px;
   font-family: "baloo_2extrabold";
 }
@@ -3041,23 +3116,37 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   width: 90%;
 }
 .customPopup.log-out .popup-container.between .popup-content .alertContainer {
-  padding: 20px 100px;
+  padding: 20px 40px;
   background: #ffffff;
-  border-radius: 30px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup.log-out .popup-container.between .popup-content .alertContainer {
+    padding: 20px 100px;
+    border-radius: 30px;
+  }
 }
 .customPopup.log-out .popup-container.between .popup-content .alertContainer p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup.log-out .popup-container.between .popup-content .alertContainer p {
     font-size: 36px;
     line-height: 35px;
+    padding: 0 50px;
   }
 }
 .customPopup.log-out .popup-container.between .popup-content .alertContainer img {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  width: 40px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup.log-out .popup-container.between .popup-content .alertContainer img {
+    width: auto;
+    margin-bottom: 60px;
+  }
 }
 .customPopup.log-out .popup-container.between .popup-content .alertContainer .close-btn {
   display: flex;
@@ -3070,6 +3159,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   border-radius: 10px;
   height: 45px;
   margin-top: 30px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup.log-out .popup-container.between .popup-content .alertContainer .close-btn {
@@ -3077,7 +3167,6 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     border-radius: 25px;
     font-size: 25.96px;
     margin-top: 60px;
-    width: 100%;
   }
 }
 
