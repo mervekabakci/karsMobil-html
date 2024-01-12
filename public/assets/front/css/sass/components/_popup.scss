@@ -147,11 +147,11 @@
             strong,
             a,
             p{
-                color: #ffffff;
+                color: #ffffff;  
             }
             img{
-                margin-bottom: 30px;
-                width: 80px;
+                margin-bottom: 25px;
+                width: 55px;
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     width: 135px;
                     margin-bottom: 80px;
@@ -187,7 +187,7 @@
 
             }
             &.title{
-                font-size: 16px;
+                font-size: 30px;
                 line-height: 16px; 
                 font-family: 'baloo_2extrabold';
                 @media screen and (min-width:768px) and (min-height:1200px) {
@@ -217,22 +217,32 @@
                     width: 90%;
 
                     .alertContainer {
-                        padding: 20px 100px;
+                        padding: 20px 40px;
                         background: #ffffff;
-                        border-radius: 30px;
-
+                        border-radius: 10px;
+                        
+                        @media screen and (min-width:768px) and (min-height:1200px) {
+                            padding: 20px 100px;
+                            border-radius: 30px;
+                        }
                         p {
-                            font-size: 14px;
+                            font-size: 16px;
                             line-height: 18px;
-                            padding: 0 50px;
+                            padding: 0 20px;
                             @media screen and (min-width:768px) and (min-height:1200px) {
                                 font-size: 36px;
                                 line-height: 35px;
+                                padding: 0 50px;
                             }
                         }
 
                         img {
-                            margin-bottom: 60px;
+                            margin-bottom: 20px;
+                            width: 40px;
+                            @media screen and (min-width:768px) and (min-height:1200px) {
+                                width: auto;
+                                margin-bottom: 60px;
+                            }
                         }
                         .close-btn {
                             display: flex;
@@ -245,13 +255,12 @@
                             border-radius: 10px;
                             height: 45px;
                             margin-top: 30px;
-
+                            width: 100%;
                             @media screen and (min-width:768px) and (min-height:1200px) {
                                 height: 109px;
                                 border-radius: 25px;
                                 font-size: 25.96px;
-                                margin-top: 60px;
-                                width: 100%;
+                                margin-top: 60px; 
                             }
                         }
                     } 
