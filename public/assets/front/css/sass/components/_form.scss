@@ -6,7 +6,7 @@ form {
     label {
         font-family: "baloo_2bold";
         color: #194769;
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
         display: block;
         padding-bottom: 5px;
@@ -28,13 +28,13 @@ form {
         box-shadow: none;
         width: 100%;
         border-radius: 16px;
-        font-size: 14px;
-        height: 45px;
-
+        font-size: 12px;
+        height: 45px; 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 27.9px;
             border-radius: 30px;
             height: 110px;
+           
         }
 
         &:focus {
@@ -46,12 +46,14 @@ form {
 
     .inputColumn {
         position: relative;
-        padding-bottom: 10px;
-
+        padding-bottom: 5px;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-bottom: 10px;
+        }
         .eyeButton {
             position: absolute;
-            right: 25px;
-            top: 45px;
+            right: 15px;
+            top: 35px;
             width: 20px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -66,12 +68,30 @@ form {
             }
         }
 
+        .email-icon{
+            position: absolute;
+            left: 15px;
+            top: 35px;
+            width: 20px;
+
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                left: 45px;
+                top: 95px;
+                width: 42px;
+            }
+
+            img {
+                opacity: 0.28;
+                width: 100%;
+            }
+        }
+
         .note {
             text-align: center;
             display: flex;
-            font-size: 14px;
+            font-size: 10px;
             line-height: 15px;
-            padding: 10px 40px 20px;
+            padding: 10px 20px 20px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 font-size: 20px;
@@ -82,13 +102,14 @@ form {
 
         &:not(.show) {
             input[type='password'] {
-                font-size: 30px;
+                font-size: 40px;
                 letter-spacing: 10.5px;
                 color: rgba(25, 71, 105, 0.2);
-
+                padding-right: 45px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     font-size: 100px;
                     letter-spacing: 15.5px;
+                    padding-right: 110px;
                 }
             }
         }
@@ -98,14 +119,14 @@ form {
         font-family: "baloo_2bold";
         color: #194769;
         border: 2px solid #f4f7fe;
-        background-color: #f4f7fe;
-        padding: 0 40px;
+        background-color: #f4f7fe; 
+        padding: 0px 15px;
+        font-size: 12px;
         border: none;
         outline: 0;
         box-shadow: none;
         width: 100%;
-        border-radius: 16px;
-        font-size: 14px;
+        border-radius: 16px; 
         height: 45px;
         display: flex;
         align-items: center;
@@ -114,10 +135,11 @@ form {
             font-size: 27.5px;
             border-radius: 30px;
             height: 110px;
+            padding: 0 40px;
         }
 
         img {
-            width: 25px;
+            width: 20px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 width: 50px;
@@ -174,6 +196,87 @@ form {
                 color: red;
                 border: 2px solid #ff004024;
 
+            }
+        }
+    }
+    &.type2{
+        padding: 75px 0;
+        label{
+            text-align: left;
+        }
+        input{
+            text-align: start;
+            padding: 0 50px;
+            &.emailInput{
+                padding-left: 115px;
+            }
+        }
+        .inputColumn{
+            padding-bottom: 25px;
+        }
+        .otherButton{
+            background-color: transparent;
+            border: 2px solid #cbcbcb;
+            margin: 55px 0;
+        }
+        .login-info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 50px 0;
+            .checkWrapper{
+                padding: 0 15px 0;
+            }
+            .check-container{
+                &.radio {
+                    align-items: center;
+                    .text{
+                        font-family: "baloo_2extrabold";
+                        color: #798086;
+                        font-size: 12px;
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            font-size: 34.5px;  
+                        }
+                    }
+                    .checkmark{
+                        height: 65px;
+                        width: 65px;
+                        min-width: 65px;
+                        &:after{
+                            width: 10px;
+                            height: 20px;
+                            border: solid white;
+                            border-width: 0 5px 5px 0;
+                        }
+                    }
+                }
+            } 
+            a{
+                font-family: "baloo_2bold";
+                color: #194769;
+                font-size: 12px;
+                text-decoration: underline;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 27.5px;  
+                }
+            }
+        }
+        .letsSignUp{
+            text-align: center;
+            padding: 35px 0;
+            span{
+                font-family: "baloo_2medium";
+            }
+            a{
+                font-family: "baloo_2bold";
+            }
+            span,
+            a{ 
+                color: #194769;
+                font-size: 12px; 
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 26.5px;  
+                }
             }
         }
     }
@@ -263,3 +366,4 @@ form {
         font-size: 21.63px;
     }
 }
+ 
