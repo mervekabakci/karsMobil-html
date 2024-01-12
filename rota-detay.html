@@ -27,6 +27,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" > -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="public/assets/front/css/app.css">
     </head>
 <body>
@@ -87,43 +88,142 @@
                     </div>
                         <div class="tabContainer">
                             <div class="tabButtons">
-                                <a class="tabNavItem active" href="javascript:;">ROTA LİSTESİ</a>
+                                <a class="tabNavItem" href="javascript:;">ROTA LİSTESİ</a>
                                 <a class="tabNavItem" href="javascript:;">ROTA ÖZELLİKLERİ</a>
                                 <a class="tabNavItem" href="javascript:;">ÖNEMLİ UYARILAR</a>
-                                <a class="tabNavItem" href="javascript:;">ÖNERİLEN MEVSİM</a>
+                                <a class="tabNavItem active" href="javascript:;">ÖNERİLEN MEVSİM</a>
                             </div>
                             <div class="tabContents">
+                                <div class="tabContent">
+                                    <div class="overflow-scroll-auto">
+                                        <div class="timeline">
+                                            <div class="item">
+                                                <div class="badge"><img src="public/assets/images/statics/icons/placeholder-2.png" alt=""></div>
+                                                <div class="desc">
+                                                    <span class="title">A - Fethiye Camii</span>
+                                                    <p>Katedral 1064 yılında Sultan Alparslan’ın Ani'yi fethetmesinden sonra camiye çevrilmiş ve ilk fetih namazı kılınmıştır. Bu sebeple büyük katedrale Fethiye Camii de denilmektedir.</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="badge"><img src="public/assets/images/statics/icons/placeholder-2.png" alt=""></div>
+                                                <div class="desc">
+                                                    <span class="title">B - Aziz Prkitch Kilisesi</span>
+                                                    <p>Kilise mimarisi kubbeli ve iki kısımdan oluşmuştur. İç mekanda sekiz köşegen mevcut olup doğu istikametindeki yarım kubbe diğer kubbeden daha geniştir. İki düzlemden meydana gelen sütunlar bu bölümü de ayırır.</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="badge"><img src="public/assets/images/statics/icons/placeholder-2.png" alt=""></div>
+                                                <div class="desc">
+                                                    <span class="title">C - Gagik Kilisesi</span>
+                                                    <p>Dairevi planlı ve yüksek kubbeli kilise kasnaklar üzerine oturan geniş kubbenin statik problemler oluşturması sebebiyle kilise yapıldıktan bir süre sonra çökmüştür.</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="badge"><img src="public/assets/images/statics/icons/placeholder-2.png" alt=""></div>
+                                                <div class="desc">
+                                                    <span class="title">C - Abukhamrents Kilisesi</span>
+                                                    <p>Silindirik bir yapıya sahip olan kilise sekizgen kubbeli olup kubbenin temeli derin yüzeyi ayıran birbirine geçmiş ince sütunların desteklediği 6 kenar sütun üzerinde durmaktadır.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="badge"><img src="public/assets/images/statics/icons/placeholder-2.png" alt=""></div>
+                                                <div class="desc">
+                                                    <span class="title">D - Tigran Honents Kilisesi</span>
+                                                    <p>Haç planı ile yapılan kilisenin zemin katının iç mekanı dört büyük sütunla kubbeye bağlanmıştır. Yarım daire şeklindeki apsis sağ ve soldaki iki katlı günah çıkarma odaları ile çevrilmiştir. Kilisenin çevresi dikdörtgen planlı olup cephelerin çatı alınlıklarında rölyef hayvan figürleri ile süslenmiştir.</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="badge"><img src="public/assets/images/statics/icons/placeholder-2.png" alt=""></div>
+                                                <div class="desc">
+                                                    <span class="title">E - Rahibeler Manastırı</span>
+                                                    <p>Türkiye Ermenistan sınırının en uç noktasında Arpaçay Nehrinin aktığı derin vadi üzerindeki sarp kayalıklar üzerine kurulan bu kilisenin yapım tarihi belli olmamakla birlikte 10. yy sonlarında yapıldığı anlaşılmaktadır.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="javascript:;" class="outline-fixBtn">PDF İNDİR</a>
+                                        <a href="javascript:;" class="outline-fixBtn">GPS VERİLERİNİ İNDİR</a>
+                                        <a href="javascript:;" class="outline-fixBtn">YAZDIR</a>
+                                    </div>
+                                </div>
+                                <div class="tabContent">
+                                    <div class="overflow-scroll-auto">
+                                        <div class="routeProps">
+                                            <div class="item">
+                                                <span class="name">Manzara</span>
+                                                <div class="favorite">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="name">Gastronomi</span>
+                                                <div class="favorite">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="name">Ulaşım</span>
+                                                <div class="favorite">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="name">Yürüyüş Yolu</span>
+                                                <div class="favorite">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                                    <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabContent">
+                                    <div class="overflow-scroll-auto">
+                                        <ul class="list">
+                                            <li>Kars’ta ilk yerleşim <strong>M.Ö 13.000’lere</strong> uzanmaktadır.</li>
+                                            <li>Kars, toplam <strong>884 adet taşınmaz kültür varlığına</strong> sahiptir.</li>
+                                            <li>2022 Dünya Göçmen Kuşlar Günü'nde Kuyucuk Gölü'nde <strong>23 türden 1.000’in üzerinde göçmen kuş</strong> tespit edilmiştir.</li>
+                                            <li>Kars dünyanın <strong>34 önemli biyolojik çeşitlilik bölgesinden ikisi olan Kafkas ve İran-Anadolu</strong> sıcak noktalarının kesişiminde yer almaktadır.</li>
+                                            <li>Dünyanın en uzun kayak pistlerinden birine sahip olan <strong>Sarıkamış Kayak Merkezi’nde toplam pist uzunluğu 25 km</strong>’dir.</li>
+                                            <li>Ani Arkeolojik Alanı <strong>2016’da Unesco Dünya Kültür Miras Listesi</strong>'ne girmiştir.</li>
+                                            <li>Kars’a <strong>2021 yılında 105 bin 298, 2022 Mart ayı itibarıyla 78 bin 333 turist </strong> gelmiştir.</li>
+                                            <li>Doğu Ekspresi ile 2022’nin ilk 6 ayında yaklaşık 215 bin kişi yolculuk etmiştir.</li>
+                                            <li>Kars, Türkiye Turizm Stratejisi 2023 ve Turizm Stratejisi Eylem Planı kapsamına alınan 15 il merkezinden biridir.</li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <div class="tabContent active">
                                     <div class="overflow-scroll-auto">
-                                            <ul class="list">
-                                                <li>Kars’ta ilk yerleşim <strong>M.Ö 13.000’lere</strong> uzanmaktadır.</li>
-                                                <li>Kars, toplam <strong>884 adet taşınmaz kültür varlığına</strong> sahiptir.</li>
-                                                <li>2022 Dünya Göçmen Kuşlar Günü'nde Kuyucuk Gölü'nde <strong>23 türden 1.000’in üzerinde göçmen kuş</strong> tespit edilmiştir.</li>
-                                                <li>Kars dünyanın <strong>34 önemli biyolojik çeşitlilik bölgesinden ikisi olan Kafkas ve İran-Anadolu</strong> sıcak noktalarının kesişiminde yer almaktadır.</li>
-                                                <li>Dünyanın en uzun kayak pistlerinden birine sahip olan <strong>Sarıkamış Kayak Merkezi’nde toplam pist uzunluğu 25 km</strong>’dir.</li>
-                                                <li>Ani Arkeolojik Alanı <strong>2016’da Unesco Dünya Kültür Miras Listesi</strong>'ne girmiştir.</li>
-                                                <li>Kars’a <strong>2021 yılında 105 bin 298, 2022 Mart ayı itibarıyla 78 bin 333 turist </strong> gelmiştir.</li>
-                                                <li>Doğu Ekspresi ile 2022’nin ilk 6 ayında yaklaşık 215 bin kişi yolculuk etmiştir.</li>
-                                                <li>Kars, Türkiye Turizm Stratejisi 2023 ve Turizm Stratejisi Eylem Planı kapsamına alınan 15 il merkezinden biridir.</li>
-                                            </ul>
-                                    </div>
-                                </div>
-                                <div class="tabContent">
-                                    <div class="overflow-scroll-auto">
-
-                                        rota ozellıklerı
-                                    </div>
-                                </div>
-                                <div class="tabContent">
-                                    <div class="overflow-scroll-auto">
-                                        
-                                        onemlı uyarılar
-                                    </div>
-                                </div>
-                                <div class="tabContent">
-                                    <div class="overflow-scroll-auto">
-
-                                        onerılen mevsım
+                                        <div class="onerilenMevsimler">
+                                            <div class="item active">OCAK</div>
+                                            <div class="item active">ŞUBAT</div>
+                                            <div class="item">MART</div>
+                                            <div class="item active">NİSAN</div>
+                                            <div class="item">MAYIS</div>
+                                            <div class="item active">HAZİRAN</div>
+                                            <div class="item">TEMMUZ</div>
+                                            <div class="item">AĞUSTOS</div>
+                                            <div class="item">EYLÜL</div>
+                                            <div class="item">EKİM</div>
+                                            <div class="item">KASIM</div>
+                                            <div class="item">ARALIK</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -271,6 +371,65 @@
             </div>
             <!----Menu Ekranı canvas bitiş-->
 
+            <!--Filtrele Başlangıc-->
+            <div id="filtreleCanvas" class="customPopup d-block">
+                <div class="popup-container between">
+                    <div class="popup-content">
+                        <div class="popup-body">
+                            <form>
+                                <select name="" id="">
+                                    <option selected disabled value="">İlçeye Göre Filtrele</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                </select>
+                                <select name="" id="">
+                                    <option selected disabled value="">Kategoriye Göre Filtrele</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                </select>
+                                <select name="" id="">
+                                    <option selected disabled value="">Mevsime Göre Filtrele</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                </select>
+                                <select name="" id="">
+                                    <option selected disabled value="">Ulaşıma Göre Filtrele</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                    <option value="">İstanbul</option>
+                                </select>
+                                 <div class="rangeWrapper">
+                                    <label for="rangeSlide1">Kilometre Cinsinden Uzaklık</label>
+                                    <div id="slider-range"></div>
+                                    <div class="props">
+                                        <span>0 KM</span>
+                                        <span>650 KM</span>
+                                    </div>
+                                </div> 
+                                <div class="rangeWrapper">
+                                    <label for="rangeSlide2">Rota Süresine Göre</label>
+                                    <div id="slider-range2"></div>
+                                    <div class="props">
+                                        <span>0 SAAT</span>
+                                        <span>78 SAAT</span>
+                                    </div>
+                                </div> 
+
+                                  
+                                <button type="submit" class="close-btn roundedNone">FİLTRELE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Filtrele  Bitiş-->
 
             <!---canvaslarda kullanılır--->
             <div class="overlay"></div>
@@ -282,6 +441,38 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
     <script src="public/assets/front/js/app.js"></script>
+
+    <script>
+        $(function() {
+            $( "#slider-range" ).slider({
+                range: true,
+                min: 0,
+                max: 650,
+                values: [ 0, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                }
+            });
+            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        });
+        $(function() {
+            $( "#slider-range2" ).slider({
+                range: true,
+                min: 0,
+                max: 78,
+                values: [ 0, 40 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                }
+            });
+            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        });
+    </script>
+
 </body>
 </html>

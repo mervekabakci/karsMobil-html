@@ -1,0 +1,41 @@
+.rangeWrapper {
+    position: relative;
+    label {
+        font-family: "baloo_2semibold";
+        font-size: 38.8px;
+        color: #ffffff;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .props {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        span {
+            font-family: "baloo_2semibold";
+            font-size: 38.8px;
+            color: rgba(255, 255, 255, 0.38);
+        }
+    }
+    .slider__tongue{
+        display: none;
+    }
+    .ui-slider-handle{
+        background-image: url("../images/nokta.png");
+        background-repeat: no-repeat;
+        width: 53px;
+        height: 53px;
+        margin-top: -18px;
+        border: none;
+        background-color: rgba(0,0,0,0);
+        background-size: contain;
+        background-position: center;
+    }
+    .ui-slider-horizontal .ui-slider-range{
+        background-color: #e13869;
+    }
+    .ui-widget.ui-widget-content{
+        border: none;
+    }
+}
