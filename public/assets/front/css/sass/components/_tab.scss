@@ -1,0 +1,51 @@
+.tabContainer{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    height: calc(100% - 200px);
+    .tabButtons{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 2px solid #e7e7e7;
+        .tabNavItem{
+            border-bottom: 2px solid #e7e7e7;
+            font-family: 'baloo_2extrabold';
+            font-size: 22.15px;
+            color: #dadada;
+            transition: all .3s linear;
+            margin-bottom: -2px;
+
+            &.active{
+                color: #114367;
+                border-color: #114367;
+            }
+        }
+    }
+    .tabContents{
+        height: calc(100% - 50px);
+        .tabContent{
+            display: none;
+            height: 100%;
+            .overflow-scroll-auto{
+                padding-left: 0;
+            }
+            &.active{
+                display: block;
+            }
+            ul{
+                &.list{
+                    li{
+                        position: relative;
+                        padding-left: 40px;
+                        &:before{
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}
