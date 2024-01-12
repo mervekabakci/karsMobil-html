@@ -106,6 +106,10 @@
         background-color: #f4f4f4;
         border-radius: 0 0 50px 50px;
         padding: 30px 50px;
+        &.type2{
+            background-color: rgba(0,0,0,0);
+            text-align: center;
+        }
         .pageTitle {
             font-family: "baloo_2extrabold";
             color: #0a3c60;

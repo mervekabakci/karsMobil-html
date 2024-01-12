@@ -4003,6 +4003,10 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   border-radius: 0 0 50px 50px;
   padding: 30px 50px;
 }
+.contentWrapper .pageHeadWrapper.type2 {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
 .contentWrapper .pageHeadWrapper .pageTitle {
   font-family: "baloo_2extrabold";
   color: #0a3c60;
