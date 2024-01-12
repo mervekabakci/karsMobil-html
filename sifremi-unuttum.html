@@ -218,10 +218,12 @@
             <!----Menu Ekranı canvas bitiş-->
 
             <!----Kayıt ol canvas baslangıc-->
-            <div id="giris-yap" class="menuCanvas off-canvas canvas-bottom active">
+            <div id="giris-yap" class="menuCanvas off-canvas canvas-bottom mid active">
                 <div class="canvas-body overflow-scroll-auto">
+                    <img class="question-icon" src="public/assets/images/statics/icons/question-mark.png" alt="">
                     <div class="canvas-head">
-                        <span class="title">Kars'a Hoşgeldin!</span> 
+                        <span class="title">Şifrenizi Mi Unuttunuz!</span> 
+                        <p>Hesabınıza yeniden girebilmeniz için e-mail adresinize yeni şifrenizi göndereceğiz.</p>
                     </div>
                     <div class="formWrapper">
                         <form id="kayitolForm" action="action.php" novalidate class="type2">
@@ -230,32 +232,11 @@
                                 <span class="error-message">Eksik yada hatalı bir e-posta adresi girdiniz.</span>
                             </div> 
                             <div class="inputColumn">
-                                <label for="email">E-Posta Adresiniz</label>
-                                <img class="email-icon" src="public/assets/images/statics/icons/email.png" alt="">
+                                <label for="email">Sistem Kayıtlı E-Posta Adresiniz</label> 
                                 <input type="email" name="email" class="emailMask emailInput" placeholder="Lütfen E-Posta Adresinizi Giriniz" required>
-                            </div> 
-                            <div class="inputColumn">
-                                <label for="password">Parolanız</label>
-                                <input type="password" class="password" name="password" placeholder="" value="dashsas" required>
-                                <span class="eyeButton"><img src="public/assets/images/statics/icons/eye.png" alt=""></span>
-                            </div> 
-                            <button class="otherButton"><img src="public/assets/images/statics/icons/google.png" alt=""><span>Google Hesabınız İle Kayıt Olun</span></button> 
-
-                            <div class="login-info">
-                                <div class="checkWrapper"> 
-                                    <label class="check-container radio">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                        <span class="text">Beni Hatırla!</span>
-                                    </label> 
-                                </div>
-                                <a href="javascript:;">Şifremi Unuttum</a>
-    
-                            </div>
-                            <button class="fixBtn" type="submit">GİRİŞ YAP</button>
-                            <div class="letsSignUp">
-                                <span>Üye Değil Misin? <a href="javascript:;">Hemen Üye Ol!</a></span>
-                            </div>
+                            </div>  
+ 
+                            <button class="fixBtn" type="submit">GÖNDER</button> 
                         </form>
                     </div>
                 </div>

@@ -261,6 +261,24 @@ form {
                 }
             }
         }
+        .letsSignUp{
+            text-align: center;
+            padding: 35px 0;
+            span{
+                font-family: "baloo_2medium";
+            }
+            a{
+                font-family: "baloo_2bold";
+            }
+            span,
+            a{ 
+                color: #194769;
+                font-size: 12px; 
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 26.5px;  
+                }
+            }
+        }
     }
 }
 

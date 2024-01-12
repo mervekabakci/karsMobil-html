@@ -107,6 +107,12 @@
         &.active {
             transform: translateY(0);
         }
+        &.mid{
+            &.active{
+                transform: translateY(180px);
+                
+            }
+        }
 
     }
 }
