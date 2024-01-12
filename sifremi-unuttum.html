@@ -218,15 +218,16 @@
             <!----Menu Ekranı canvas bitiş-->
 
             <!----Kayıt ol canvas baslangıc-->
-            <div id="giris-yap" class="menuCanvas off-canvas canvas-bottom mid active">
+            <div id="sifremi-unuttum" class="menuCanvas off-canvas canvas-bottom mid active">
+                <img class="question-icon" src="public/assets/images/statics/icons/question-mark.png" alt="">
                 <div class="canvas-body overflow-scroll-auto">
-                    <img class="question-icon" src="public/assets/images/statics/icons/question-mark.png" alt="">
+                  
                     <div class="canvas-head">
                         <span class="title">Şifrenizi Mi Unuttunuz!</span> 
                         <p>Hesabınıza yeniden girebilmeniz için e-mail adresinize yeni şifrenizi göndereceğiz.</p>
                     </div>
-                    <div class="formWrapper">
-                        <form id="kayitolForm" action="action.php" novalidate class="type2">
+                    <div class="formWrapper type2">
+                        <form id="kayitolForm" action="action.php" novalidate>
                             <div class="form-invalid-message">
                                 <img src="public/assets/images/statics/icons/danger.png" alt="">
                                 <span class="error-message">Eksik yada hatalı bir e-posta adresi girdiniz.</span>

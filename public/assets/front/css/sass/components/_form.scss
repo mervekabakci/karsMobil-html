@@ -1,8 +1,10 @@
 form {
     padding: 10px 0;
+
     @media screen and (min-width: 768px) and (min-height: 1200px) {
         padding: 20px 0;
     }
+
     label {
         font-family: "baloo_2bold";
         color: #194769;
@@ -29,12 +31,13 @@ form {
         width: 100%;
         border-radius: 16px;
         font-size: 12px;
-        height: 45px; 
+        height: 45px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 27.9px;
             border-radius: 30px;
             height: 110px;
-           
+
         }
 
         &:focus {
@@ -47,9 +50,11 @@ form {
     .inputColumn {
         position: relative;
         padding-bottom: 5px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding-bottom: 10px;
         }
+
         .eyeButton {
             position: absolute;
             right: 15px;
@@ -68,7 +73,7 @@ form {
             }
         }
 
-        .email-icon{
+        .email-icon {
             position: absolute;
             left: 15px;
             top: 35px;
@@ -106,6 +111,7 @@ form {
                 letter-spacing: 10.5px;
                 color: rgba(25, 71, 105, 0.2);
                 padding-right: 45px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     font-size: 100px;
                     letter-spacing: 15.5px;
@@ -119,14 +125,14 @@ form {
         font-family: "baloo_2bold";
         color: #194769;
         border: 2px solid #f4f7fe;
-        background-color: #f4f7fe; 
+        background-color: #f4f7fe;
         padding: 0px 15px;
         font-size: 12px;
         border: none;
         outline: 0;
         box-shadow: none;
         width: 100%;
-        border-radius: 16px; 
+        border-radius: 16px;
         height: 45px;
         display: flex;
         align-items: center;
@@ -199,50 +205,63 @@ form {
             }
         }
     }
-    &.type2{
+
+    &.type2 {
         padding: 75px 0;
-        label{
+
+        label {
             text-align: left;
         }
-        input{
+
+        input {
             text-align: start;
             padding: 0 50px;
-            &.emailInput{
+
+            &.emailInput {
                 padding-left: 115px;
             }
         }
-        .inputColumn{
+
+        .inputColumn {
             padding-bottom: 25px;
         }
-        .otherButton{
+
+        .otherButton {
             background-color: transparent;
             border: 2px solid #cbcbcb;
             margin: 55px 0;
         }
-        .login-info{
+
+        .login-info {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 0 50px 0;
-            .checkWrapper{
+
+            .checkWrapper {
                 padding: 0 15px 0;
             }
-            .check-container{
+
+            .check-container {
                 &.radio {
                     align-items: center;
-                    .text{
+
+                    .text {
                         font-family: "baloo_2extrabold";
                         color: #798086;
                         font-size: 12px;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
-                            font-size: 34.5px;  
+                            font-size: 34.5px;
                         }
                     }
-                    .checkmark{
+
+                    .checkmark {
                         height: 65px;
                         width: 65px;
                         min-width: 65px;
-                        &:after{
+
+                        &:after {
                             width: 10px;
                             height: 20px;
                             border: solid white;
@@ -250,38 +269,56 @@ form {
                         }
                     }
                 }
-            } 
-            a{
+            }
+
+            a {
                 font-family: "baloo_2bold";
                 color: #194769;
                 font-size: 12px;
                 text-decoration: underline;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    font-size: 27.5px;  
+                    font-size: 27.5px;
                 }
             }
         }
-        .letsSignUp{
+
+        .letsSignUp {
             text-align: center;
             padding: 35px 0;
-            span{
+
+            span {
                 font-family: "baloo_2medium";
             }
-            a{
+
+            a {
                 font-family: "baloo_2bold";
             }
+
             span,
-            a{ 
+            a {
                 color: #194769;
-                font-size: 12px; 
+                font-size: 12px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    font-size: 26.5px;  
+                    font-size: 26.5px;
                 }
             }
+        }
+
+    }
+
+    
+
+}
+.formWrapper{
+    &.type2 {
+        padding-top: 100px;
+        .inputColumn {
+            padding-bottom: 30px;
         }
     }
 }
-
 .searchWrapper {
     position: relative;
 
@@ -330,6 +367,7 @@ form {
         }
     }
 }
+
 .fixBtn {
     background-color: #194769;
     font-family: "baloo_2bold";
@@ -341,12 +379,14 @@ form {
     font-size: 16px;
     height: 45px;
     border-radius: 16px;
+
     @media screen and (min-width: 768px) and (min-height: 1200px) {
-        font-size: 35.9px;
+        font-size: 29.9px;
         height: 113px;
         border-radius: 30px;
     }
 }
+
 .fixBtn2 {
     display: inline-flex;
     align-items: center;
@@ -356,14 +396,15 @@ form {
     min-width: 215px;
     height: 50px;
     border-radius: 6px;
+
     img {
         margin-right: 30px;
         opacity: 0.29;
     }
+
     span {
         font-family: "baloo_2extrabold";
         color: rgba(24, 24, 24, 0.29);
         font-size: 21.63px;
     }
 }
- 
