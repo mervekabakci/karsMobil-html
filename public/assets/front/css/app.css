@@ -1433,6 +1433,27 @@ form.type2 .login-info a {
     font-size: 27.5px;
   }
 }
+form.type2 .letsSignUp {
+  text-align: center;
+  padding: 35px 0;
+}
+form.type2 .letsSignUp span {
+  font-family: "baloo_2medium";
+}
+form.type2 .letsSignUp a {
+  font-family: "baloo_2bold";
+}
+form.type2 .letsSignUp span,
+form.type2 .letsSignUp a {
+  color: #194769;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form.type2 .letsSignUp span,
+  form.type2 .letsSignUp a {
+    font-size: 26.5px;
+  }
+}
 
 .searchWrapper {
   position: relative;
@@ -2445,6 +2466,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .off-canvas.canvas-bottom.active {
   transform: translateY(0);
+}
+.off-canvas.canvas-bottom.mid.active {
+  transform: translateY(180px);
 }
 
 .logoBgBottom {
