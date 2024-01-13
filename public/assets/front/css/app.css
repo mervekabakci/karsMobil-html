@@ -4492,11 +4492,86 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     font-size: 19.68px;
   }
 }
-.contentWrapper.type2 {
+.contentWrapper .content .rotaHesap span {
+  font-family: "baloo_2bold";
+  font-size: 28px;
+  color: #292929;
+}
+.contentWrapper .content .rotaHesap .inputColumn {
+  position: relative;
+}
+.contentWrapper .content .rotaHesap .inputColumn img {
+  position: absolute;
+  width: 34px;
+  top: 20px;
+  left: 10px;
+}
+.contentWrapper .content .rotaHesap .inputColumn input {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #e8e8e8;
+  font-family: "baloo_2bold";
+  font-size: 28px;
+  color: #292929;
+  padding-left: 50px;
+  padding-right: 24px;
+}
+.contentWrapper .content .rotaHesap .changeButton {
+  width: 21px;
+  margin: 10px 0;
+}
+.contentWrapper .content .rotaHesap .routeResult {
+  display: flex;
+  align-items: center;
+}
+.contentWrapper .content .rotaHesap .routeResult > img {
+  width: 51px;
+  margin-right: 30px;
+}
+.contentWrapper .content .rotaHesap .routeResult .totalItem {
+  margin-right: 70px;
+}
+.contentWrapper .content .rotaHesap .routeResult .totalItem span {
+  font-family: "baloo_2bold";
+  font-size: 34.58px;
+  color: #194769;
+  display: block;
+  line-height: 34px;
+}
+.contentWrapper .content .rotaHesap .routeResult .totalItem span.title {
+  font-size: 19.52px;
+  line-height: 19px;
+  color: #282828;
+}
+.contentWrapper .content .rotaHesap #map {
+  height: 465px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ticketButton,
+.directionsButton {
+  font-family: "baloo_2extrabold";
+  font-size: 48.55px;
+  color: #ffffff;
+  width: 100vw;
+  height: 100%;
+  background-color: #194769;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -5.5vw;
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+.ticketButton.type2,
+.directionsButton.type2 {
   margin: -70px auto 0 auto;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
-  .contentWrapper.type2 {
+  .ticketButton.type2,
+  .directionsButton.type2 {
     margin: -330px auto 0 auto;
   }
 }
@@ -4695,11 +4770,48 @@ span.title {
   }
 }
 
+.companies .title {
+  font-family: "baloo_2extrabold";
+  color: #15354d;
+  font-family: 26.34px;
+}
+.companies .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid #e1e1e1;
+  margin-top: 20px;
+  height: 114px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.companies .item a {
+  text-align: right;
+}
+.companies .item a span {
+  font-family: "baloo_2medium";
+  font-size: 18.46px;
+  line-height: 18.46px;
+  color: #757575;
+  display: block;
+}
+.companies .item a span.bold {
+  font-family: "baloo_2extrabold";
+  font-size: 32.71px;
+  line-height: 32.46px;
+  color: #0d3c5f;
+}
+
 * {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -4719,6 +4831,10 @@ p {
 
 .d-block {
   display: block !important;
+}
+
+.d-none {
+  display: none !important;
 }
 
 .overflow-x-auto {

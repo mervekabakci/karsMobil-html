@@ -164,6 +164,22 @@ $(".tabContainer .tabButtons .tabNavItem").click(function(){
 
   $(this).parent().siblings().find(".tabContent").removeClass("active");
   $(this).parent().siblings().find(".tabContent").eq(tIndex).addClass("active");
+
+
+  if($(".demirYoluTab").hasClass("active")){
+    $(".footer").addClass("d-none");
+    $("footer .ticketButton").css("display","flex");
+  }
+  else if($(".karayoluTab").hasClass("active")){
+    $(".footer").addClass("d-none");
+      $("footer .ticketButton").css("display","none");
+      $("footer .directionsButton").css("display","flex");
+  }
+  else{
+      $(".footer").removeClass("d-none");
+      $("footer .ticketButton").css("display","none");
+      $("footer .directionsButton").css("display","none");
+  }
 })
 
 
