@@ -58,13 +58,12 @@
                         <img src="public/assets/images/media/gagik-kilisesi.jpg" alt="">
                     </div>
                 </div>
-                <div class="contentWrapper">
+                <div class="contentWrapper type2">
                     <div class="content">
                         <div class="titleColumn">
                             <a href="javascript:;" class="backButton" onclick="history.back()"><img src="public/assets/images/statics/icons/left-arrow.png" alt=""><span>GERİ DÖN</span></a>
-                            <h4>Nasıl Gelinir</h4>
+                            <h4>Nasıl Gelinir?</h4>
                         </div>
-                     
                         <div class="tabContainer">
                             <div class="tabButtons">
                                 <a class="tabNavItem" href="javascript:;">HAVAYOLU ULAŞIMI</a>
@@ -125,15 +124,19 @@
                                             <p>Ankara ile Kars arasında seferleri bulunan Devlet Demiryolları’nın (TCDD) Doğu Ekspresi Ankara, Kayseri, Sivas, Erzincan, Erzurum rotasını izleyerek Kars’a ulaşıyor. Haftanın her günü karşılıklı seferleri bulunan tren ile yolculuk 24 saat sürüyor. Tren garı Kars merkeze 1 km uzaklıkta.</p>
                                         </div>
                                         <div class="rotaHesap">
-                                            <span>Geliş Yönünü Seçiniz</span>
+                                            <span>Geliş Yönü Seçiniz</span>
                                             <div class="inputColumn">
                                                 <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
-                                                <input type="text" value="Ankara">
+                                                <select name="" id="">
+                                                    <option selected disabled value="">Ankara</option>
+                                                    <option value="">İstanbul</option>
+                                                    <option value="">İstanbul</option>
+                                                </select>
                                             </div>
                                             <a href="javascript:;" class="changeButton"><img src="public/assets/images/statics/icons/change.png" alt=""></a>
                                             <div class="inputColumn">
                                                 <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
-                                                <input type="text" value="Ankara">
+                                                <input type="text" value="Kars">
                                             </div>
                                             <div class="routeResult">
                                                 <img src="public/assets/images/statics/icons/route.png" alt="">
@@ -166,7 +169,7 @@
                                             <a href="javascript:;" class="changeButton"><img src="public/assets/images/statics/icons/change.png" alt=""></a>
                                             <div class="inputColumn">
                                                 <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
-                                                <input type="text" value="Ankara">
+                                                <input type="text" value="Kars">
                                             </div>
                                             <div class="routeResult">
                                                 <img src="public/assets/images/statics/icons/route.png" alt="">
@@ -350,6 +353,7 @@
     <script>
       if($(".demirYoluTab").hasClass("active")){
             $(".footer").addClass("d-none");
+            $("footer .directionsButton").css("display","none");
             $("footer .ticketButton").css("display","flex");
         }
         else if($(".karayoluTab").hasClass("active")){

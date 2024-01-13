@@ -505,7 +505,23 @@ form {
         }
     }
 }
+select{
+    width: 100%;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url("../images/select-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 7px 11px;
+    background-position-x: calc(100% - 16px);
+    background-position-y: 50%;
+    padding-left: 30px;
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+    background-position-x: calc(100% - 30px);
+    background-size: 20px 23px;
 
+    }
+}
 .fixBtn {
     background-color: #194769;
     font-family: "baloo_2bold";
