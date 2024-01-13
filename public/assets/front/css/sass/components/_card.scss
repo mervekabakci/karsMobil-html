@@ -446,7 +446,7 @@
     }
 
     &.type4 {
-        padding-top: 10px;
+        padding-top: 3px;
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding-top: 20px;
@@ -455,13 +455,13 @@
         .card {
             display: flex;
             align-items: center;
-            height: 45px;
+            height: 40px;
             border-radius: 10px;
             padding-left: 15px;
             padding-right: 15px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                height: 100px;
+                height: 115px;
                 border-radius: 10px;
                 padding-left: 25px;
                 padding-right: 25px;
@@ -477,8 +477,8 @@
                 margin-right: 8px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    margin-right: 16px;
-                    width: 22px;
+                    margin-right: 40px;
+                    width: 32px;
                 }
             }
 
@@ -506,8 +506,8 @@
                         display: block;
 
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
-                            font-size: 22.8px;
-                            line-height: 10px;
+                            font-size: 28.8px;
+                            line-height: 22px;
                         }
                     }
                 }
@@ -526,10 +526,10 @@
             border-radius: 10px;
 
             @media screen and (min-width: 768px) and (min-height: 1080px) {
-                height: 175px;
+                height: 205px;
                 padding: 10px 15px 10px 5px;
                 border-radius: 30px;
-                margin-top: 20px;
+                margin-top: 30px;
             }
 
             .imageWrapper {
