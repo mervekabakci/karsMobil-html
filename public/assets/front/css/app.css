@@ -1681,18 +1681,27 @@ form select {
   height: 175px;
   border-radius: 30px;
   margin-bottom: 30px;
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
   appearance: none;
   background-image: url("../images/select-arrow.png");
   background-repeat: no-repeat;
-  background-size: 20px 23px;
+  background-size: 8px 10px;
   background-position-x: calc(100% - 30px);
   background-position-y: 50%;
   padding-left: 30px;
   font-family: "baloo_2semibold";
-  font-size: 44.91px;
+  font-size: 15px;
   color: #181818;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form .dropdownBtn,
+  form select {
+    font-size: 44.91px;
+    background-size: 20px 23px;
+  }
 }
 form .close-btn {
   display: flex;
@@ -2059,20 +2068,58 @@ select {
 }
 
 .rota-filtre select {
-  height: 150px;
-  border-radius: 20px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 13px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .rota-filtre select {
+    height: 170px;
+    margin-bottom: 40px;
+  }
+}
+.rota-filtre label {
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .rota-filtre label {
+    padding-bottom: 25px;
+  }
 }
 .rota-filtre .close-btn {
-  margin-top: 470px;
+  margin-top: 195px;
+  height: 55px;
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .rota-filtre .close-btn {
+    margin-top: 545px;
+    height: 166px;
+    border-radius: 10px;
+    font-size: 43.96px;
+  }
 }
 .rota-filtre .dropdown-menu {
   display: none;
   background: #fff;
-  margin-top: -60px;
-  border-radius: 0 0 30px 30px;
+  margin-top: -20px;
+  border-radius: 0 0 10px 10px;
+  height: 145px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .rota-filtre .dropdown-menu {
+    margin-top: -60px;
+    border-radius: 0 0 30px 30px;
+    height: 433px;
+  }
 }
 .rota-filtre .dropdown-menu .checkWrapper {
-  padding: 15px 75px 60px;
+  padding: 10px 24px 35px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .rota-filtre .dropdown-menu .checkWrapper {
+    padding: 15px 75px 60px;
+  }
 }
 .rota-filtre .dropdown-menu.show {
   display: block;
@@ -2081,8 +2128,15 @@ select {
   background-color: #fff;
   text-align: start;
   border: none !important;
-  height: 150px;
-  border-radius: 20px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 13px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .rota-filtre .dropdownBtn {
+    height: 170px;
+    margin-bottom: 40px;
+  }
 }
 
 /* Customize the label (the container) */
@@ -2240,9 +2294,18 @@ select {
   background-size: contain;
   background-position: center;
   border: none;
-  width: 46px;
-  height: 46px;
-  margin-right: 40px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  min-width: 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .check-container.radio.type2 .checkmark {
+    width: 55px;
+    height: 55px;
+    margin-right: 40px;
+    min-width: 55px;
+  }
 }
 .check-container.radio.type2 .checkmark:after {
   display: none;
@@ -2257,8 +2320,13 @@ select {
 }
 .check-container.radio.type2 .text {
   font-family: "baloo_2extrabold";
-  font-size: 34px;
+  font-size: 14px;
   color: #181818;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .check-container.radio.type2 .text {
+    font-size: 34px;
+  }
 }
 
 .checkWrapper {
@@ -3743,28 +3811,54 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   }
 }
 .customPopup#rotaBulunamadi .popup-container .popup-content {
-  margin-top: 177px;
+  margin-top: 170px;
   width: 80%;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup#rotaBulunamadi .popup-container .popup-content {
-    margin-top: 377px;
+    margin-top: 440px;
   }
 }
 .customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer {
-  height: 490px;
+  height: 200px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer {
+    height: 580px;
+  }
+}
+.customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer img {
+  width: 44px;
+  margin-bottom: 17px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer img {
+    width: 130px;
+    margin-bottom: 40px;
+  }
 }
 .customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer p.desc {
-  font-size: 30px;
-  line-height: 37px;
-  padding: 55px 80px 0 !important;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 20px 0 0 !important;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer p.desc {
+    font-size: 30px;
+    line-height: 45px;
+    padding: 55px 80px 0 !important;
+  }
 }
 .customPopup#rotaBulunamadi .popup-container .popup-content .close-btn {
-  margin-top: 100px;
+  margin-top: 150px;
+  height: 55px;
+  font-size: 18px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup#rotaBulunamadi .popup-container .popup-content .close-btn {
-    margin-top: 290px;
+    margin-top: 370px;
+    height: 145px;
+    font-size: 40.96px;
   }
 }
 .customPopup#rotaOlusturuluyor .alertContainer.none-bg img {
@@ -3799,9 +3893,15 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   }
 }
 .customPopup#filtreleCanvas .popup-container .popup-content {
-  height: 83%;
+  height: 78%;
   place-content: normal;
-  padding: 0 20px;
+  padding: 0px 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#filtreleCanvas .popup-container .popup-content {
+    padding: 0 65px;
+    height: 83%;
+  }
 }
 .customPopup#approval .popup-container .popup-content {
   height: 73%;
@@ -3832,6 +3932,52 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
     padding: 30px 0 0;
     font-size: 43px;
     line-height: 58px;
+  }
+}
+.customPopup#pageMenuPopup .popup-container .popup-content {
+  height: 58%;
+  place-content: normal;
+  justify-content: space-between !important;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#pageMenuPopup .popup-container .popup-content {
+    height: 55%;
+  }
+}
+.customPopup#pageMenuPopup .popup-container .popup-content .alertContainer {
+  height: 200px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#pageMenuPopup .popup-container .popup-content .alertContainer {
+    height: 570px;
+  }
+}
+.customPopup#pageMenuPopup .popup-container .popup-content .alertContainer img {
+  width: 45px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#pageMenuPopup .popup-container .popup-content .alertContainer img {
+    width: 122px;
+  }
+}
+.customPopup#pageMenuPopup .popup-container .popup-content .alertContainer p {
+  font-size: 12px;
+  line-height: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#pageMenuPopup .popup-container .popup-content .alertContainer p {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+.customPopup#pageMenuPopup .popup-container .popup-content .close-btn {
+  margin-top: 120px;
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#pageMenuPopup .popup-container .popup-content .close-btn {
+    margin-top: 370px;
+    font-size: 40.96px;
   }
 }
 .customPopup.log-out .popup-container.between .popup-content {
