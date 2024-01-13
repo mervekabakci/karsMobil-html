@@ -5204,4 +5204,7 @@ h5 {
 }
 .grid.quad > a, .grid.quad > div {
   height: 100%;
+}
+.grid.quad a {
+  flex-direction: column;
 }/*# sourceMappingURL=app.css.map */

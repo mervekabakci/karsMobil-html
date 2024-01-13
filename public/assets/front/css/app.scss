@@ -154,7 +154,10 @@ h5 {
 
     & > a,
     & > div{
-      height: 100%;
+      height: 100%; 
+    }
+    a{
+      flex-direction: column
     }
   }
 }
