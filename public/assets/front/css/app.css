@@ -845,7 +845,7 @@
   }
 }
 .cards.type4 {
-  padding-top: 10px;
+  padding-top: 3px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type4 {
@@ -855,14 +855,14 @@
 .cards.type4 .card {
   display: flex;
   align-items: center;
-  height: 45px;
+  height: 40px;
   border-radius: 10px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type4 .card {
-    height: 100px;
+    height: 115px;
     border-radius: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -878,8 +878,8 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type4 .card img {
-    margin-right: 16px;
-    width: 22px;
+    margin-right: 40px;
+    width: 32px;
   }
 }
 .cards.type4 .card .card-text {
@@ -909,8 +909,8 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type4 .card .card-text span.title {
-    font-size: 22.8px;
-    line-height: 10px;
+    font-size: 28.8px;
+    line-height: 22px;
   }
 }
 .cards.type5 .card {
@@ -924,10 +924,10 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1080px) {
   .cards.type5 .card {
-    height: 175px;
+    height: 205px;
     padding: 10px 15px 10px 5px;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 .cards.type5 .card .imageWrapper {
@@ -1513,9 +1513,9 @@ form .inputColumn .email-icon {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .inputColumn .email-icon {
-    left: 45px;
-    top: 95px;
-    width: 42px;
+    left: 50px;
+    top: 120px;
+    width: 50px;
   }
 }
 form .inputColumn .email-icon img {
@@ -1714,7 +1714,8 @@ form.type2 .otherButton {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form.type2 .otherButton {
-    margin: 55px 0;
+    margin: 55px 0 70px;
+    padding: 0 45px;
   }
 }
 form.type2 .login-info {
@@ -1725,7 +1726,7 @@ form.type2 .login-info {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form.type2 .login-info {
-    padding: 0 0 50px 0;
+    padding: 0 0 70px 0;
   }
 }
 form.type2 .login-info .checkWrapper {
@@ -1768,6 +1769,8 @@ form.type2 .login-info .check-container.radio .checkmark:after {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form.type2 .login-info .check-container.radio .checkmark:after {
+    left: 25px;
+    top: 15px;
     width: 10px;
     height: 20px;
     border: solid white;
@@ -1775,14 +1778,14 @@ form.type2 .login-info .check-container.radio .checkmark:after {
   }
 }
 form.type2 .login-info a {
-  font-family: "baloo_2bold";
+  font-family: "baloo_2extrabold";
   color: #194769;
   font-size: 12px;
   text-decoration: underline;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form.type2 .login-info a {
-    font-size: 27.5px;
+    font-size: 34.5px;
   }
 }
 form.type2 .letsSignUp {
@@ -1808,7 +1811,7 @@ form.type2 .letsSignUp a {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form.type2 .letsSignUp span,
   form.type2 .letsSignUp a {
-    font-size: 26.5px;
+    font-size: 32.5px;
   }
 }
 form#kayitolForm {
@@ -1817,6 +1820,21 @@ form#kayitolForm {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form#kayitolForm {
     padding: 75px 25px;
+  }
+}
+form#girisyapForm {
+  padding: 35px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form#girisyapForm {
+    padding: 115px 25px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form#girisyapForm .eyeButton {
+    right: 58px;
+    top: 120px;
+    width: 45px;
   }
 }
 
@@ -3080,7 +3098,29 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   #anaMenuCanvas.off-canvas.canvas-bottom .canvas-body {
-    padding: 70px 45px;
+    padding: 115px 55px;
+  }
+}
+#anaMenuCanvas.off-canvas.canvas-bottom .canvas-body .searchWrapper {
+  padding-top: 14px;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #anaMenuCanvas.off-canvas.canvas-bottom .canvas-body .searchWrapper {
+    padding-top: 53px;
+    margin-bottom: 60px;
+  }
+}
+#anaMenuCanvas.off-canvas.canvas-bottom .canvas-body .searchWrapper .searchButton {
+  right: 12px;
+  margin-top: -4px;
+  width: 24px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #anaMenuCanvas.off-canvas.canvas-bottom .canvas-body .searchWrapper .searchButton {
+    right: 57px;
+    margin-top: 0;
+    width: 53px;
   }
 }
 
@@ -4293,7 +4333,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   }
 }
 #center .titleColumn {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   #center .titleColumn {
@@ -4510,8 +4550,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .overflow-scroll-auto {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
     padding-top: 10px;
   }
 }
@@ -4634,10 +4674,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .contentWrapper .content .searchSuccessHead span.searchSuccesWord {
   font-family: "baloo_2extrabold";
   color: #0d3c5f;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 10px;
   display: block;
-  padding-bottom: 5px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .searchSuccessHead span.searchSuccesWord {
@@ -4651,7 +4690,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   border-radius: 10px;
   padding: 10px 15px;
   font-family: "baloo_2semibold";
-  font-size: 12px;
+  font-size: 7px;
   color: #404040;
   margin: 0;
 }
@@ -4732,7 +4771,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   overflow: hidden;
 }
 .contentWrapper .content.noneMenu {
-  padding-top: 10px;
+  padding-top: 18px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content.noneMenu {
