@@ -3551,7 +3551,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup .alertContainer p.title {
     font-size: 75px !important;
-    line-height: 35px;
+    line-height: 70px;
   }
 }
 .customPopup .alertContainer p.desc {
@@ -3564,6 +3564,62 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     font-size: 36px;
     line-height: 50px;
     padding: 55px 0 0 !important;
+  }
+}
+.customPopup#rotaBulunamadi .popup-container .popup-content {
+  margin-top: 177px;
+  width: 80%;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaBulunamadi .popup-container .popup-content {
+    margin-top: 377px;
+  }
+}
+.customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer {
+  height: 490px;
+}
+.customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer p.desc {
+  font-size: 30px;
+  line-height: 37px;
+  padding: 55px 80px 0 !important;
+}
+.customPopup#rotaBulunamadi .popup-container .popup-content .close-btn {
+  margin-top: 100px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaBulunamadi .popup-container .popup-content .close-btn {
+    margin-top: 290px;
+  }
+}
+.customPopup#rotaOlusturuluyor .alertContainer.none-bg img {
+  margin-bottom: 25px;
+  width: 55px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaOlusturuluyor .alertContainer.none-bg img {
+    width: 312px;
+    margin-bottom: 55px;
+  }
+}
+.customPopup#rotaOlusturuluyor .alertContainer p.title {
+  font-size: 30px;
+  line-height: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaOlusturuluyor .alertContainer p.title {
+    font-size: 52px !important;
+    line-height: 70px;
+  }
+}
+.customPopup#rotaOlusturuluyor .alertContainer p.desc {
+  font-size: 14px;
+  line-height: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#rotaOlusturuluyor .alertContainer p.desc {
+    font-size: 30px;
+    line-height: 35px;
+    padding: 15px 0 0 !important;
   }
 }
 .customPopup#filtreleCanvas .popup-container .popup-content {
