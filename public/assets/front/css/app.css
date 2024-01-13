@@ -1961,6 +1961,25 @@ form#girisyapForm {
   }
 }
 
+select {
+  width: 100%;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url("../images/select-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 7px 11px;
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  select {
+    background-position-x: calc(100% - 30px);
+    background-size: 20px 23px;
+  }
+}
+
 .fixBtn {
   background-color: #194769;
   font-family: "baloo_2bold";
@@ -4052,26 +4071,43 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 
 .tabContainer {
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  height: calc(100% - 200px);
+  padding-top: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: calc(100% - 40px);
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .tabContainer {
+    padding-top: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: calc(100% - 70px);
+  }
 }
 .tabContainer .tabButtons {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
   border-bottom: 2px solid #e7e7e7;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 .tabContainer .tabButtons .tabNavItem {
   border-bottom: 2px solid #e7e7e7;
   font-family: "baloo_2extrabold";
-  font-size: 22.15px;
+  font-size: 12px;
+  line-height: 12px;
   color: #dadada;
   transition: all 0.3s linear;
   margin-bottom: -2px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .tabContainer .tabButtons .tabNavItem {
+    font-size: 21.15px;
+    line-height: 21px;
+  }
+}
+.tabContainer .tabButtons .tabNavItem + .tabNavItem {
+  margin-left: 18px;
 }
 .tabContainer .tabButtons .tabNavItem.active {
   color: #114367;
@@ -4087,6 +4123,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 .tabContainer .tabContents .tabContent .overflow-scroll-auto {
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 40px;
 }
 .tabContainer .tabContents .tabContent.active {
   display: block;
@@ -4749,7 +4786,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   left: 22px;
   display: flex;
   align-items: center;
-  top: 4px;
+  top: 6px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .titleColumn .backButton {
@@ -4785,12 +4822,12 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 .contentWrapper .content {
   height: 100%;
-  padding-bottom: 180px;
+  padding-bottom: 11vh;
 }
 .contentWrapper .content .overflow-scroll-auto {
   padding-left: 22px;
   padding-right: 22px;
-  padding-bottom: 180px;
+  padding-bottom: 11vh;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .overflow-scroll-auto {
@@ -4957,62 +4994,136 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
     font-size: 19.68px;
   }
 }
-.contentWrapper .content .rotaHesap span {
+.contentWrapper .content .rotaHesap {
+  padding-right: 10px;
+}
+.contentWrapper .content .rotaHesap > span {
   font-family: "baloo_2bold";
-  font-size: 28px;
   color: #292929;
+  display: block;
+  font-size: 14px;
+  padding: 10px 0 8px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap > span {
+    font-size: 25px;
+    padding: 24px 0 12px 0;
+  }
 }
 .contentWrapper .content .rotaHesap .inputColumn {
   position: relative;
 }
 .contentWrapper .content .rotaHesap .inputColumn img {
   position: absolute;
-  width: 34px;
-  top: 20px;
-  left: 10px;
+  width: 18px;
+  top: 9px;
+  left: 13px;
 }
-.contentWrapper .content .rotaHesap .inputColumn input {
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .inputColumn img {
+    width: 34px;
+    top: 20px;
+    left: 23px;
+  }
+}
+.contentWrapper .content .rotaHesap .inputColumn input,
+.contentWrapper .content .rotaHesap .inputColumn select {
   width: 100%;
-  height: 80px;
+  height: 45px;
   border: 1px solid #e8e8e8;
   font-family: "baloo_2bold";
-  font-size: 28px;
+  font-size: 16px;
   color: #292929;
-  padding-left: 50px;
+  padding-left: 40px;
   padding-right: 24px;
 }
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .inputColumn input,
+  .contentWrapper .content .rotaHesap .inputColumn select {
+    height: 82px;
+    padding-left: 90px;
+    padding-right: 24px;
+    font-size: 28px;
+  }
+}
 .contentWrapper .content .rotaHesap .changeButton {
-  width: 21px;
-  margin: 10px 0;
+  width: 18px;
+  display: block;
+  margin: 10px 0 7px 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .changeButton {
+    margin: 20px 0 12px 32px;
+  }
+}
+.contentWrapper .content .rotaHesap .changeButton img {
+  width: 100%;
 }
 .contentWrapper .content .rotaHesap .routeResult {
   display: flex;
   align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 7px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .routeResult {
+    margin-top: 36px;
+    margin-bottom: 27px;
+  }
 }
 .contentWrapper .content .rotaHesap .routeResult > img {
-  width: 51px;
-  margin-right: 30px;
+  width: 22px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .routeResult > img {
+    width: 51px;
+    margin-right: 30px;
+  }
 }
 .contentWrapper .content .rotaHesap .routeResult .totalItem {
-  margin-right: 70px;
+  margin-right: 12px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .routeResult .totalItem {
+    margin-right: 70px;
+  }
 }
 .contentWrapper .content .rotaHesap .routeResult .totalItem span {
   font-family: "baloo_2bold";
-  font-size: 34.58px;
   color: #194769;
   display: block;
-  line-height: 34px;
+  line-height: 18px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .routeResult .totalItem span {
+    line-height: 34px;
+    font-size: 29.58px;
+  }
 }
 .contentWrapper .content .rotaHesap .routeResult .totalItem span.title {
-  font-size: 19.52px;
-  line-height: 19px;
+  font-size: 10px;
+  line-height: 12px;
   color: #282828;
 }
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap .routeResult .totalItem span.title {
+    font-size: 17.52px;
+    line-height: 19px;
+  }
+}
 .contentWrapper .content .rotaHesap #map {
-  height: 465px;
+  height: 180px;
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .rotaHesap #map {
+    height: 465px;
+  }
 }
 .contentWrapper .content.noneMenu {
   padding-top: 18px;
@@ -5224,21 +5335,45 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   font-size: 25.13px;
   color: #2c2c2c;
 }
+.contentWrapper.type2 {
+  margin: -20.6vh auto 0 auto;
+  height: 81.6vh;
+}
+.contentWrapper.type2 .titleColumn {
+  margin-top: 16px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper.type2 .titleColumn {
+    margin-top: 54px;
+  }
+}
 
 .ticketButton,
 .directionsButton {
   font-family: "baloo_2extrabold";
-  font-size: 48.55px;
   color: #ffffff;
   width: 100vw;
-  height: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
   background-color: #194769;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -5.5vw;
-  border-top-right-radius: 70px;
-  border-top-left-radius: 70px;
+  margin-left: -16px;
+  border-top-right-radius: 36px;
+  border-top-left-radius: 36px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .ticketButton,
+  .directionsButton {
+    margin-left: -5.5vw;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+    font-size: 48.55px;
+    height: 157px;
+  }
 }
 .ticketButton.type2,
 .directionsButton.type2 {
@@ -5261,11 +5396,15 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   z-index: -1;
 }
 
+.paragraph {
+  padding-right: 10px;
+}
 .paragraph span {
   font-size: 12px;
   line-height: 13px;
   color: #282828;
   display: block;
+  padding-right: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .paragraph span {
@@ -5277,7 +5416,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   font-family: "baloo_2medium";
   color: #282828;
   font-size: 11px;
-  line-height: 10px;
+  line-height: 18px;
   padding-bottom: 10px;
   margin-bottom: 0;
 }
@@ -5430,36 +5569,86 @@ ul.list li:before {
   }
 }
 
+.companies {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .companies {
+    padding-top: 32px;
+  }
+}
 .companies .title {
   font-family: "baloo_2extrabold";
   color: #15354d;
-  font-family: 26.34px;
+  display: block;
+  padding-bottom: 13px;
+  font-size: 14.74px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .companies .title {
+    font-size: 23.74px;
+  }
 }
 .companies .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 3px solid #e1e1e1;
-  margin-top: 20px;
-  height: 114px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border: 2px solid #e1e1e1;
+  margin-bottom: 14px;
+  height: 67px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 7px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .companies .item {
+    margin-bottom: 26px;
+    height: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 26px;
+  }
+}
+.companies .item .imageWrapper {
+  width: 70px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .companies .item .imageWrapper {
+    width: auto;
+  }
+}
+.companies .item .imageWrapper img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .companies .item a {
   text-align: right;
 }
 .companies .item a span {
   font-family: "baloo_2medium";
-  font-size: 18.46px;
-  line-height: 18.46px;
+  font-size: 12.46px;
+  line-height: 13.46px;
   color: #757575;
   display: block;
 }
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .companies .item a span {
+    font-size: 16.46px;
+    line-height: 16.46px;
+  }
+}
 .companies .item a span.bold {
   font-family: "baloo_2extrabold";
-  font-size: 32.71px;
-  line-height: 32.46px;
+  font-size: 13.71px;
+  line-height: 16.46px;
   color: #0d3c5f;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .companies .item a span.bold {
+    font-size: 28.71px;
+    line-height: 28.46px;
+  }
 }
 
 * {

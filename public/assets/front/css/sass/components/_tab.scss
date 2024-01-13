@@ -1,65 +1,91 @@
-.tabContainer{
-    padding-top: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    height: calc(100% - 200px);
-    .tabButtons{
+.tabContainer {
+    padding-top: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    height: calc(100% - 40px);
+
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        padding-top: 32px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: calc(100% - 70px);
+    }
+
+    .tabButtons {
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
         border-bottom: 2px solid #e7e7e7;
-        margin-bottom: 30px;
-        .tabNavItem{
+        margin-bottom: 17px;
+
+        .tabNavItem {
             border-bottom: 2px solid #e7e7e7;
             font-family: 'baloo_2extrabold';
-            font-size: 22.15px;
+            font-size: 12px;
+            line-height: 12px;
             color: #dadada;
             transition: all .3s linear;
             margin-bottom: -2px;
+            padding-bottom: 10px;
 
-            &.active{
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                font-size: 21.15px;
+                line-height: 21px;
+            }
+
+            &+.tabNavItem {
+                margin-left: 18px;
+            }
+
+            &.active {
                 color: #114367;
                 border-color: #114367;
             }
         }
     }
-    .tabContents{
+
+    .tabContents {
         height: calc(100% - 50px);
 
-        .tabContent{
+        .tabContent {
             display: none;
             height: 100%;
-            .overflow-scroll-auto{
+
+            .overflow-scroll-auto {
                 padding-left: 0;
                 padding-right: 0;
+                padding-bottom: 40px;
             }
-            &.active{
+
+            &.active {
                 display: block;
             }
-            ul{
+
+            ul {
                 padding-right: 30px;
-                &.list{
-                    li{
+
+                &.list {
+                    li {
                         position: relative;
                         padding-left: 40px;
-                        &:before{
+
+                        &:before {
                             position: absolute;
                             left: 0;
                         }
                     }
                 }
             }
-        }  
+        }
     }
 }
 
-.routeProps{
+.routeProps {
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
-    .item{
+
+    .item {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -73,33 +99,38 @@
         padding-left: 20px;
         height: 90px;
         border-radius: 6px;
-        .favorite{
+
+        .favorite {
             display: flex;
             align-items: center;
-            img{
-                & + img{
+
+            img {
+                &+img {
                     margin-left: 5px;
                 }
             }
         }
     }
 }
-.onerilenMevsimler{
+
+.onerilenMevsimler {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
-    .item{
+
+    .item {
         width: 120px;
         height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border:2px solid #e7e7e7;
+        border: 2px solid #e7e7e7;
         font-family: 'baloo_2extrabold';
         font-size: 17.05px;
         color: #989898;
         margin: 15px;
-        &.active{
+
+        &.active {
             background-color: #d22c58;
             color: #ffffff;
         }

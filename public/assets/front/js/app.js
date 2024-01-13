@@ -168,7 +168,8 @@ $(".tabContainer .tabButtons .tabNavItem").click(function(){
 
   if($(".demirYoluTab").hasClass("active")){
     $(".footer").addClass("d-none");
-    $("footer .ticketButton").css("display","flex");
+      $("footer .directionsButton").css("display","none");
+      $("footer .ticketButton").css("display","flex");
   }
   else if($(".karayoluTab").hasClass("active")){
     $(".footer").addClass("d-none");
