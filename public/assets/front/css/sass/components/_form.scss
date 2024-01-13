@@ -45,6 +45,16 @@ form {
             outline: 0;
             box-shadow: none;
         }
+        &.border-line{
+            padding: 10px 5px;
+            border: 1px solid #c0c0c0;
+            border-radius: 10px; 
+            background-color: transparent;
+            height: 30px;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                height: 90px;
+            }
+        }
     }
 
     .inputColumn {
@@ -394,6 +404,7 @@ form {
 
 }
 
+
 .formWrapper {
     &.type2 {
         padding-top: 40px;
@@ -537,4 +548,14 @@ form {
         height: 80px;
         border-radius: 10px;
     }
+}
+
+.rota-filtre{
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+      }
+      .dropdown-menu.show {
+        display: block;
+      }
 }

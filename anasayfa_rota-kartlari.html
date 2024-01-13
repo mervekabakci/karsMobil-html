@@ -23,10 +23,10 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <title>Kars</title>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" > -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+        
         <link rel="stylesheet" href="public/assets/front/css/app.css">
     </head>
 <body>
@@ -57,20 +57,23 @@
                         <img src="public/assets/images/media/gagik-kilisesi.jpg" alt="">
                     </div>
                 </div>
-                <div class="contentWrapper"> 
+                <div class="contentWrapper type2"> 
                     <div class="content">
-                        <div class="overflow-scroll-auto type1">
-                            <div class="titleColumn"> 
-                                <span class="title">Doğu’nun Masalsı Kenti  Kars’a Hoşgeldiniz!</span>
-                                <p>Doğası, tarihi, kültürü, lezzetleri ve eşsiz kar manzaraları ile 
-                                    misafirlerini büyüleyen, unutamayacakları deneyimlere 
-                                    ev sahipliği yapan Kars’ın sizler için tüm güzelliklerini 
-                                    görebileceğiniz rotaları ile Kars’ı keşfetmeye hemen başlayın!</p>
+                        <div class="overflow-scroll-auto type6">
+                            <div class="titleColumn">
+                                <a href="javascript:;" class="backButton" onclick="history.back()"><img src="public/assets/images/statics/icons/left-arrow.png" alt=""><span>GERİ DÖN</span></a>
+                                <h4>Rota Oluştur</h4>
+                            </div> 
+                           <div class="top-info">
+                            <div class="searchWrapper">
+                                <input type="text" id="searchInput" placeholder="Hangi destinasyonu aramıştınız?">
+                                <a href="javascript:;" class="searchButton"><img src="public/assets/images/statics/icons/glass.png" alt=""></a>
                             </div>
                             <div class="ms-auto">
-                                <a href="javascript:;" class="filterButton fixBtn2"><img src="public/assets/images/statics/icons/filter.png" alt=""><span>FİLTRELE</span></a>
+                                <a href="javascript:;" class="filterButton fixBtn2"><img src="public/assets/images/statics/icons/filter.png" alt=""></a>
                             </div>
-                            <div class="cards overlay-info">
+                           </div>
+                            <div class="cards overlay-info type2">
                                 <a href="javascript:;" class="card">
                                     <div class="card-top">
                                         <div class="imageWrapper">
@@ -285,9 +288,10 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 
     <script src="public/assets/front/js/app.js"></script>
 </body>
