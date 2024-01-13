@@ -23,10 +23,10 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <title>Kars</title>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" > -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+        
         <link rel="stylesheet" href="public/assets/front/css/app.css">
     </head>
 <body>
@@ -37,14 +37,14 @@
                 <img src="public/assets/images/statics/logo-dark.png" alt="">
             </div>
         </div>
-        <main>
+        <main class="subMain">
             <header>
                 <div class="header">
                     <a href="javascript:;" class="userButton">
                         <img src="public/assets/images/statics/icons/user-icon.png" alt="">
                         <span>PROFIL</span>
                     </a>
-                    <a href="javascript:;" class="logoV"><img src="public/assets/images/statics/logo-dark-V.png" alt=""></a>
+                    <a href="javascript:;" class="logo"><img src="public/assets/images/statics/logo-light.png" alt=""></a>
                     <a href="javascript:;" class="menuButton">
                         <img src="public/assets/images/statics/icons/menu-btn.png" alt="">
                         <span>MENU</span>
@@ -52,119 +52,118 @@
                 </div>
             </header>
             <div id="center">
-                <div class="titleColumn afterLine">
-                    <h1>Hadi Başlayalım!</h1>
-                    <div class="desc">
-                        <p><strong>Tarihi, Kültürü, Doğası</strong> ve <strong>Lezzetleriyle</strong> Kars’ı Keşfedelim...</p>
+                <div class="bannerWrapper">
+                    <div class="imageBanner">
+                        <img src="public/assets/images/media/gagik-kilisesi.jpg" alt="">
                     </div>
                 </div>
-                <div class="kesfetFilter">
-                    <div class="overflow-x-auto">
-                        <a href="javascript:;">
-                            <div class="imageWrapper">
-                                <img src="public/assets/images/statics/icons/gastronomi.png" alt="">
-                            </div>
-                            <span>GASTRONOMİ</span>
-                        </a>
-                        <a href="javascript:;">
-                            <div class="imageWrapper">
-                                <img src="public/assets/images/statics/icons/museum.png" alt="">
-                            </div>
-                            <span>TARİH</span>
-                        </a>
-                        <a href="javascript:;">
-                            <div class="imageWrapper">
-                                <img src="public/assets/images/statics/icons/konaklama.png" alt="">
-                            </div>
-                            <span>KONAKLAMA</span>
-                        </a>
-                        <a href="javascript:;">
-                            <div class="imageWrapper">
-                                <img src="public/assets/images/statics/icons/doga.png" alt="">
-                            </div>
-                            <span>DOĞA</span>
-                        </a>
-                        <a href="javascript:;">
-                            <div class="imageWrapper">
-                                <img src="public/assets/images/statics/icons/kamp.png" alt="">
-                            </div>
-                            <span>AKTİVİTELER</span>
-                        </a>
-                        <a href="javascript:;">
-                            <div class="imageWrapper">
-                                <img src="public/assets/images/statics/icons/route.png" alt="">
-                            </div>
-                            <span>ROTALAR</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="searchWrapper">
-                    <input type="text" id="searchInput" placeholder="Kars ile ilgili merak ettiklerinize dair ipucu verin!">
-                    <a href="javascript:;" class="searchButton"><img src="public/assets/images/statics/icons/glass.png" alt=""></a>
-                </div>
-                <div class="kesfetListe">
-                    <div class="cards type1">
-                        <div class="card">
-                            <label class="check-container">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <a href="javascript:;">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/Abughamrents-kilisesi.jpg" alt="">
-                                    <div class="image-overlay">
-                                        <span class="name">Abughamrents Kilisesi</span>
-                                        <span class="category">MERKEZ</span>
+                <div class="contentWrapper type2"> 
+                    <div class="content">
+                        <div class="titleColumn">
+                            <a href="javascript:;" class="backButton" onclick="history.back()"><img src="public/assets/images/statics/icons/left-arrow.png" alt=""><span>GERİ DÖN</span></a>
+                            <h4>Neler Yapılır?</h4>
+                        </div> 
+                        <div class="overflow-scroll-auto type6">
+                           <div class="detailsContentHead">
+                                <div class="leftColumn">
+                                    <img src="public/assets/images/statics/icons/museum-2.png" alt="">
+                                    <div>
+                                        <h3 class="dark">Çıldır Gölü</h3>
+                                        <h3 class="light">ARPAÇAY</h3>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <label class="check-container">
-                                <input type="checkbox" checked="">
-                                <span class="checkmark"></span>
-                              </label>
-                            <a href="javascript:;">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/Abughamrents-kilisesi.jpg" alt="">
-                                    <div class="image-overlay">
-                                        <span class="name">Abughamrents Kilisesi</span>
-                                        <span class="category">MERKEZ</span>
+                                <div class="buttons">
+                                    <a href="javascript:;" class="sounds">
+                                        <img src="public/assets/images/statics/icons/sound.png" alt="">
+                                    </a>
+                                    <label class="check-container">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                           </div>
+                            <div class="paragraph">
+                                <p>Çıldır Gölü, Ardahan ve Kars il sınırları içerisinde kalan göl, 123 km2 alanı ile Doğu Anadolu Bölgesi'nin en büyük tatlı su ve en büyük ikinci göldür. Deniz seviyesinden 1959 metre yükseklikte bulunan gölün en derin noktası 42 metredir. Çıldır Gölü, bir lâv akıntısı ile bir moloz mahrutu tarafından müştereken meydana getirilmiş bir doğal set gölüdür. Birçok dere ve pınarlarla beslenmekte olan gölün tek çıktısı kuzey batısında yer alan Ermenistan sınırında bulunan Arpaçay kolu olan Telek Çayı'dır. En büyük olanı Akçakale harabelerinin yanında yer alan adadır. Göl etrafında çok az bitki örtüsü gelişmiştir ancak gölü çevreleyen otlaklarda yoğun hayvancılık yapılmaktadır.</p>
+                                <p>Yılın dört mevsiminde yapılabilen balıkçılık yöre halkı için önemli bir ekonomik gelir kaynağı teşkil etmektedir. Gölün sadece kuzey batısında seddeyle ayrılmış bataklık ve sulak çayırlar bulunur. </p>
+                            </div>
+                            <div class="nearWrapper">
+                                <h3>Yakınındakiler</h3>
+                                <div class="near">
+                                    <div class="item">
+                                        <img src="public/assets/images/statics/icons/konaklama-2.png" alt="">
+                                        <span class="count">13</span>
+                                        <span class="category">KONAKLAMA</span>
+                                    </div>
+                                    <div class="item">
+                                        <img src="public/assets/images/statics/icons/museum-2.png" alt="">
+                                        <span class="count">8</span>
+                                        <span class="category">TARİH</span>
+                                    </div>
+                                    <div class="item">
+                                        <img src="public/assets/images/statics/icons/kamp2.png" alt="">
+                                        <span class="count">6</span>
+                                        <span class="category">AKTİVİTE</span>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <label class="check-container">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                              </label>
-                            <a href="javascript:;">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/Abughamrents-kilisesi.jpg" alt="">
-                                    <div class="image-overlay">
-                                        <span class="name">Abughamrents Kilisesi</span>
-                                        <span class="category">MERKEZ</span>
+                            </div>
+                            <div class="photosWrapper">
+                                <h3>Fotoğraflar</h3>
+                                <div class="photos">
+                                    <div data-src="public/assets/images/media/doguekspresi-rotasi.jpg" data-fancybox="photoGallery">
+                                        <img src="public/assets/images/media/doguekspresi-rotasi.jpg" alt="">
+                                    </div>
+                                    <div data-src="public/assets/images/media/doguekspresi-rotasi.jpg" data-fancybox="photoGallery">
+                                        <img src="public/assets/images/media/doguekspresi-rotasi.jpg" alt="">
+                                    </div>
+                                    <div data-src="public/assets/images/media/doguekspresi-rotasi.jpg" data-fancybox="photoGallery">
+                                        <img src="public/assets/images/media/doguekspresi-rotasi.jpg" alt="">
+                                    </div>
+                                    <div data-src="public/assets/images/media/doguekspresi-rotasi.jpg" data-fancybox="photoGallery">
+                                        <img src="public/assets/images/media/doguekspresi-rotasi.jpg" alt="">
+                                    </div>
+                                    <div data-src="public/assets/images/media/doguekspresi-rotasi.jpg" data-fancybox="photoGallery">
+                                        <img src="public/assets/images/media/doguekspresi-rotasi.jpg" alt="">
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <label class="check-container">
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                              </label>
-                            <a href="javascript:;">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/Abughamrents-kilisesi.jpg" alt="">
-                                    <div class="image-overlay">
-                                        <span class="name">Abughamrents Kilisesi</span>
-                                        <span class="category">MERKEZ</span>
+                            </div>
+                            <div class="quickWrapper">
+                                <h3>Hızlı Bakış</h3>
+                                <div class="quick">
+                                    <div>
+                                        <span class="name">Manzara</span>
+                                        <div class="favorite">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="name">Ulaşım</span>
+                                        <div class="favorite">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="name">Gastronomi</span>
+                                        <div class="favorite">
+                                            <img src="public/assets/images/statics/icons/star-pink.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                            <img src="public/assets/images/statics/icons/star-2.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
 
+                            <a href="javascript:;" class="fixBtn pink">HEMEN GİT</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,7 +190,7 @@
                         </div>
                         <span>MENÜ</span>
                     </a>
-                    <a href="javascript:;" class="active">
+                    <a href="javascript:;">
                         <div class="imageWrapper">
                             <img src="public/assets/images/statics/icons/picture.png" alt="">
                         </div>
@@ -309,15 +308,16 @@
             <!----Menu Ekranı canvas bitiş-->
 
 
-              <!---canvaslarda kullanılır--->
-              <div class="overlay"></div>
+            <!---canvaslarda kullanılır--->
+            <div class="overlay"></div>
         </main>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 
     <script src="public/assets/front/js/app.js"></script>
 </body>
