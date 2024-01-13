@@ -194,7 +194,36 @@ if (typeof Fancybox !== 'undefined') {
 }
 
 
-function toggleDropdown() {
-  var dropdownMenu = document.querySelector('.dropdown-menu');
-  dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
+// function toggleDropdown(button, dropdownId) {
+//   var dropdown = document.getElementById(dropdownId);
+//   var dropdownMenu = dropdown.querySelector('.dropdown-menu');
+//   dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
+// }
+function toggleDropdown(button) {
+  var dropdownMenu = button.nextElementSibling;
+  var allDropdowns = document.querySelectorAll('.dropdown-menu');
+
+  // Close all dropdowns
+  allDropdowns.forEach(function (dropdown) {
+      if (dropdown !== dropdownMenu && dropdown.classList.contains('show')) {
+          dropdown.classList.remove('show');
+      }
+  });
+
+  // Toggle the selected dropdown
+ dropdownMenu.classList.toggle("show");
+ 
+}
+
+// Close the dropdowns if the user clicks outside of them
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdownBtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-menu");
+      for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+          }
+      }
+  }
 }

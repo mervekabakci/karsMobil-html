@@ -554,19 +554,30 @@ form {
 }
 
 .rota-filtre{ 
+    select{
+        height: 150px;
+        border-radius: 20px;
+    }
+    .close-btn{
+        margin-top: 470px;
+    }
     .dropdown-menu {
         display: none;
         background: #fff;
         margin-top: -60px;
         border-radius: 0 0 30px 30px;
         .checkWrapper{
-            padding: 25px 15px 45px; 
+            padding: 15px 75px 60px;
+        }
+        &.show{
+            display: block;
         }
     }
     .dropdownBtn{
         background-color: #fff;
         text-align: start;
         border: none !important; 
-         
+        height: 150px;
+        border-radius: 20px;
     }
 }

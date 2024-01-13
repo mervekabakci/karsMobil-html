@@ -1927,6 +1927,13 @@ form.type2 .letsSignUp a {
   }
 }
 
+.rota-filtre select {
+  height: 150px;
+  border-radius: 20px;
+}
+.rota-filtre .close-btn {
+  margin-top: 470px;
+}
 .rota-filtre .dropdown-menu {
   display: none;
   background: #fff;
@@ -1934,12 +1941,17 @@ form.type2 .letsSignUp a {
   border-radius: 0 0 30px 30px;
 }
 .rota-filtre .dropdown-menu .checkWrapper {
-  padding: 25px 15px 45px;
+  padding: 15px 75px 60px;
+}
+.rota-filtre .dropdown-menu.show {
+  display: block;
 }
 .rota-filtre .dropdownBtn {
   background-color: #fff;
   text-align: start;
   border: none !important;
+  height: 150px;
+  border-radius: 20px;
 }
 
 /* Customize the label (the container) */
@@ -2086,14 +2098,18 @@ form.type2 .letsSignUp a {
     border-width: 0 3px 3px 0;
   }
 }
+.check-container.radio.type2 {
+  align-items: center;
+}
 .check-container.radio.type2 .checkmark {
   background-image: url("../images/check-empty.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   border: none;
-  width: 56px;
-  height: 56px;
+  width: 46px;
+  height: 46px;
+  margin-right: 40px;
 }
 .check-container.radio.type2 .checkmark:after {
   display: none;
@@ -2105,6 +2121,11 @@ form.type2 .letsSignUp a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.check-container.radio.type2 .text {
+  font-family: "baloo_2extrabold";
+  font-size: 34px;
+  color: #181818;
 }
 
 .checkWrapper {
@@ -3509,6 +3530,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     line-height: 50px;
     padding: 55px 0 0 !important;
   }
+}
+.customPopup#filtreleCanvas .popup-container .popup-content {
+  height: 83%;
+  place-content: normal;
+  padding: 0 20px;
 }
 .customPopup.log-out .popup-container.between .popup-content {
   width: 90%;
