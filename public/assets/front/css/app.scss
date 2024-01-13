@@ -157,7 +157,10 @@ h5 {
       height: 100%; 
     }
     a{
-      flex-direction: column
+      flex-direction: column;
+      img{
+        opacity: 0.46;
+      }
     }
   }
 }
