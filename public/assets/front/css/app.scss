@@ -2,10 +2,15 @@
 @import "sass/components/index";
 @import "sass/pages/index";
 // @import "sass/config/utils";
-*{
+* {
   box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 body {
@@ -16,11 +21,14 @@ a {
   text-decoration: none;
   transition: all 0.3s linear;
 }
-p{
-  margin:0;
+p {
+  margin: 0;
 }
-.d-block{
-  display: block!important;
+.d-block {
+  display: block !important;
+}
+.d-none {
+  display: none !important;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -78,7 +86,7 @@ h1 {
     font-size: 40px;
     line-height: 44px;
     padding: 0px 90px 15px;
-}
+  }
 }
 h3 {
   font-family: "baloo_2bold";
@@ -97,7 +105,7 @@ h4 {
   color: #0a3c60;
   @media screen and (min-width: 768px) and (min-height: 1200px) {
     font-size: 33.55px;
-}
+  }
 }
 h5 {
   font-family: "baloo_2extrabold";
@@ -110,13 +118,13 @@ h5 {
     font-size: 30px;
   }
 }
-.ps-0{
-  padding-left: 0!important;
+.ps-0 {
+  padding-left: 0 !important;
 }
-.zIndex2{
-  z-index: 9!important;
+.zIndex2 {
+  z-index: 9 !important;
 }
-.ms-auto{
+.ms-auto {
   margin-left: auto;
   text-align: right;
 }

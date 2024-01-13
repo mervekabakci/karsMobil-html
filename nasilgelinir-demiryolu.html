@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="public/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="public/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="public/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="public/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="public/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="public/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="public/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="public/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="public/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="public/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" >
+        <link rel="icon" type="image/png" sizes="96x96" href="public/favicon-96x96.png" >
+        <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" >
+        <link rel="manifest" href="public/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Kars</title>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" > -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="public/assets/front/css/app.css">
+    </head>
+<body>
+
+    <div id="app">
+        <div class="preloader">
+            <div class="preloader-spin">
+                <img src="public/assets/images/statics/logo-dark.png" alt="">
+            </div>
+        </div>
+        <main class="subMain">
+            <header>
+                <div class="header">
+                    <a href="javascript:;" class="userButton">
+                        <img src="public/assets/images/statics/icons/user-icon.png" alt="">
+                        <span>PROFIL</span>
+                    </a>
+                    <a href="javascript:;" class="logo"><img src="public/assets/images/statics/logo-light.png" alt=""></a>
+                    <a href="javascript:;" class="menuButton">
+                        <img src="public/assets/images/statics/icons/menu-btn.png" alt="">
+                        <span>MENU</span>
+                    </a>
+                </div>
+            </header>
+            <div id="center">
+                <div class="bannerWrapper">
+                    <div class="imageBanner">
+                        <img src="public/assets/images/media/gagik-kilisesi.jpg" alt="">
+                    </div>
+                </div>
+                <div class="contentWrapper">
+                    <div class="content">
+                        <div class="titleColumn">
+                            <a href="javascript:;" class="backButton" onclick="history.back()"><img src="public/assets/images/statics/icons/left-arrow.png" alt=""><span>GERİ DÖN</span></a>
+                            <h4>Nasıl Gelinir</h4>
+                        </div>
+                     
+                        <div class="tabContainer">
+                            <div class="tabButtons">
+                                <a class="tabNavItem" href="javascript:;">HAVAYOLU ULAŞIMI</a>
+                                <a class="tabNavItem karayoluTab" href="javascript:;">KARAYOLU ULAŞIMI</a>
+                                <a class="tabNavItem active demirYoluTab" href="javascript:;">DEMİRYOLU ULAŞIMI</a>
+                            </div>
+                            <div class="tabContents">
+                                <div class="tabContent">
+                                    <div class="overflow-scroll-auto">
+                                        <div class="paragraph">
+                                            <p>İstanbul ile Kars arasında ki uçuş süresi 2 saat 5 dakikadır.  Şehirde kent merkezinden 7 km mesafede Kars Havalimanı bulunmaktadır.  Havaalanına yurt içi ve yurt dışı karşılıklı seferler düzenlenmektedir. </p>
+                                        </div>
+                                        <div class="companies">
+                                            <span class="title">Seyahat Eden Havayolu Firmaları</span>
+                                            <div class="item">
+                                                <div class="imageWrapper">
+                                                    <img src="public/assets/images/media/companies/turkish-airlines.jpg" alt="">
+                                                </div>
+                                                <a href="javascript:;">
+                                                    <span class="bold">(0426) 213 18 38</span>
+                                                    <span>HEMEN ARA</span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <div class="imageWrapper">
+                                                    <img src="public/assets/images/media/companies/pegasus.png" alt="">
+                                                </div>
+                                                <a href="javascript:;">
+                                                    <span class="bold">(0426) 213 18 38</span>
+                                                    <span>HEMEN ARA</span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <div class="imageWrapper">
+                                                    <img src="public/assets/images/media/companies/onurair.png" alt="">
+                                                </div>
+                                                <a href="javascript:;">
+                                                    <span class="bold">(0426) 213 18 38</span>
+                                                    <span>HEMEN ARA</span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <div class="imageWrapper">
+                                                    <img src="public/assets/images/media/companies/borajet.png" alt="">
+                                                </div>
+                                                <a href="javascript:;">
+                                                    <span class="bold">(0426) 213 18 38</span>
+                                                    <span>HEMEN ARA</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabContent">
+                                    <div class="overflow-scroll-auto">
+                                        <div class="paragraph">
+                                            <p>Ankara ile Kars arasında seferleri bulunan Devlet Demiryolları’nın (TCDD) Doğu Ekspresi Ankara, Kayseri, Sivas, Erzincan, Erzurum rotasını izleyerek Kars’a ulaşıyor. Haftanın her günü karşılıklı seferleri bulunan tren ile yolculuk 24 saat sürüyor. Tren garı Kars merkeze 1 km uzaklıkta.</p>
+                                        </div>
+                                        <div class="rotaHesap">
+                                            <span>Geliş Yönünü Seçiniz</span>
+                                            <div class="inputColumn">
+                                                <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
+                                                <input type="text" value="Ankara">
+                                            </div>
+                                            <a href="javascript:;" class="changeButton"><img src="public/assets/images/statics/icons/change.png" alt=""></a>
+                                            <div class="inputColumn">
+                                                <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
+                                                <input type="text" value="Ankara">
+                                            </div>
+                                            <div class="routeResult">
+                                                <img src="public/assets/images/statics/icons/route.png" alt="">
+                                                <div class="totalItem">
+                                                    <span class="title">Toplam Mesafe</span>
+                                                    <span>1.430 km</span>
+                                                </div>
+                                                <div class="totalItem">
+                                                    <span class="title">Toplam Süre</span>
+                                                    <span>16 Saat 29 Dakika</span>
+                                                </div>
+                                            </div>
+                                            <div id="map">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48472.02600243136!2d43.060587864095865!3d40.596754904220276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40698ed9cd732267%3A0x46d5117e984d216!2sKars%2C%20Kars%20Merkez%2FKars!5e0!3m2!1str!2str!4v1705127661208!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabContent active">
+                                    <div class="overflow-scroll-auto">
+                                        <div class="paragraph">
+                                            <p>Ankara ile Kars arasında seferleri bulunan Devlet Demiryolları’nın (TCDD) Doğu Ekspresi Ankara, Kayseri, Sivas, Erzincan, Erzurum rotasını izleyerek Kars’a ulaşıyor. Haftanın her günü karşılıklı seferleri bulunan tren ile yolculuk 24 saat sürüyor. Tren garı Kars merkeze 1 km uzaklıkta.</p>
+                                        </div>
+                                        <div class="rotaHesap">
+                                            <span>Geliş Yönünü Seçiniz</span>
+                                            <div class="inputColumn">
+                                                <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
+                                                <input type="text" value="Ankara">
+                                            </div>
+                                            <a href="javascript:;" class="changeButton"><img src="public/assets/images/statics/icons/change.png" alt=""></a>
+                                            <div class="inputColumn">
+                                                <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
+                                                <input type="text" value="Ankara">
+                                            </div>
+                                            <div class="routeResult">
+                                                <img src="public/assets/images/statics/icons/route.png" alt="">
+                                                <div class="totalItem">
+                                                    <span class="title">Toplam Mesafe</span>
+                                                    <span>1.430 km</span>
+                                                </div>
+                                                <div class="totalItem">
+                                                    <span class="title">Toplam Süre</span>
+                                                    <span>16 Saat 29 Dakika</span>
+                                                </div>
+                                            </div>
+                                            <div id="map">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48472.02600243136!2d43.060587864095865!3d40.596754904220276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40698ed9cd732267%3A0x46d5117e984d216!2sKars%2C%20Kars%20Merkez%2FKars!5e0!3m2!1str!2str!4v1705127661208!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <a href="javascript:;" class="ticketButton">BİLET AL</a>
+                <a href="javascript:;" class="directionsButton">YOL TARİFİ AL</a>
+                <div class="footer">
+                    <a href="javascript:;">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/placeholder.png" alt="">
+                        </div>
+                        <span>ROTALAR</span>
+                    </a>
+
+                    <a href="javascript:;">
+                        <span class="budget">3</span>
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/shopping-bag.png" alt="">
+                        </div>
+                        <span>ROTA ÇANTAM</span>
+                    </a>
+
+                    <a href="javascript:;" class="bottom-menu">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/menu-light.png" alt="">
+                        </div>
+                        <span>MENÜ</span>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/picture.png" alt="">
+                        </div>
+                        <span>GALERİ</span>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="imageWrapper">
+                            <img src="public/assets/images/statics/icons/bookmark.png" alt="">
+                        </div>
+                        <span>ROTA OLUŞTUR</span>
+                    </a>
+                </div>
+            </footer>
+
+            <!----Profil Ekranı canvas baslangıc-->
+            <div id="profileCanvas" class="profileCanvas off-canvas">
+                <div class="profileInfo">
+                    <img class="logoBg" src="public/assets/images/statics/userTopg.jpg" alt="">
+                    <div class="name">
+                        Hoşgeldin
+                        <strong>Ahmet Yılmaz</strong>
+                    </div>
+                    <a href="javascript:;" class="profile-email">ahmetyilmaz@gmail.com</a>
+                </div>
+                <div class="profileContent">
+                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png" alt="">
+                    <div class="profileMenu">
+                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-user.png" alt=""><span>Profil bilgilerim</span></a>
+                        <a href="javascript:;" class="plus"><img src="public/assets/images/statics/icons/profile-pin-plus.png" alt=""><span>Rota Oluştur</span></a>
+                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-pin.png" alt=""><span>Rotalarım</span></a>
+                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-cikis.png" alt=""><span>Çıkış Yap</span></a>
+                        <a href="javascript:;" class="language"><span>EN</span></a>
+                    </div>
+                    <div class="bottom">
+                        <img src="public/assets/images/statics/icons/favorite.png" alt="">
+                        <div>
+                            <span>Doğu’nun <strong>gizemli</strong> ve <strong>masalsı şehri</strong></span>
+                            <span class="hashtag">#karstayiz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----Profil Ekranı canvas bitiş-->
+
+            <!----Menu Ekranı canvas baslangıc-->
+            <div id="menuCanvas" class="menuCanvas off-canvas end">
+                <div class="profileInfo">
+                    <img class="logoBg" src="public/assets/images/statics/userTopg.jpg" alt="">
+                    <div>
+                        <img src="public/assets/images/statics/icons/menu-light.png" alt="">
+                        <span>Menü</span>
+                    </div>
+                </div>
+                <div class="profileContent">
+                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png" alt="">
+                    <div class="profileMenu accMenu">
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Karsı Tanıyalım</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="kars-hikayeleri.html">Kars Hikayeleri</a></li>
+                                <li><a href="kars-turkuleri.html">Kars Türküleri</a></li>
+                                <li><a href="rakamlarla-kars.html">Rakamlarla Kars</a></li>
+                                <li><a href="tarihte-kars.html">Tarihte Kars</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Faydalı Bilgiler</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="arac-kiralama.html">Araç Kiralama</a></li>
+                                <li><a href="faydali-linkler.html">Faydalı Linkler</a></li>
+                                <li><a href="nobetci-eczaneler.html">Nöbetçi Eczaneler</a></li>
+                                <li><a href="onemli-telefonlar.html">Önemli Telefonlar</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton active"><span class="icon"></span><span>Galeri</span></a>
+                        <div class="accContent active">
+                            <ul>
+                                <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
+                                <li><a href="javascript:;">Video Galerisi</a></li>
+                                <li><a href="javascript:;">Sanal Tur (360)</a></li>
+                                <li><a class="active" href="javascript:;">Basında Kars</a></li>
+                                <li><a href="javascript:;">Şehir Kameraları</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Projemizi Tanı!</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
+                                <li><a href="javascript:;">Video Galerisi</a></li>
+                                <li><a href="javascript:;">Sanal Tur (360)</a></li>
+                                <li><a class="active" href="javascript:;">Basında Kars</a></li>
+                                <li><a href="javascript:;">Şahir Kameraları</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Gizlilik</span></a>
+                        <div class="accContent">
+                            <ul>
+                                <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
+                                <li><a href="javascript:;">Video Galerisi</a></li>
+                                <li><a href="javascript:;">Sanal Tur (360)</a></li>
+                                <li><a class="active" href="javascript:;">Basında Kars</a></li>
+                                <li><a href="javascript:;">Şahir Kameraları</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img src="public/assets/images/statics/icons/favorite.png" alt="">
+                        <div>
+                            <span>Doğu’nun <strong>gizemli</strong> ve <strong>masalsı şehri</strong></span>
+                            <span class="hashtag">#karstayiz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----Menu Ekranı canvas bitiş-->
+
+
+            <!---canvaslarda kullanılır--->
+            <div class="overlay"></div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="public/assets/front/js/app.js"></script>
+
+    <script>
+      if($(".demirYoluTab").hasClass("active")){
+            $(".footer").addClass("d-none");
+            $("footer .ticketButton").css("display","flex");
+        }
+        else if($(".karayoluTab").hasClass("active")){
+            $(".footer").addClass("d-none");
+            $("footer .ticketButton").css("display","none");
+            $("footer .directionsButton").css("display","flex");
+        }
+        else{
+            $(".footer").removeClass("d-none");
+            $("footer .ticketButton").css("display","none");
+            $("footer .directionsButton").css("display","none");
+        }
+    </script>
+
+</body>
+</html>
