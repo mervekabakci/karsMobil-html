@@ -487,7 +487,9 @@ form {
     font-size: 16px;
     height: 45px;
     border-radius: 16px;
-
+    &.pink{
+        background-color: #e13869;
+    }
     @media screen and (min-width: 768px) and (min-height: 1200px) {
         font-size: 29.9px;
         height: 113px;

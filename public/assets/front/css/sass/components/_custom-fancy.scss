@@ -1,5 +1,5 @@
 .f-button {
-    background-color: rgba(84, 26, 9, 1);
+    background-color: #e13869;
     opacity: 1!important;
     margin-top: 15px;
     &.is-close-btn{
@@ -14,7 +14,7 @@
         }
         @media screen and (min-width:991.98px) {
             &:hover{
-                background-color: rgba(84, 26, 9, 1);
+                background-color: #e13869;
                 opacity: 1;
                 svg{
                     opacity: 1;
@@ -24,21 +24,21 @@
         }
     }
     &:hover:not([disabled]){
-        background-color: rgba(84, 26, 9, 1);
+        background-color: #e13869;
     }
 }
 .fancybox-image{
     border-radius: 30px;
 }
 .fancybox__container{
-    background: var(--Primary-Color, rgba(255, 170, 0, 0.7));
-    background-color: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+  background: var(--Primary-Color, rgba(10, 60, 96, 0.7));
+    background-color: var(--Primary-Color, rgba(10, 60, 96, 0.7));
 }
 --fancybox-bg{
-    background: var(--Primary-Color, rgba(255, 170, 0, 0.7));
-    background-color: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+    background: var(--Primary-Color, rgba(10, 60, 96, 0.7));
+    background-color: var(--Primary-Color, rgba(10, 60, 96, 0.7));
 }
 
 .fancybox__backdrop{
-    background: var(--Primary-Color, rgba(255, 170, 0, 0.7));
+    background: var(--Primary-Color, rgba(10, 60, 96, 0.7));
 }
