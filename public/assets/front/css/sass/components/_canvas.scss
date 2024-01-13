@@ -82,6 +82,8 @@
 
     &.canvas-bottom {
         width: 100vw;
+        max-width: 1080px;
+        margin: 0 auto;
         height: 94%;
         bottom: 0;
         top: auto;

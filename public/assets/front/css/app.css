@@ -1957,6 +1957,13 @@ form.type2 .letsSignUp a {
   }
 }
 
+.rota-filtre select {
+  height: 150px;
+  border-radius: 20px;
+}
+.rota-filtre .close-btn {
+  margin-top: 470px;
+}
 .rota-filtre .dropdown-menu {
   display: none;
   background: #fff;
@@ -1964,12 +1971,17 @@ form.type2 .letsSignUp a {
   border-radius: 0 0 30px 30px;
 }
 .rota-filtre .dropdown-menu .checkWrapper {
-  padding: 25px 15px 45px;
+  padding: 15px 75px 60px;
+}
+.rota-filtre .dropdown-menu.show {
+  display: block;
 }
 .rota-filtre .dropdownBtn {
   background-color: #fff;
   text-align: start;
   border: none !important;
+  height: 150px;
+  border-radius: 20px;
 }
 
 /* Customize the label (the container) */
@@ -2031,8 +2043,25 @@ form.type2 .letsSignUp a {
   border-color: #e13869;
 }
 .check-container input:checked ~ .checkmark:after {
+  content: "";
   display: block;
   color: #ffffff;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  width: 3px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .check-container input:checked ~ .checkmark:after {
+    width: 15px;
+    height: 30px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+  }
 }
 .check-container.radio {
   position: relative;
@@ -2080,8 +2109,11 @@ form.type2 .letsSignUp a {
 }
 .check-container.radio .checkmark:after {
   content: "";
-  left: 9px;
-  top: 5px;
+}
+.check-container.radio input:checked ~ .checkmark:after {
+  content: "";
+  left: 13px;
+  top: 8px;
   width: 3px;
   height: 5px;
   border: solid white;
@@ -2089,12 +2121,41 @@ form.type2 .letsSignUp a {
   transform: rotate(45deg);
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
-  .check-container.radio .checkmark:after {
+  .check-container.radio input:checked ~ .checkmark:after {
     width: 5px;
     height: 10px;
     border: solid white;
     border-width: 0 3px 3px 0;
   }
+}
+.check-container.radio.type2 {
+  align-items: center;
+}
+.check-container.radio.type2 .checkmark {
+  background-image: url("../images/check-empty.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  width: 46px;
+  height: 46px;
+  margin-right: 40px;
+}
+.check-container.radio.type2 .checkmark:after {
+  display: none;
+}
+.check-container.radio.type2 input:checked ~ .checkmark {
+  background-color: #fff;
+  border-color: #fff;
+  background-image: url("../images/check-cheked.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.check-container.radio.type2 .text {
+  font-family: "baloo_2extrabold";
+  font-size: 34px;
+  color: #181818;
 }
 
 .checkWrapper {
@@ -2868,6 +2929,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .off-canvas.canvas-bottom {
   width: 100vw;
+  max-width: 1080px;
+  margin: 0 auto;
   height: 94%;
   bottom: 0;
   top: auto;
@@ -3497,6 +3560,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     line-height: 50px;
     padding: 55px 0 0 !important;
   }
+}
+.customPopup#filtreleCanvas .popup-container .popup-content {
+  height: 83%;
+  place-content: normal;
+  padding: 0 20px;
 }
 .customPopup.log-out .popup-container.between .popup-content {
   width: 90%;
