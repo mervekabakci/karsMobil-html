@@ -3266,7 +3266,24 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 {
-    padding-top: 30px;
+    padding-top: 15px;
+  }
+}
+.accMenu.accType2 .accContent .paragraph {
+  padding: 10px 0 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accContent .paragraph {
+    padding: 30px 20px 20px;
+  }
+}
+.accMenu.accType2 .accContent .paragraph span {
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accContent .paragraph span {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 .accMenu.accType2 .accButton {
@@ -3282,14 +3299,14 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton {
     height: 75px;
-    padding-left: 24px;
+    padding-left: 35px;
     margin-bottom: 18px;
     border-radius: 10px;
   }
 }
 .accMenu.accType2 .accButton span {
   font-family: "baloo_2medium";
-  font-size: 12px;
+  font-size: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton span {
@@ -3311,14 +3328,27 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   font-size: 14px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accButton span.icon:after {
+    font-size: 44px;
+  }
+}
+.accMenu.accType2 .accButton span.icon:before {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accButton span.icon:before {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton span.icon {
-    width: 58px;
-    height: 58px;
+    width: 75px;
+    height: 75px;
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 30px;
   }
   .accMenu.accType2 .accButton span.icon:after {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 .accMenu.accType2 .accButton > div {
@@ -3342,17 +3372,17 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   }
 }
 .accMenu.accType2 .accButton.type2 {
-  height: 45px;
-  margin-bottom: 5px;
+  height: 40px;
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton.type2 {
-    height: 90px;
+    height: 110px;
     margin-bottom: 5px;
   }
 }
 .accMenu.accType2 .accButton.type2 > div img {
-  width: 12px;
+  width: 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton.type2 > div img {
