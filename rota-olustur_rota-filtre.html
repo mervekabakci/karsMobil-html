@@ -384,22 +384,35 @@
                                     <option value="">İstanbul</option>
                                     <option value="">İstanbul</option>
                                 </select>
-                                <select name="" id="">
-                                    <option selected disabled value="">Kategoriye Göre Filtrele</option>
-                                    <option value="">İstanbul</option>
-                                    <option value="">İstanbul</option>
-                                    <option value="">İstanbul</option>
-                                    <option value="">İstanbul</option>
-                                </select>
+                               
 
                                 <div class="dropdown">
-                                    <button class="btn" onclick="toggleDropdown()">
-                                      Dropdown button
+                                    <button type="button" class="btn dropdownBtn" onclick="toggleDropdown()">
+                                        Kategoriye Göre Filtrele
                                     </button>
                                     <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <div class="checkWrapper"> 
+                                            <label class="check-container radio type2">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                                <span class="text">Doğa</span>
+                                            </label> 
+                                            <label class="check-container radio type2">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                                <span class="text">Tarih</span>
+                                            </label> 
+                                            <label class="check-container radio type2">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                                <span class="text">Gastronomi</span>
+                                            </label> 
+                                            <label class="check-container radio type2">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                                <span class="text">Kültür</span>
+                                            </label> 
+                                        </div>
                                     </ul>
                                   </div>
                                 <button type="submit" class="close-btn ">FİLTRELE</button>

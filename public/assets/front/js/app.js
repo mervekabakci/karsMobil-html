@@ -196,16 +196,5 @@ if (typeof Fancybox !== 'undefined') {
 
 function toggleDropdown() {
   var dropdownMenu = document.querySelector('.dropdown-menu');
-  dropdownMenu.classList.toggle('show');
-}
-
-// Tıklanan dışında bir yere tıklanırsa dropdown'ı kapat
-window.onclick = function(event) {
-  var dropdowns = document.getElementsByClassName('dropdown-menu');
-  for (var i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show') && !openDropdown.parentNode.contains(event.target)) {
-      openDropdown.classList.remove('show');
-    }
-  }
+  dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
 }
