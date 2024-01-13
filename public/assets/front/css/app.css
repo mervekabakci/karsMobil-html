@@ -532,6 +532,33 @@
     max-width: 30px;
   }
 }
+.cards .card .card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.cards .card .card-body .title {
+  color: #292929;
+  font-family: "baloo_2extrabold";
+  font-size: 28.21px;
+}
+.cards .card .card-body .adress {
+  font-family: "baloo_2medium";
+  font-size: 22.82px;
+  line-height: 22.82px;
+  color: rgba(41, 41, 41, 0.42);
+}
+.cards .card .card-body .fixBtn {
+  height: 45px;
+  border-radius: 6px;
+  font-size: 22.22px;
+  width: 220px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 .cards.type1 {
   display: flex;
   flex-wrap: wrap;
@@ -1244,6 +1271,9 @@
   .cards.overlay-info.type2 .card .card-top .card-image-overlay .title {
     font-size: 17.44px;
   }
+}
+.cards.flex-column .card {
+  flex-direction: column;
 }
 
 .shareWrapper {
@@ -4249,6 +4279,10 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     font-size: 20.7px;
   }
 }
+.contentWrapper .titleColumn .buttons {
+  position: absolute;
+  right: 0;
+}
 .contentWrapper .content {
   height: 100%;
   padding-bottom: 150px;
@@ -4561,6 +4595,23 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   border-radius: 6px;
   overflow: hidden;
 }
+.contentWrapper .buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contentWrapper .buttons .sounds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+.contentWrapper .buttons .check-container {
+  position: relative;
+  top: 0;
+  right: 0;
+}
 .contentWrapper .detailsContentHead,
 .contentWrapper .nearWrapper,
 .contentWrapper .photosWrapper,
@@ -4595,23 +4646,6 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .contentWrapper .detailsContentHead .leftColumn img {
   margin-right: 20px;
   width: 84px;
-}
-.contentWrapper .detailsContentHead .buttons {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.contentWrapper .detailsContentHead .buttons .sounds {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 70px;
-}
-.contentWrapper .detailsContentHead .buttons .check-container {
-  position: relative;
-  top: 0;
-  right: 0;
 }
 .contentWrapper .nearWrapper {
   margin-top: 40px;
@@ -4891,21 +4925,6 @@ ul.list li:before {
   }
 }
 
-span.title {
-  font-family: "baloo_2extrabold";
-  font-size: 17px;
-  line-height: 19px;
-  color: #0a3c60;
-  padding: 0px 15px 10px;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  span.title {
-    font-size: 37px;
-    line-height: 44px;
-    padding: 0px 90px 15px;
-  }
-}
-
 .companies .title {
   font-family: "baloo_2extrabold";
   color: #15354d;
@@ -5105,6 +5124,10 @@ h5 {
 
 .grid {
   display: grid;
+}
+.grid.twice {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
 }
 .grid.quad {
   grid-template-columns: repeat(4, 1fr);
