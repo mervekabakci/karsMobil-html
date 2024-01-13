@@ -212,19 +212,20 @@ function toggleDropdown(button) {
   });
 
   // Toggle the selected dropdown
- dropdownMenu.classList.toggle("show");
- 
+  dropdownMenu.classList.toggle("show");
 }
 
 // Close the dropdowns if the user clicks outside of them
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdownBtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-menu");
-      for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
+window.onclick = function (event) {
+  var clickedElement = event.target;
+
+  // Check if the clicked element is a dropdown button or inside a dropdown
+  if (!clickedElement.matches('.dropdownBtn') && !clickedElement.closest('.dropdown')) {
+      var dropdowns = document.querySelectorAll(".dropdown-menu");
+      dropdowns.forEach(function (openDropdown) {
           if (openDropdown.classList.contains('show')) {
               openDropdown.classList.remove('show');
           }
-      }
+      });
   }
 }
