@@ -131,3 +131,17 @@ h5 {
   margin-left: auto;
   text-align: right;
 }
+
+.grid{
+  display: grid;
+  &.quad{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 150px);
+    grid-gap: 25px;
+
+    & > a,
+    & > div{
+      height: 100%;
+    }
+  }
+}
