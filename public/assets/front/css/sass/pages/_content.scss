@@ -213,6 +213,10 @@
                 }
             }
         }
+        .buttons{
+            position:absolute;
+            right: 0;
+        }
     }
 
     .content {
@@ -509,6 +513,23 @@
             }
         }
     }
+    .buttons{
+        position: relative;
+        display: flex;
+        align-items: center;
+        .sounds{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+        }
+        .check-container{
+            position: relative;
+            top: 0;
+            right:0
+        }
+    }
     .detailsContentHead,
     .nearWrapper,
     .photosWrapper,
@@ -539,23 +560,6 @@
             img{
                 margin-right: 20px;
                width: 84px;
-            }
-        }
-        .buttons{
-            position: relative;
-            display: flex;
-            align-items: center;
-            .sounds{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 70px;
-                height: 70px;
-            }
-            .check-container{
-                position: relative;
-                top: 0;
-                right:0
             }
         }
     }
@@ -849,20 +853,20 @@ ul {
         }
     }
 }
-span {
-    &.title {
-        font-family: "baloo_2extrabold";
-        font-size: 17px;
-        line-height: 19px;
-        color: #0a3c60;
-        padding: 0px 15px 10px;
-        @media screen and (min-width: 768px) and (min-height: 1200px) {
-            font-size: 37px;
-            line-height: 44px;
-            padding: 0px 90px 15px;
-        }
-    }
-}
+// span {
+//     &.title {
+//         font-family: "baloo_2extrabold";
+//         font-size: 17px;
+//         line-height: 19px;
+//         color: #0a3c60;
+//         padding: 0px 15px 10px;
+//         @media screen and (min-width: 768px) and (min-height: 1200px) {
+//             font-size: 37px;
+//             line-height: 44px;
+//             padding: 0px 90px 15px;
+//         }
+//     }
+// }
 
 .companies {
     .title {
