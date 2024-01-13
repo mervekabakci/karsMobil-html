@@ -141,18 +141,22 @@
         justify-content: center;
         padding: 20px 40px;
         text-align: center;
-        &.none-bg{
+
+        &.none-bg {
             background: transparent !important;
             padding: 20px 0 !important;
+
             span,
             strong,
             a,
-            p{
-                color: #ffffff;  
+            p {
+                color: #ffffff;
             }
-            img{
+
+            img {
                 margin-bottom: 25px;
                 width: 55px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     width: 135px;
                     margin-bottom: 80px;
@@ -187,20 +191,24 @@
                 font-family: 'baloo_2extrabold';
 
             }
-            &.title{
+
+            &.title {
                 font-size: 30px;
-                line-height: 16px; 
+                line-height: 16px;
                 font-family: 'baloo_2extrabold';
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     font-size: 75px !important;
                     line-height: 70px;
                 }
 
             }
-            &.desc{
+
+            &.desc {
                 padding: 25px 0 0;
                 font-size: 14px;
                 line-height: 16px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     font-size: 36px;
                     line-height: 50px;
@@ -210,60 +218,71 @@
         }
 
     }
-    &#rotaBulunamadi{
-        .popup-container { 
+
+    &#rotaBulunamadi {
+        .popup-container {
             .popup-content {
                 margin-top: 177px;
+
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     margin-top: 377px;
                 }
+
                 width: 80%;
-                .alertContainer{
+
+                .alertContainer {
                     height: 490px;
 
-                    p{
-                        &.desc{
+                    p {
+                        &.desc {
                             font-size: 30px;
                             line-height: 37px;
                             padding: 55px 80px 0 !important;
                         }
                     }
                 }
-                .close-btn{
+
+                .close-btn {
                     margin-top: 100px;
+
                     @media screen and (min-width:768px) and (min-height:1200px) {
                         margin-top: 290px;
                     }
                 }
-            } 
+            }
         }
     }
-    &#rotaOlusturuluyor{
-        .alertContainer { 
-            &.none-bg{ 
-                img{
+
+    &#rotaOlusturuluyor {
+        .alertContainer {
+            &.none-bg {
+                img {
                     margin-bottom: 25px;
                     width: 55px;
+
                     @media screen and (min-width:768px) and (min-height:1200px) {
                         width: 312px;
                         margin-bottom: 55px;
                     }
                 }
-            } 
-     
-            p { 
-                &.title{
+            }
+
+            p {
+                &.title {
                     font-size: 30px;
-                    line-height: 16px;  
+                    line-height: 16px;
+
                     @media screen and (min-width:768px) and (min-height:1200px) {
                         font-size: 52px !important;
                         line-height: 70px;
                     }
-    
+
                 }
-                &.desc{ 
+
+                &.desc {
                     font-size: 14px;
                     line-height: 16px;
+
                     @media screen and (min-width:768px) and (min-height:1200px) {
                         font-size: 30px;
                         line-height: 35px;
@@ -271,39 +290,80 @@
                     }
                 }
             }
-    
+
         }
     }
-    &#filtreleCanvas{
-        .popup-container { 
+
+    &#filtreleCanvas {
+        .popup-container {
             .popup-content {
                 height: 83%;
                 place-content: normal;
                 padding: 0 20px
-            } 
+            }
         }
     }
+    &#approval {
+        .popup-container {
+            .popup-content {
+                height: 73%;
+                place-content: normal; 
+                @media screen and (min-width:768px) and (min-height:1200px) {
+                    height: 55%;
+                }
+                .alertContainer{
+                    img{
+                        
+                        @media screen and (min-width:768px) and (min-height:1200px) {
+                            width: 170px;
+                        }
+                    }
+                    p{
+                        &.title{
+                            @media screen and (min-width:768px) and (min-height:1200px) {
+                               font-size:  88px !important;
+                            }
+                        }
+                        &.desc{
+                            padding: 30px 0 0;
+                            font-size: 15px;
+                            line-height: 18px;
+                            @media screen and (min-width:768px) and (min-height:1200px) {
+                                padding: 30px 0 0;
+                                font-size: 43px;
+                                line-height: 58px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     &.log-out {
         .popup-container {
             &.between {
                 .popup-content {
                     width: 90%;
+                    margin-top: 0;
 
                     .alertContainer {
                         padding: 20px 40px;
                         background: #ffffff;
                         border-radius: 10px;
-                        
+
                         @media screen and (min-width:768px) and (min-height:1200px) {
                             padding: 20px 100px;
                             border-radius: 30px;
                         }
+
                         p {
                             font-size: 16px;
                             line-height: 18px;
                             padding: 0 20px;
+
                             @media screen and (min-width:768px) and (min-height:1200px) {
-                                font-size: 36px;
+                                font-size: 47px;
                                 line-height: 35px;
                                 padding: 0 50px;
                             }
@@ -312,11 +372,13 @@
                         img {
                             margin-bottom: 20px;
                             width: 40px;
+
                             @media screen and (min-width:768px) and (min-height:1200px) {
                                 width: auto;
                                 margin-bottom: 60px;
                             }
                         }
+
                         .close-btn {
                             display: flex;
                             align-items: center;
@@ -327,16 +389,17 @@
                             color: #ffffff;
                             border-radius: 10px;
                             height: 45px;
-                            margin-top: 30px;
+                            margin-top: 25px;
                             width: 100%;
+
                             @media screen and (min-width:768px) and (min-height:1200px) {
                                 height: 109px;
                                 border-radius: 25px;
-                                font-size: 25.96px;
-                                margin-top: 60px; 
+                                font-size: 32.96px;
+                                margin-top: 65px;
                             }
                         }
-                    } 
+                    }
                 }
             }
         }
