@@ -222,11 +222,11 @@
     &#rotaBulunamadi {
         .popup-container {
             .popup-content {
-                margin-top: 170px;
+                // margin-top: 170px;
                 width: 80%;
-                @media screen and (min-width:768px) and (min-height:1200px) {
-                    margin-top: 440px;
-                } 
+                // @media screen and (min-width:768px) and (min-height:1200px) {
+                //     margin-top: 440px;
+                // } 
                 .alertContainer {
                     height: 200px;
                     @media screen and (min-width:768px) and (min-height:1200px) {
@@ -313,12 +313,12 @@
     &#filtreleCanvas {
         .popup-container {
             .popup-content {
-                height: 78%;
+                height: auto;
                 place-content: normal;
                 padding: 0px 20px;
                 @media screen and (min-width:768px) and (min-height:1200px) {
                     padding: 0 65px;
-                    height: 83%;
+                    height:auto;
                 }
             }
         }

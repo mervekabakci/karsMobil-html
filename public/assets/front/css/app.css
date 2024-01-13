@@ -1291,6 +1291,42 @@
   display: flex;
   flex-wrap: wrap;
 }
+.cards.overlay-info.type2 .check-container {
+  right: 5px;
+  top: -12px;
+  height: 30px;
+  width: 30px;
+  font-size: 9px;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info.type2 .check-container {
+    height: 46px;
+    width: 49px;
+  }
+}
+.cards.overlay-info.type2 .check-container .checkmark:after {
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info.type2 .check-container .checkmark:after {
+    font-size: 36.42px;
+  }
+}
+.cards.overlay-info.type2 .check-container input:checked ~ .checkmark:after {
+  width: 6px;
+  height: 12px;
+  left: 10px;
+  top: 6px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.overlay-info.type2 .check-container input:checked ~ .checkmark:after {
+    width: 10px;
+    height: 21px;
+    left: 18px;
+    top: 6px;
+  }
+}
 .cards.overlay-info.type2 .card {
   width: 50%;
   height: 100%;
@@ -1306,6 +1342,10 @@
 }
 .cards.overlay-info.type2 .card .card-top .card-image-overlay {
   align-items: center;
+  text-align: center;
+}
+.cards.overlay-info.type2 .card .card-top .card-image-overlay > div {
+  line-height: 10px;
 }
 .cards.overlay-info.type2 .card .card-top .card-image-overlay .title {
   padding: 0;
@@ -1315,6 +1355,10 @@
   .cards.overlay-info.type2 .card .card-top .card-image-overlay .title {
     font-size: 17.44px;
   }
+}
+.cards.overlay-info.type2.aspect1 .card .card-top {
+  height: auto;
+  aspect-ratio: 4/4.55;
 }
 .cards.flex-column .card {
   flex-direction: column;
@@ -3811,13 +3855,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   }
 }
 .customPopup#rotaBulunamadi .popup-container .popup-content {
-  margin-top: 170px;
   width: 80%;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  .customPopup#rotaBulunamadi .popup-container .popup-content {
-    margin-top: 440px;
-  }
 }
 .customPopup#rotaBulunamadi .popup-container .popup-content .alertContainer {
   height: 200px;
@@ -3893,14 +3931,14 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   }
 }
 .customPopup#filtreleCanvas .popup-container .popup-content {
-  height: 78%;
+  height: auto;
   place-content: normal;
   padding: 0px 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup#filtreleCanvas .popup-container .popup-content {
     padding: 0 65px;
-    height: 83%;
+    height: auto;
   }
 }
 .customPopup#approval .popup-container .popup-content {
@@ -4906,8 +4944,23 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .top-info {
-    padding-top: 50px;
+    padding-top: 34px;
     padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .top-info .searchWrapper input {
+    font-size: 26.05px;
+    height: 100px;
+    padding-left: 31px;
+    padding-right: 120px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .top-info .searchWrapper .searchButton {
+    right: 48px;
+    margin-top: -20px;
+    width: 38px;
   }
 }
 .contentWrapper .content .top-info .searchWrapper {
@@ -4917,14 +4970,15 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 .contentWrapper .content .top-info .filterButton {
   margin: 0;
-  min-width: 35px;
-  height: 35px;
+  min-width: 50px;
+  height: 50px;
   background-color: #0d3c5f;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .top-info .filterButton {
-    min-width: 85px;
-    height: 85px;
+    min-width: 111px;
+    height: 100px;
+    border-radius: 19px;
   }
 }
 .contentWrapper .content .top-info .filterButton img {

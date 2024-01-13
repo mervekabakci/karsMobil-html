@@ -342,8 +342,27 @@
             padding-bottom: 25px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                padding-top: 50px;
+                padding-top: 34px;
                 padding-bottom: 15px;
+            }
+
+            .searchWrapper {
+                input {
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 26.05px;
+                        height: 100px;
+                        padding-left: 31px;
+                        padding-right: 120px
+                    }
+                }
+
+                .searchButton {
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        right: 48px;
+                        margin-top: -20px;
+                        width: 38px;
+                    }
+                }
             }
 
             // input {
@@ -368,13 +387,14 @@
             // }
             .filterButton {
                 margin: 0;
-                min-width: 35px;
-                height: 35px;
+                min-width: 50px;
+                height: 50px;
                 background-color: #0d3c5f;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    min-width: 85px;
-                    height: 85px;
+                    min-width: 111px;
+                    height: 100px;
+                    border-radius: 19px;
                 }
 
                 img {
