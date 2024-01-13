@@ -73,6 +73,33 @@
                 }
             }
         }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            .title{
+                color:#292929;
+                font-family: 'baloo_2extrabold';
+                font-size: 28.21px;
+            }
+            .adress{
+                font-family: 'baloo_2medium';
+                font-size: 22.82px;
+                line-height: 22.82px;
+                color: rgba(41, 41, 41, 0.42);
+            }
+            .fixBtn{
+                height: 45px;
+                border-radius: 6px;
+                font-size: 22.22px;
+                width: 220px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+            }
+        }
     }
 
     &.type1 {
@@ -806,6 +833,11 @@
                     }
                 }
             }
+        }
+    }
+    &.flex-column{
+        .card{
+            flex-direction:column;
         }
     }
 }
