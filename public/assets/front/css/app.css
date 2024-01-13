@@ -523,7 +523,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards .card .card-buttons .button {
-    width: 62px;
+    width: 80px;
   }
 }
 .cards .card .card-buttons .button img {
@@ -637,7 +637,17 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type2.accType2 .card {
-    height: 95px;
+    height: 106px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+}
+.cards.type2.accType2 .card .card-left {
+  padding-left: 26px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type2.accType2 .card .card-text .title {
+    font-size: 23.5px;
   }
 }
 .cards.type2 .card {
@@ -650,8 +660,8 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type2 .card {
-    height: 110px;
-    margin-bottom: 20px;
+    height: 135px;
+    margin-bottom: 25px;
   }
 }
 .cards.type2 .card .card-left {
@@ -661,7 +671,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type2 .card .card-left {
-    padding-left: 30px;
+    padding-left: 40px;
   }
 }
 .cards.type2 .card .imageWrapper {
@@ -669,7 +679,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type2 .card .imageWrapper {
-    width: 80px;
+    width: 93px;
   }
 }
 .cards.type2 .card .card-text {
@@ -681,7 +691,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type2 .card .card-text {
-    padding-left: 35px;
+    padding-left: 52px;
   }
 }
 .cards.type2 .card .card-text .title {
@@ -692,8 +702,10 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type2 .card .card-text .title {
-    font-size: 17.3px;
+    font-size: 20.5px;
     line-height: 20px;
+    display: block;
+    margin-bottom: 10px;
   }
 }
 .cards.type2 .card .card-text p {
@@ -704,7 +716,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type2 .card .card-text p {
-    font-size: 16.16px;
+    font-size: 16.36px;
     line-height: 18px;
   }
 }
@@ -728,6 +740,36 @@
   .cards.type2 .card .card-text .link {
     font-size: 20.29px;
     line-height: 25px;
+  }
+}
+.cards.type2 .card .card-text .impPhoneName {
+  font-family: "baloo_2regular";
+  font-size: 12px;
+  color: #0d3c5f;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type2 .card .card-text .impPhoneName {
+    font-size: 24.29px;
+  }
+}
+.cards.type2 .card .card-text .impPhone {
+  font-family: "baloo_2extrabold";
+  font-size: 12px;
+  line-height: 10px;
+  color: #0d3c5f;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type2 .card .card-text .impPhone {
+    font-size: 25.29px;
+    line-height: 25px;
+  }
+}
+.cards.type2 .card .card-buttons .button img {
+  max-width: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type2 .card .card-buttons .button img {
+    max-width: 37px;
   }
 }
 .cards.type3 .card {
@@ -1664,6 +1706,7 @@ form .close-btn {
   height: 45px;
   margin-top: 30px;
   width: 100%;
+  cursor: pointer;
 }
 form .close-btn.roundedNone {
   border-radius: 0;
@@ -1837,6 +1880,14 @@ form#girisyapForm {
     width: 45px;
   }
 }
+form#kayitolForm {
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form#kayitolForm {
+    padding: 75px 25px;
+  }
+}
 
 .formWrapper.type2 {
   padding-top: 40px;
@@ -1920,6 +1971,7 @@ form#girisyapForm {
   font-size: 16px;
   height: 45px;
   border-radius: 16px;
+  cursor: pointer;
 }
 .fixBtn.pink {
   background-color: #e13869;
@@ -1942,6 +1994,7 @@ form#girisyapForm {
   height: 25px;
   border-radius: 10px;
   margin: 5px 0;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .fixBtn2 {
@@ -1984,6 +2037,7 @@ form#girisyapForm {
   height: 50px;
   border-radius: 10px;
   margin-top: 20px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .outline-fixBtn {
@@ -2295,7 +2349,7 @@ header .header .logoV img {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .subMain header .header .logo {
-    height: 90px;
+    height: 155px;
   }
 }
 .subMain header .header .userButton,
@@ -2546,7 +2600,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   background-position: center center;
   width: 60px;
   height: 60px;
-  padding: 10px 10px 0 0;
+  padding: 7px 7px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2560,6 +2614,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     width: 113px;
     height: 112px;
   }
+}
+footer .footer a.bottom-menu-2 .imageWrapper img {
+  width: 24px;
 }
 
 .off-canvas {
@@ -3216,7 +3273,6 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .accMenu .accButton span.icon:before {
   content: "+";
-  font-family: "baloo_2bold";
   font-size: 14px;
   color: #dbdbdb;
 }
@@ -3281,10 +3337,10 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton {
-    height: 75px;
+    height: 100px;
     padding-left: 24px;
-    margin-bottom: 18px;
-    border-radius: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
   }
 }
 .accMenu.accType2 .accButton span {
@@ -3293,7 +3349,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton span {
-    font-size: 20.72px;
+    font-size: 26.12px;
+    line-height: 26px;
   }
 }
 .accMenu.accType2 .accButton span strong {
@@ -3315,7 +3372,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     width: 58px;
     height: 58px;
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 22px;
   }
   .accMenu.accType2 .accButton span.icon:after {
     font-size: 16px;
@@ -3337,8 +3394,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton > div img {
-    width: 30px;
-    margin-right: 32px;
+    width: 34px;
+    margin-right: 47px;
   }
 }
 .accMenu.accType2 .accButton.type2 {
@@ -4400,8 +4457,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 
 .contentWrapper {
-  width: 79%;
-  height: calc(70vh + 100px);
+  width: 90%;
+  height: calc(61vh + 190px);
   margin: -70px auto 0 auto;
   background-color: #ffffff;
   border-radius: 30px 30px 0 0;
@@ -4472,16 +4529,17 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   background-color: #f4f4f4;
   border-radius: 0 0 50px 50px;
   height: 38px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .pageMenuButton {
-    border-radius: 0 0 100px 100px;
-    height: 100px;
+    border-radius: 0 0 76px 77px;
+    height: 113px;
   }
 }
 .contentWrapper .pageMenuButton img {
   width: 14px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .pageMenuButton img {
@@ -4496,7 +4554,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .pageMenuButton span {
-    font-size: 20.9px;
+    font-size: 26.9px;
   }
 }
 .contentWrapper .titleColumn {
@@ -4506,12 +4564,26 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .titleColumn {
+    margin-top: 14px;
+  }
 }
 .contentWrapper .titleColumn .backButton {
   position: absolute;
-  left: 10px;
+  position: absolute;
+  left: 22px;
   display: flex;
   align-items: center;
+  top: 4px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .titleColumn .backButton {
+    left: 60px;
+    top: 21px;
+  }
 }
 .contentWrapper .titleColumn .backButton img {
   transform: rotate(180deg);
@@ -4532,7 +4604,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .titleColumn .backButton span {
-    font-size: 20.7px;
+    font-size: 22.7px;
   }
 }
 .contentWrapper .titleColumn .buttons {
@@ -4541,12 +4613,12 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .contentWrapper .content {
   height: 100%;
-  padding-bottom: 150px;
+  padding-bottom: 180px;
 }
 .contentWrapper .content .overflow-scroll-auto {
   padding-left: 22px;
   padding-right: 22px;
-  padding-bottom: 150px;
+  padding-bottom: 180px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .overflow-scroll-auto {
@@ -5261,9 +5333,13 @@ p {
 }
 .overflow-x-auto::-webkit-scrollbar-thumb {
   background-color: transparent; /* Chrome, Safari, Edge ve Opera için */
+  background-color: rgba(0, 0, 0, 0); /* Chrome, Safari, Edge ve Opera için */
+  width: 0; /* Chrome, Safari, Edge ve Opera için */
 }
 .overflow-x-auto::-webkit-scrollbar-track {
   background-color: transparent; /* Chrome, Safari, Edge ve Opera için */
+  background-color: rgba(0, 0, 0, 0); /* Chrome, Safari, Edge ve Opera için */
+  width: 0; /* Chrome, Safari, Edge ve Opera için */
 }
 
 .overflow-scroll-auto {
@@ -5339,7 +5415,7 @@ h3.dark {
 
 h4 {
   font-family: "baloo_2extrabold";
-  font-size: 14px;
+  font-size: 18px;
   color: #0a3c60;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {

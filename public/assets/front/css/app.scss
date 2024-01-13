@@ -38,10 +38,14 @@ p {
 
   &::-webkit-scrollbar-thumb {
     background-color: transparent; /* Chrome, Safari, Edge ve Opera için */
+    background-color: rgba(0, 0, 0, 0); /* Chrome, Safari, Edge ve Opera için */
+    width: 0; /* Chrome, Safari, Edge ve Opera için */
   }
 
   &::-webkit-scrollbar-track {
     background-color: transparent; /* Chrome, Safari, Edge ve Opera için */
+    background-color: rgba(0, 0, 0, 0); /* Chrome, Safari, Edge ve Opera için */
+    width: 0; /* Chrome, Safari, Edge ve Opera için */
   }
 }
 .overflow-scroll-auto {
@@ -106,7 +110,7 @@ h3 {
 }
 h4 {
   font-family: "baloo_2extrabold";
-  font-size: 14px;
+  font-size: 18px;
   color: #0a3c60;
   @media screen and (min-width: 768px) and (min-height: 1200px) {
     font-size:39.55px;
