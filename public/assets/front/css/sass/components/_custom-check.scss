@@ -147,14 +147,16 @@
       }
     }
     &.type2{ 
+      align-items: center;
       .checkmark {
         background-image: url("../images/check-empty.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position:center;
         border: none; 
-        width: 56px;
-        height: 56px;
+        width: 46px;
+        height: 46px;
+        margin-right: 40px;
         &:after{ 
           display: none;
         }
@@ -166,6 +168,11 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position:center;
+      }
+      .text{
+        font-family: "baloo_2extrabold";
+        font-size: 34px;
+        color: #181818;
       }
     }
   }

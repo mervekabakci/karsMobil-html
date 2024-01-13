@@ -211,6 +211,15 @@
 
     }
 
+    &#filtreleCanvas{
+        .popup-container { 
+            .popup-content {
+                height: 83%;
+                place-content: normal;
+                padding: 0 20px
+            } 
+        }
+    }
     &.log-out {
         .popup-container {
             &.between {
