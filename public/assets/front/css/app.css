@@ -4241,6 +4241,37 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     font-size: 20.7px;
   }
 }
+.contentWrapper .detailsContentHead {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentWrapper .detailsContentHead .leftColumn {
+  display: flex;
+  align-items: center;
+}
+.contentWrapper .detailsContentHead .leftColumn img {
+  margin-right: 20px;
+  width: 84px;
+}
+.contentWrapper .detailsContentHead .buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contentWrapper .detailsContentHead .buttons .sounds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+.contentWrapper .detailsContentHead .buttons .check-container {
+  position: relative;
+  top: 0;
+  right: 0;
+}
 .contentWrapper .content {
   height: 100%;
   padding-bottom: 150px;
@@ -4553,7 +4584,21 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   border-radius: 6px;
   overflow: hidden;
 }
-
+.contentWrapper .detailsContentHead,
+.contentWrapper .nearWrapper,
+.contentWrapper .photosWrapper,
+.contentWrapper .quickWrapper {
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+.contentWrapper .nearWrapper .near {
+  display: flex;
+  align-items: center;
+}
+.contentWrapper .nearWrapper .near .item {
+  width: 126px;
+  height: 126px;
+}
 .ticketButton,
 .directionsButton {
   font-family: "baloo_2extrabold";
@@ -4910,6 +4955,7 @@ h3 {
   font-family: "baloo_2extrabold";
   color: #0a3c60;
   font-size: 16px;
+  line-height: 16px;
 }
 h3.light {
   opacity: 0.29;
@@ -4920,6 +4966,7 @@ h3.dark {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   h3 {
     font-size: 37.53px;
+    line-height: 38px;
   }
 }
 

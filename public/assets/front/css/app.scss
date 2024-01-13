@@ -92,6 +92,7 @@ h3 {
   font-family: "baloo_2extrabold";
   color: #0a3c60;
   font-size: 16px;
+  line-height: 16px;
   &.light {
     opacity: 0.29;
   }
@@ -100,6 +101,7 @@ h3 {
   }
   @media screen and (min-width: 768px) and (min-height: 1200px) {
     font-size: 37.53px;
+    line-height: 38px;
   }
 }
 h4 {
