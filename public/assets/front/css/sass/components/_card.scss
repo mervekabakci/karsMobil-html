@@ -2,6 +2,7 @@
     border: none;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
+
     .imageWrapper {
         img {
             object-fit: cover;
@@ -9,12 +10,14 @@
             min-height: 100%;
         }
     }
+
     a {
         display: block;
         height: 100%;
         width: 100%;
     }
 }
+
 .imageWrapper {
     position: relative;
     display: flex;
@@ -22,17 +25,33 @@
     justify-content: center;
     overflow: hidden;
 }
+
 .cards {
     position: relative;
+
+    &.none-border {
+        padding-top: 50px !important;
+        .card {
+            border: none !important; 
+            margin-bottom: 0 !important; 
+            .caption{
+                font-size: 32px  !important; 
+                line-height: 50px  !important; 
+            }
+        }
+    }
+
     .card {
         display: flex;
         align-items: center;
         border: none;
 
+
         .card-buttons {
             display: flex;
             align-items: center;
             height: 100%;
+
             .button {
                 display: flex;
                 align-items: center;
@@ -40,11 +59,14 @@
                 width: 25px;
                 height: 100%;
                 border-left: 2px solid #d3d3d3;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     width: 62px;
                 }
+
                 img {
                     max-width: 10px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         max-width: 30px;
                     }
@@ -52,28 +74,35 @@
             }
         }
     }
+
     &.type1 {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -8px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             margin: 0 -32px;
         }
+
         .card {
             width: 50%;
             padding: 8px 8px;
             position: relative;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding: 29px 32px;
             }
+
             .imageWrapper {
                 border-radius: 24px;
                 will-change: transform;
                 aspect-ratio: 4/4;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     border-radius: 42px;
                 }
             }
+
             .image-overlay {
                 position: absolute;
                 width: 100%;
@@ -85,25 +114,30 @@
                 background: rgb(255, 255, 255);
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(2, 43, 73, 0.7) 100%);
                 padding: 10px 10px 10px 10px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     padding: 10px 10px 30px 10px;
                 }
+
                 .name {
                     font-family: "baloo_2extrabold";
                     font-size: 14px;
                     line-height: 16px;
                     color: #ffffff;
                     text-align: center;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 32.34px;
                         line-height: 32px;
                     }
                 }
+
                 .category {
                     font-family: "baloo_2medium";
                     text-align: center;
                     font-size: 12px;
                     color: rgba(255, 255, 255, 0.42);
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 25.53px;
                     }
@@ -116,11 +150,13 @@
         &.accType2 {
             .card {
                 height: 45px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     height: 95px;
                 }
             }
         }
+
         .card {
             flex-direction: row;
             justify-content: space-between;
@@ -128,24 +164,30 @@
             margin-bottom: 5px;
             border: 2px solid #d3d3d3;
             border-radius: 6px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 height: 110px;
                 margin-bottom: 20px;
             }
+
             .card-left {
                 display: flex;
                 align-items: center;
                 padding-left: 12px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     padding-left: 30px;
                 }
             }
+
             .imageWrapper {
                 width: 30px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     width: 80px;
                 }
             }
+
             .card-text {
                 padding-left: 22px;
                 height: 100%;
@@ -162,34 +204,41 @@
                     font-size: 12px;
                     line-height: 13px;
                     color: #0d3c5f;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 17.3px;
                         line-height: 20px;
                     }
                 }
+
                 p {
                     font-size: 10px;
                     line-height: 10px;
                     color: #6e6e6e;
                     font-family: "baloo_2semibold";
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 16.16px;
                         line-height: 18px;
                     }
                 }
+
                 .linkName {
                     font-family: "baloo_2regular";
                     font-size: 12px;
                     color: #0d3c5f;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 20.29px;
                     }
                 }
+
                 .link {
                     font-family: "baloo_2extrabold";
                     font-size: 12px;
                     line-height: 10px;
                     color: #0d3c5f;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 20.29px;
                         line-height: 25px;
@@ -198,6 +247,7 @@
             }
         }
     }
+
     &.type3 {
         .card {
             display: flex;
@@ -205,12 +255,15 @@
             justify-content: space-between;
             border-bottom: 2px solid rgba(152, 152, 152, 0.22);
             padding: 5px 0;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding: 15px 0;
             }
+
             .card-buttons {
                 position: relative;
             }
+
             .shareButton {
                 display: flex;
                 align-items: center;
@@ -218,77 +271,95 @@
                 font-family: "baloo_2extrabold";
                 color: #9d9d9d;
                 font-size: 10px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     font-size: 17.07px;
                     line-height: 23px;
                 }
+
                 span {
                     margin-right: 10px;
                     display: block;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         margin-right: 14px;
                     }
                 }
+
                 img {
                     opacity: 0.28;
                     width: 12px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         width: 22px;
                     }
                 }
             }
+
             .shareWrapper {
                 display: none;
                 position: absolute;
                 bottom: 100%;
                 right: 0;
             }
+
             .card-left {
                 display: flex;
                 align-items: center;
             }
+
             .card-text {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
+
                 .audioName {
                     font-family: "baloo_2extrabold";
                     color: #0d3c5f;
                     font-size: 12px;
                     line-height: 15px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 29.4px;
                         line-height: 30px;
                     }
                 }
+
                 .artName {
                     font-family: "baloo_2semibold";
                     color: #9d9d9d;
                     font-size: 11px;
                     line-height: 10px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 24.1px;
                         line-height: 24px;
                     }
                 }
+
                 .audioTime {
                     font-family: "baloo_2semibold";
                     color: #9d9d9d;
                     font-size: 11px;
                     line-height: 10px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 24.1px;
                         line-height: 24px;
                     }
                 }
             }
+
             .audioPlayWrapper {
                 margin-right: 15px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     margin-right: 30px;
                 }
+
                 img {
                     width: 24px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         width: 60px;
                     }
@@ -296,11 +367,14 @@
             }
         }
     }
+
     &.type4 {
         padding-top: 10px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding-top: 20px;
         }
+
         .card {
             display: flex;
             align-items: center;
@@ -308,42 +382,52 @@
             border-radius: 10px;
             padding-left: 15px;
             padding-right: 15px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 height: 100px;
                 border-radius: 10px;
                 padding-left: 25px;
                 padding-right: 25px;
             }
+
             &:nth-child(even) {
                 background-color: #f4f4f4;
             }
+
             img {
                 opacity: 0.25;
                 width: 11px;
                 margin-right: 8px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     margin-right: 16px;
                     width: 22px;
                 }
             }
+
             .card-text {
                 line-height: 12px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     line-height: normal;
                 }
+
                 span {
                     font-family: "baloo_2semibold";
                     color: #9d9d9d;
                     font-size: 11px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 20.21px;
                     }
+
                     &.title {
                         font-family: "baloo_2extrabold";
                         color: #0d3c5f;
                         font-size: 11.5px;
                         line-height: 10px;
                         display: block;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
                             font-size: 22.8px;
                             line-height: 10px;
@@ -353,6 +437,7 @@
             }
         }
     }
+
     &.type5 {
         .card {
             display: flex;
@@ -362,47 +447,57 @@
             margin-top: 15px;
             height: 70px;
             border-radius: 10px;
+
             @media screen and (min-width: 768px) and (min-height: 1080px) {
                 height: 175px;
                 padding: 10px 15px 10px 5px;
                 border-radius: 30px;
                 margin-top: 20px;
             }
+
             .imageWrapper {
                 width: 30%;
+
                 img {
                     height: 30%;
                     width: 50%;
                     min-height: 40px;
                     max-height: 40px;
                     object-fit: contain;
+
                     @media screen and (min-width: 768px) and (min-height: 1080px) {
                         height: 60%;
                         width: 43%;
                         min-height: 70px;
                         max-height: 100px;
-                        
+
                     }
                 }
             }
+
             .card-text {
                 flex: 1;
             }
+
             .title {
                 font-family: "baloo_2bold";
                 font-size: 14px;
                 color: #194769;
+
                 @media screen and (min-width: 768px) and (min-height: 1080px) {
                     font-size: 40.4px;
                 }
             }
         }
     }
+
     &.type6 {
         padding-top: 5px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding-top: 0;
         }
+
         .card {
             padding: 20px 5px;
             border: 1px solid #c0c0c0;
@@ -412,6 +507,7 @@
             height: 90px;
             overflow: hidden;
             margin-bottom: 7px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding: 20px 10px;
                 border-width: 3px;
@@ -419,11 +515,13 @@
                 height: 215px;
                 margin-bottom: 22px;
             }
+
             .imageWrapper {
                 width: 72px;
                 min-width: 72px;
                 height: 78px;
                 border-radius: 10px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     width: 175px;
                     min-width: 175px;
@@ -431,43 +529,54 @@
                     border-radius: 20px;
                 }
             }
+
             .card-text {
                 flex: 1;
                 padding: 0 20px;
+
                 .title {
                     font-family: "baloo_2extrabold";
                     color: #194769;
                     font-size: 18px;
                     line-height: 10px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 45.89px;
                         line-height: 15px;
                     }
                 }
+
                 .desc {
                     margin-top: 5px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         margin-top: 15px;
                     }
+
                     .item {
                         padding: 1px 0;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
                             padding: 0;
                         }
+
                         span {
                             font-family: "baloo_2semibold";
                             font-size: 10px;
                             line-height: 10px;
                             color: #969696;
                             display: block;
+
                             @media screen and (min-width: 768px) and (min-height: 1200px) {
                                 font-size: 20.1px;
                                 line-height: 26px;
                             }
+
                             &.bold {
                                 font-family: "baloo_2extrabold";
                                 color: #194769;
                                 font-size: 11px;
+
                                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                                     font-size: 24.47px;
                                 }
@@ -476,29 +585,36 @@
                     }
                 }
             }
+
             .card-buttons {
                 height: calc(100% + 40px);
                 margin-top: -10px;
                 margin-bottom: -10px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     height: calc(100% + 40px);
                     margin-top: -20px;
                     margin-bottom: -20px;
                 }
+
                 .button {
                     height: 100%;
                     margin-right: -10px;
                     width: 50px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         margin-right: -20px;
                         width: 105px;
                     }
+
                     img {
                         max-width: 10px;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
                             max-width: 30px;
                         }
                     }
+
                     &.deleteButton {
                         background-color: #e13869;
                     }
@@ -507,26 +623,97 @@
         }
     }
 
-    &.overlay-info{
-        .card{
+    &.type7 {
+        padding-top: 5px;
+
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-top: 85px;
+        }
+
+        .card {
+            padding: 10px 5px;
+            border: 1px solid #c0c0c0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 90px;
+            overflow: hidden;
+            margin-bottom: 7px;
+
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                padding: 10px 10px;
+                border-width: 3px;
+                border-radius: 30px;
+                height: 250px;
+                margin-bottom: 35px;
+            }
+
+            img {
+                width: 25px;
+                height: auto;
+
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    width: 75px;
+                    height: auto;
+                }
+            }
+
+            .caption {
+                font-family: "baloo_2extrabold";
+                color: #0a3c60;
+                font-size: 12px;
+                line-height: 10px;
+                text-align: center;
+
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 28px;
+                    line-height: 45px;
+                    padding-top: 10px;
+                }
+            }
+
+            .card-text {
+                flex: 1;
+                padding: 0 20px;
+                font-size: 12px;
+                line-height: 10px;
+                text-align: center;
+                font-family: "baloo_2semibold";
+                color: #9d9d9d;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 22px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+
+    &.overlay-info {
+        .card {
             margin-top: 20px;
-            .card-top{
+
+            .card-top {
                 width: 100%;
                 height: 100px;
                 overflow: hidden;
                 border-radius: 10px;
                 position: relative;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     width: 100%;
                     height: 245px;
                     border-radius: 30px;
                 }
-                .imageWrapper{
+
+                .imageWrapper {
                     height: 100%;
                 }
             }
-            .card-image-overlay{
-                background:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(2, 43, 73, 0.7) 100%);
+
+            .card-image-overlay {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(2, 43, 73, 0.7) 100%);
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -538,10 +725,12 @@
                 align-items: flex-start;
                 justify-content: flex-end;
                 padding: 7px;
+
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     padding: 20px;
                 }
-                .category{
+
+                .category {
                     display: block;
                     background-color: #e13869;
                     font-family: 'baloo_2bold';
@@ -551,35 +740,68 @@
                     border-radius: 5px;
                     line-height: 5px;
                     margin-bottom: 5px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 15.84px;
                         line-height: 14px;
                         margin-bottom: 10px;
                     }
                 }
-                .title{
+
+                .title {
                     font-family: 'baloo_2extrabold';
                     font-size: 10px;
                     color: #ffffff;
                     line-height: 10px;
+
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        font-size:22.44px;
+                        font-size: 22.44px;
                         line-height: 20px;
                     }
                 }
-                & > div{
-                    span{
+
+                &>div {
+                    span {
                         font-family: 'baloo_2medium';
                         font-size: 9px;
-                        color: rgba(255,255,255,0.42);
+                        color: rgba(255, 255, 255, 0.42);
                         padding-right: 10px;
                         display: inline-block;
+
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
                             font-size: 17.19px;
                         }
-                        & + span{
-                            border-left: 1px solid rgba(255,255,255,0.42);
+
+                        &+span {
+                            border-left: 1px solid rgba(255, 255, 255, 0.42);
                             padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &.type2{
+            display: flex;
+            flex-wrap: wrap;
+            .card{
+                width: 50%;
+                height: 100%;
+                margin-bottom: 5px;
+                padding: 0 10px;
+                border: none;
+                .imageWrapper{
+                    width: 100%;
+                }
+                .card-top{
+                    height: 330px;
+                    .card-image-overlay{
+                        align-items: center;
+                        .title{
+                            padding: 0;
+                            font-size: 11px;
+                            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                                font-size: 17.44px;
+                            }
                         }
                     }
                 }
@@ -587,8 +809,10 @@
         }
     }
 }
+
 .shareWrapper {
     background-color: rgba(0, 0, 0, 0);
+
     // bottom:100%;
     // padding-bottom: 40px;
     .button {
@@ -608,17 +832,20 @@
         height: 50px;
     }
 }
+
 .audioPlayWrapper {
     display: flex;
     align-items: flex-start;
 }
-.addRouteButton{
+
+.addRouteButton {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
     border: 1px dashed #c0c0c0;
     height: 100px;
+
     @media screen and (min-width: 768px) and (min-height: 1200px) {
         padding: 20px;
         border-width: 3px;
@@ -626,21 +853,25 @@
         height: 215px;
         margin-bottom: 30px;
     }
-    & > div{
+
+    &>div {
         display: flex;
         align-items: center;
         justify-content: center;
 
     }
-    span{
+
+    span {
         font-family: 'baloo_2extrabold';
         color: rgba(131, 131, 131, 0.60);
         font-size: 14px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 34.47px;
         }
     }
-    .plusButton{
+
+    .plusButton {
         border: 1px solid #c0c0c0;
         color: rgba(73, 73, 73, 0.5);
         display: flex;
@@ -651,6 +882,7 @@
         height: 25px;
         border-radius: 3px;
         margin-right: 10px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 39.52px;
             width: 58px;
