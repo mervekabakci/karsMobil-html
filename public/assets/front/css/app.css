@@ -2544,6 +2544,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 .off-canvas .profileInfo {
   height: 20vh;
+  min-height: 120px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -2563,8 +2564,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileInfo .name {
-    font-size: 37.79px;
-    line-height: 35px;
+    font-size: 44.49px;
+    line-height: 38px;
   }
 }
 .off-canvas .profileInfo .name strong {
@@ -2574,7 +2575,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileInfo .name strong {
-    font-size: 41.86px;
+    font-size: 50.16px;
   }
 }
 .off-canvas .profileInfo a {
@@ -2585,22 +2586,24 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileInfo a {
-    font-size: 38.25px;
-    margin-top: 10px;
+    font-size: 36.65px;
+    margin-top: 19px;
   }
 }
 .off-canvas .profileContent {
-  position: relative;
   height: 80vh;
+  min-height: calc(80vh - 155px);
   padding: 0 60px 60px 60px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileContent {
     height: 72vh;
+    min-height: calc(72vh - 155px);
   }
 }
 .off-canvas .profileContent .profileMenu a {
@@ -2656,6 +2659,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   .off-canvas .profileContent .bottom {
     width: 500px;
     padding-top: 0;
+    margin-left: -10px;
   }
 }
 .off-canvas .profileContent .bottom span {
@@ -2665,8 +2669,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileContent .bottom span {
-    font-size: 34.52px;
-    line-height: 34px;
+    font-size: 42.52px;
+    line-height: 42px;
   }
 }
 .off-canvas .profileContent .bottom span.hashtag {
@@ -2675,8 +2679,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileContent .bottom span.hashtag {
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 72px;
+    line-height: 57px;
+    padding-top: 28px;
   }
 }
 .off-canvas .profileContent .bottom img {
@@ -2685,7 +2690,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas .profileContent .bottom img {
-    width: 80px;
+    width: 105px;
     margin-right: 17px;
   }
 }
@@ -2710,8 +2715,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileInfo div img {
-    width: 55px;
-    margin-right: 20px;
+    width: 64px;
+    margin-right: 25px;
   }
 }
 .off-canvas.menuCanvas .profileInfo div span {
@@ -2721,7 +2726,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileInfo div span {
-    font-size: 53.62px;
+    font-size: 62.62px;
+    line-height: 61px;
   }
 }
 .off-canvas.menuCanvas .profileContent {
@@ -2730,7 +2736,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileContent {
-    padding: 20px 55px 60px 60px;
+    padding: 14px 58px 74px 66px;
   }
 }
 .off-canvas.menuCanvas .profileContent .profileMenu a {
@@ -2743,9 +2749,10 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileContent .profileMenu a {
-    height: 110px;
-    border-radius: 25px;
-    margin-top: 20px;
+    height: 130px;
+    border-radius: 30px;
+    margin-top: 36px;
+    padding-left: 22px;
   }
 }
 .off-canvas.menuCanvas .profileContent .profileMenu a span {
@@ -2753,42 +2760,43 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileContent .profileMenu a span {
-    font-size: 28px;
+    font-size: 33px;
   }
 }
 .off-canvas.menuCanvas .profileContent .profileMenu a span.icon {
   margin-right: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   width: 30px;
   height: 30px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .profileContent .profileMenu a span.icon {
-    margin-right: 17px;
-    border-radius: 12px;
-    width: 34px;
-    height: 34px;
+    margin-right: 36px;
+    border-radius: 18px;
+    width: 78px;
+    height: 78px;
   }
 }
 .off-canvas.menuCanvas .accMenu .accContent {
   margin-top: -10px;
 }
 .off-canvas.menuCanvas .accMenu .accContent ul {
-  padding: 0 0 0 40px;
+  padding: 10px 0 0 40px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .accMenu .accContent ul {
-    padding: 0 0 0 100px;
+    padding: 10px 0 0 115px;
   }
 }
 .off-canvas.menuCanvas .accMenu .accContent ul a {
   margin-bottom: 0;
-  font-size: 11.7px;
+  font-size: 12px;
+  line-height: 24px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.menuCanvas .accMenu .accContent ul a {
-    padding-bottom: 5px;
-    font-size: 26.7px;
+    font-size: 33.7px;
+    line-height: 58.9px;
   }
 }
 .off-canvas.profileCanvas .profileInfo {
@@ -2800,17 +2808,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.profileCanvas .profileInfo {
     height: 25vh;
-    padding-left: 80px;
-    padding-bottom: 32px;
+    padding-left: 94px;
+    padding-bottom: 39px;
     border-bottom-right-radius: 80px;
-  }
-}
-.off-canvas.profileCanvas .profileInfo a {
-  font-size: 16px;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  .off-canvas.profileCanvas .profileInfo a {
-    font-size: 30.25px;
   }
 }
 .off-canvas.profileCanvas .profileContent {
@@ -2818,7 +2818,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.profileCanvas .profileContent {
-    padding: 10px 60px 60px 60px;
+    padding: 10px 76px 69px 73px;
   }
 }
 .off-canvas.profileCanvas .profileContent .profileMenu a {
@@ -2828,14 +2828,16 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   border-radius: 5px;
   margin-bottom: 10px;
   margin-top: 0;
+  border-radius: 8px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.profileCanvas .profileContent .profileMenu a {
-    height: 120px;
+    height: 140px;
     padding-left: 25px;
     padding-right: 25px;
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 37px;
+    border-radius: 18px;
   }
 }
 .off-canvas.profileCanvas .profileContent .profileMenu a span {
@@ -2843,7 +2845,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.profileCanvas .profileContent .profileMenu a span {
-    font-size: 28px;
+    font-size: 33px;
   }
 }
 .off-canvas.profileCanvas .profileContent .profileMenu a img {
@@ -2852,8 +2854,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.profileCanvas .profileContent .profileMenu a img {
-    margin-right: 24px;
-    width: 40px;
+    margin-right: 30px;
+    width: 60px;
   }
 }
 .off-canvas.profileCanvas .profileContent .profileMenu a.plus img {
@@ -2861,7 +2863,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.profileCanvas .profileContent .profileMenu a.plus img {
-    width: 55px;
+    width: 67px;
   }
 }
 .off-canvas .searchWrapper {
@@ -2904,9 +2906,22 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.end .bottom img {
-    width: 80px;
-    margin-left: 17px;
-    margin-right: 0;
+    width: 105px;
+    margin-left: 30px;
+    margin-right: 7px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.end .bottom span {
+    font-size: 41.32px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .off-canvas.end .bottom span.hashtag {
+    font-size: 74px;
+    line-height: 57px;
+    padding-top: 29px;
   }
 }
 .off-canvas.end .bottom > div {
@@ -2921,9 +2936,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.end .profileInfo {
-    padding-left: 75px;
-    padding-bottom: 30px;
-    border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 76px;
+    padding-left: 93px;
+    padding-bottom: 54px;
   }
 }
 .off-canvas.active {
@@ -3123,11 +3138,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   color: #0a3c60;
 }
 .accMenu .accButton span.icon {
-  border: 3px solid #e1e1e1;
+  border: 1px solid #e1e1e1;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 8px;
   width: 34px;
   height: 34px;
   margin-right: 10px;
@@ -3137,17 +3152,18 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     width: 76px;
     height: 76px;
     border-radius: 26px;
+    border: 3px solid #e1e1e1;
   }
 }
 .accMenu .accButton span.icon:before {
   content: "+";
   font-family: "baloo_2bold";
-  font-size: 18px;
+  font-size: 14px;
   color: #dbdbdb;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu .accButton span.icon:before {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 .accMenu .accButton.active {
