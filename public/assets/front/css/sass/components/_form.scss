@@ -90,9 +90,9 @@ form {
             width: 20px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                left: 45px;
-                top: 95px;
-                width: 42px;
+                left: 50px;
+                top: 120px;
+                width: 50px;
             }
 
             img {
@@ -304,7 +304,8 @@ form {
             margin: 20px 0 30px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                margin: 55px 0;
+                margin: 55px 0 70px;
+                padding: 0 45px;
             }
         }
 
@@ -315,7 +316,7 @@ form {
             padding: 0 0 20px 0;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                padding: 0 0 50px 0;
+                padding: 0 0 70px 0;
             }
 
             .checkWrapper {
@@ -357,6 +358,8 @@ form {
                             border-width: 0 2px 2px 0;
 
                             @media screen and (min-width: 768px) and (min-height: 1200px) {
+                                left: 25px;
+                                top: 15px;
                                 width: 10px;
                                 height: 20px;
                                 border: solid white;
@@ -368,13 +371,13 @@ form {
             }
 
             a {
-                font-family: "baloo_2bold";
-                color: #194769;
+                font-family: "baloo_2extrabold";
+                color: #194769; 
                 font-size: 12px;
                 text-decoration: underline;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    font-size: 27.5px;
+                    font-size: 34.5px;
                 }
             }
         }
@@ -401,7 +404,7 @@ form {
                 font-size: 12px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    font-size: 26.5px;
+                    font-size: 32.5px;
                 }
             }
         }
@@ -415,7 +418,19 @@ form {
         }
     }
 
-
+    &#girisyapForm{
+        padding: 35px 0;
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding: 115px 25px;
+        }
+        .eyeButton{
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                right: 58px;
+                top: 120px;
+                width: 45px;
+            }
+        }
+    }
 }
 
 

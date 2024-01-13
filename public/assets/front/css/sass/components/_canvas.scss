@@ -206,7 +206,25 @@
             .canvas-body {
                 padding: 30px 15px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    padding: 70px 45px;
+                    padding: 115px 55px;
+                }
+                .searchWrapper {
+                    padding-top: 14px;
+                    margin-bottom: 14px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        padding-top: 53px;
+                        margin-bottom: 60px;
+                    }
+                    .searchButton{
+                        right: 12px;
+                        margin-top: -4px;
+                        width: 24px; 
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            right: 57px;
+                            margin-top: 0;
+                            width: 53px;
+                        }
+                    }
                 }
             }
         }
