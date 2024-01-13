@@ -485,6 +485,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .cards {
@@ -1824,7 +1826,7 @@ form.type2 .letsSignUp a {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .searchWrapper {
-    padding-top: 30px;
+    padding-top: 21px;
   }
 }
 .searchWrapper input {
@@ -1843,9 +1845,9 @@ form.type2 .letsSignUp a {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .searchWrapper input {
-    font-size: 27.35px;
-    height: 95px;
-    padding-left: 39px;
+    font-size: 32.05px;
+    height: 120px;
+    padding-left: 45px;
     padding-right: 120px;
   }
 }
@@ -2047,10 +2049,10 @@ form.type2 .letsSignUp a {
   display: block;
   color: #ffffff;
   position: absolute;
-  left: 30px;
-  top: 15px;
-  width: 3px;
-  height: 5px;
+  left: 9px;
+  top: 5px;
+  width: 4px;
+  height: 9px;
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
@@ -2059,6 +2061,8 @@ form.type2 .letsSignUp a {
   .check-container input:checked ~ .checkmark:after {
     width: 15px;
     height: 30px;
+    left: 27px;
+    top: 16px;
     border: solid white;
     border-width: 0 5px 5px 0;
   }
@@ -2336,7 +2340,7 @@ header .header .logoV img {
   display: block;
   font-size: 12px;
   color: #9f9f9f;
-  padding-top: 7px;
+  padding-top: 11px;
 }
 @media screen and (min-width: 767.98px) {
   .kesfetFilter > div a span {
@@ -2416,15 +2420,16 @@ footer .footer a:before {
   border-radius: 100%;
   background-color: rgba(10, 60, 96, 0);
   position: absolute;
-  top: 0;
+  top: -4px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   footer .footer a:before {
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
+    top: -8px;
   }
 }
 footer .footer a.active:before {
@@ -2529,7 +2534,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   height: 100vh;
   top: 0;
   left: 0;
-  transform: translateX(-100%);
+  transform: translateX(calc(-100% - 2px));
   background: #ffffff;
   z-index: 99;
   border-radius: 0 86px 86px 0;
@@ -2687,7 +2692,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .off-canvas .profileContent .logoBgBottom {
   right: 0;
   z-index: -1;
-  left: -26%;
+  left: 0;
   opacity: 1;
   filter: invert(1) grayscale(1) opacity(0.28);
   height: 24vh;
@@ -2871,7 +2876,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   left: auto;
   border-radius: 30px 0 0 30px;
   right: 0;
-  transform: translateX(100%);
+  transform: translateX(calc(100% + 2px));
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.end {
@@ -2934,7 +2939,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   height: 94%;
   bottom: 0;
   top: auto;
-  transform: translateY(100%);
+  transform: translateY(calc(100% + 2px));
   border-radius: 60px 60px 0 0;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -3942,8 +3947,9 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 0;
-  right: -465px;
+  right: 0;
   z-index: -1;
+  opacity: 0.36;
 }
 .acilis-ekrani .langButtons {
   display: flex;
@@ -3955,8 +3961,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   font-size: 16px;
   color: #0a3c60;
   background-color: #ffffff;
-  border-radius: 46px;
-  width: calc(50% - 30px);
+  border-radius: 12px;
+  width: calc(50% - 10px);
   height: 45px;
   display: flex;
   align-items: center;
@@ -3967,6 +3973,8 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   .acilis-ekrani .langButtons a {
     height: 200px;
     font-size: 46.52px;
+    width: calc(50% - 30px);
+    border-radius: 46px;
   }
 }
 .acilis-ekrani.progression {
@@ -4007,6 +4015,12 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .acilis-ekrani .skipeButton {
     font-size: 43.52px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .acilis-ekrani .bottom span.slogan {
+    font-size: 42.52px;
+    line-height: 43px;
   }
 }
 
@@ -4235,6 +4249,17 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 #center .titleColumn.afterLine {
   position: relative;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #center .titleColumn.afterLine {
+    padding-bottom: 26px;
+    margin-top: 70px;
+  }
+}
+#center .titleColumn.afterLine h1 {
+  line-height: 54px;
 }
 #center .titleColumn.afterLine:after {
   content: "";

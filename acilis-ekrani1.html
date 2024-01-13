@@ -101,15 +101,57 @@
 
     <!---Sadece bu sayfaya ozel scriptler-->
     <script>
-        $(".aciliSlideButton a").click(function(){
 
-            var tIndex = $(this).index();
-            $(this).addClass("active");
+        //Asagıdakı script tab contentın bır slide gibi calısması ıcın yazılmıstır. Sadece bu sayfada kullanılır
+        $(document).ready(function () {
+            var activeIndex = 0; 
 
-            var item = $(".acilisSlide .item");
-            $(".acilisSlide .item").removeClass("active");
-            $(".acilisSlide .item").eq(tIndex).addClass("active");
-        })
+            $(".aciliSlideButton a").click(function () {
+                var currentIndex = $(this).index();
+                if (currentIndex !== activeIndex) {
+                    activeIndex = currentIndex;
+
+                    // Update active class for the clicked tab
+                    $(".aciliSlideButton a").removeClass("active");
+                    $(this).addClass("active");
+
+                    // alttaki dot butonların active classını sılmek icin asagıdaki yorum satırı kaldırılmalı. Burası tıklama ıcın kullanılır. touch ıcın olan kod asagıda
+                    // $(".acilisSlide .item").removeClass("active");
+                    $(".acilisSlide .item").eq(activeIndex).addClass("active");
+                }
+            });
+
+            //mobilde kaydırarak gecıs yapmak ıcın
+            var touchStartX = 0;
+            $(".acilisSlide").on("touchstart", function (e) {
+                touchStartX = e.originalEvent.touches[0].clientX;
+            });
+
+            $(".acilisSlide").on("touchend", function (e) {
+                var touchEndX = e.originalEvent.changedTouches[0].clientX;
+                var deltaX = touchEndX - touchStartX;
+
+                var threshold = 50;
+
+                if (deltaX > threshold) {
+                    if (activeIndex > 0) {
+                        activeIndex--;
+                    }
+                } else if (deltaX < -threshold) {
+                    if (activeIndex < $(".aciliSlideButton a").length - 1) {
+                        activeIndex++;
+                    }
+                }
+
+                // alttaki dot butonların active classını sılmek icin asagıdaki yorum satırı kaldırılmalı. Burası touch ıcın kullanılır. Tıklama ıcın olan kod yukarıda
+                // $(".aciliSlideButton a").removeClass("active");
+                $(".aciliSlideButton a").eq(activeIndex).addClass("active");
+
+                $(".acilisSlide .item").removeClass("active");
+                $(".acilisSlide .item").eq(activeIndex).addClass("active");
+            });
+        });
+
     </script>
 </body>
 </html>
