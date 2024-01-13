@@ -33,7 +33,7 @@ form {
         font-size: 12px;
         height: 45px;
 
-        @media screen and (min-width: 768px) and (min-height: 1200px) { 
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
             border-radius: 30px;
             font-size: 33.9px;
             height: 135px;
@@ -45,12 +45,14 @@ form {
             outline: 0;
             box-shadow: none;
         }
-        &.border-line{
+
+        &.border-line {
             padding: 10px 5px;
             border: 1px solid #c0c0c0;
-            border-radius: 10px; 
+            border-radius: 10px;
             background-color: transparent;
             height: 30px;
+
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 height: 90px;
             }
@@ -148,7 +150,7 @@ form {
         align-items: center;
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            
+
             border-radius: 30px;
             font-size: 33.9px;
             height: 135px;
@@ -171,10 +173,12 @@ form {
             }
         }
     }
-    .checkWrapper{
+
+    .checkWrapper {
         padding: 30px 0 20px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            padding:  85px 40px 50px;
+            padding: 85px 40px 50px;
         }
     }
 
@@ -223,25 +227,34 @@ form {
             }
         }
     }
+
     .dropdownBtn,
-    select{
+    select {
         width: 100%;
         height: 175px;
         border-radius: 30px;
         margin-bottom: 30px;
-        -moz-appearance:none; /* Firefox */
-        -webkit-appearance:none; /* Safari and Chrome */
-        appearance:none;
+        -moz-appearance: none;
+        /* Firefox */
+        -webkit-appearance: none;
+        /* Safari and Chrome */
+        appearance: none;
         background-image: url("../images/select-arrow.png");
         background-repeat: no-repeat;
-        background-size: 20px 23px;
+        background-size: 8px 10px;
         background-position-x: calc(100% - 30px);
         background-position-y: 50%;
         padding-left: 30px;
         font-family: 'baloo_2semibold';
-        font-size: 44.91px;
+        font-size: 15px;
         color: #181818;
+
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            font-size: 44.91px;
+            background-size: 20px 23px;
+        }
     }
+
     .close-btn {
         display: flex;
         align-items: center;
@@ -255,7 +268,8 @@ form {
         margin-top: 30px;
         width: 100%;
         cursor: pointer;
-        &.roundedNone{
+
+        &.roundedNone {
             border-radius: 0;
         }
 
@@ -373,7 +387,7 @@ form {
 
             a {
                 font-family: "baloo_2extrabold";
-                color: #194769; 
+                color: #194769;
                 font-size: 12px;
                 text-decoration: underline;
 
@@ -412,19 +426,22 @@ form {
 
     }
 
-    &#kayitolForm{
+    &#kayitolForm {
         padding: 20px 0;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding: 75px 25px;
         }
     }
 
-    &#girisyapForm{
+    &#girisyapForm {
         padding: 35px 0;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             padding: 115px 25px;
         }
-        .eyeButton{
+
+        .eyeButton {
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 right: 58px;
                 top: 120px;
@@ -518,9 +535,11 @@ form {
     height: 45px;
     border-radius: 16px;
     cursor: pointer;
-    &.pink{
+
+    &.pink {
         background-color: #e13869;
     }
+
     @media screen and (min-width: 768px) and (min-height: 1200px) {
         font-size: 33.9px;
         height: 142px;
@@ -551,6 +570,7 @@ form {
         margin-right: 5px;
         opacity: 0.29;
         width: 10px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             width: 22px;
             margin-right: 20px;
@@ -561,12 +581,14 @@ form {
         font-family: "baloo_2extrabold";
         color: rgba(24, 24, 24, 0.29);
         font-size: 10px;
+
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 21.63px;
         }
     }
 }
-.outline-fixBtn{
+
+.outline-fixBtn {
     border: 2px solid #dadada;
     font-family: 'baloo_2extrabold';
     color: #717171;
@@ -578,6 +600,7 @@ form {
     border-radius: 10px;
     margin-top: 20px;
     cursor: pointer;
+
     @media screen and (min-width:768px) and (min-height:1200px) {
         font-size: 23.84px;
         height: 80px;
@@ -585,31 +608,76 @@ form {
     }
 }
 
-.rota-filtre{ 
-    select{
-        height: 150px;
-        border-radius: 20px;
+.rota-filtre {
+    select {
+        height: 60px;
+        border-radius: 10px;
+        margin-bottom: 13px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            height: 170px;
+            margin-bottom: 40px;
+        }
     }
-    .close-btn{
-        margin-top: 470px;
+
+    label {
+        padding-bottom: 5px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            padding-bottom: 25px;
+        }
     }
+
+    .close-btn {
+        margin-top: 195px;
+        height: 55px;
+        font-size: 15px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            margin-top: 545px;
+            height: 166px;
+            border-radius: 10px;
+            font-size: 43.96px;
+        }
+    }
+
     .dropdown-menu {
         display: none;
         background: #fff;
-        margin-top: -60px;
-        border-radius: 0 0 30px 30px;
-        .checkWrapper{
-            padding: 15px 75px 60px;
+        margin-top: -20px;
+        border-radius: 0 0 10px 10px;
+        height: 145px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            margin-top: -60px;
+            border-radius: 0 0 30px 30px;
+            height: 433px;
         }
-        &.show{
+
+        .checkWrapper {
+            padding: 10px 24px 35px;
+
+            @media screen and (min-width:768px) and (min-height:1200px) {
+                padding: 15px 75px 60px;
+            }
+        }
+
+        &.show {
             display: block;
         }
     }
-    .dropdownBtn{
+
+    .dropdownBtn {
         background-color: #fff;
         text-align: start;
-        border: none !important; 
-        height: 150px;
-        border-radius: 20px;
+        border: none !important;
+        height: 60px;
+        border-radius: 10px;
+        margin-bottom: 13px;
+
+        @media screen and (min-width:768px) and (min-height:1200px) {
+            height: 170px;
+            margin-bottom: 40px;
+        }
     }
 }
