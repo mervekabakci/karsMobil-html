@@ -215,7 +215,35 @@
         }
     }
     .detailsContentHead{
-
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .leftColumn{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 20px;
+               width: 84px;
+            }
+        }
+        .buttons{
+            position: relative;
+            display: flex;
+            align-items: center;
+            .sounds{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+            }
+            .check-container{
+                position: relative;
+                top: 0;
+                right:0
+            }
+        }
     }
 
     .content {
@@ -511,6 +539,30 @@
                 overflow: hidden;
             }
         }
+    }
+    .detailsContentHead,
+    .nearWrapper,
+    .photosWrapper,
+    .quickWrapper{
+        border-top: 1px solid #a5a5a5;
+        border-bottom: 1px solid #a5a5a5;
+    }
+    .nearWrapper{
+        .near{
+            display: flex;
+            align-items: center;
+
+            .item{
+                width: 126px;
+                height: 126px;
+            }
+        }
+    }
+    .photosWrapper{
+
+    }
+    .quickWrapper{
+
     }
 }
 .ticketButton,
