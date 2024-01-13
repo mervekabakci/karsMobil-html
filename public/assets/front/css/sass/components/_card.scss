@@ -63,7 +63,7 @@
                 border-left: 2px solid #d3d3d3;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    width: 62px;
+                    width: 80px;
                 }
 
                 img {
@@ -181,7 +181,21 @@
                 height: 45px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    height: 95px;
+                    height: 106px;
+                    margin-top: 28px;
+                    margin-bottom: 28px;
+                }
+
+                .card-left {
+                    padding-left: 26px;
+                }
+                .card-text{
+                    .title{
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            font-size:23.5px;
+                        }
+        
+                    }
                 }
             }
         }
@@ -195,8 +209,8 @@
             border-radius: 6px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                height: 110px;
-                margin-bottom: 20px;
+                height: 135px;
+                margin-bottom: 25px;
             }
 
             .card-left {
@@ -205,7 +219,7 @@
                 padding-left: 12px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    padding-left: 30px;
+                    padding-left: 40px;
                 }
             }
 
@@ -213,7 +227,7 @@
                 width: 30px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    width: 80px;
+                    width: 93px;
                 }
             }
 
@@ -225,7 +239,7 @@
                 justify-content: center;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    padding-left: 35px;
+                    padding-left: 52px;
                 }
 
                 .title {
@@ -235,8 +249,10 @@
                     color: #0d3c5f;
 
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        font-size: 17.3px;
+                        font-size: 20.5px;
                         line-height: 20px;
+                        display: block;
+                        margin-bottom: 10px;
                     }
                 }
 
@@ -247,7 +263,7 @@
                     font-family: "baloo_2semibold";
 
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        font-size: 16.16px;
+                        font-size: 16.36px;
                         line-height: 18px;
                     }
                 }
@@ -271,6 +287,38 @@
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         font-size: 20.29px;
                         line-height: 25px;
+                    }
+                }
+                .impPhoneName {
+                    font-family: "baloo_2regular";
+                    font-size: 12px;
+                    color: #0d3c5f;
+
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 24.29px;
+                    }
+                }
+
+                .impPhone {
+                    font-family: "baloo_2extrabold";
+                    font-size: 12px;
+                    line-height: 10px;
+                    color: #0d3c5f;
+
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 25.29px;
+                        line-height: 25px;
+                    }
+                }
+            }
+            .card-buttons{
+                .button {
+                    img {
+                        max-width: 10px;
+    
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            max-width: 37px;
+                        }
                     }
                 }
             }

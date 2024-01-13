@@ -35,7 +35,6 @@
 
                 &:before {
                     content: "+";
-                    font-family: "baloo_2bold";
                     font-size: 14px;
                     color: #dbdbdb;
 
@@ -114,10 +113,10 @@
             margin-bottom: 3px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                height: 75px;
+                height: 100px;
                 padding-left: 24px;
-                margin-bottom: 18px;
-                border-radius: 10px;
+                margin-bottom: 20px;
+                border-radius: 8px;
             }
 
             span {
@@ -125,7 +124,8 @@
                 font-size: 12px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    font-size: 20.72px;
+                    font-size: 26.12px;
+                    line-height: 26px;
                 }
 
                 strong {
@@ -146,7 +146,7 @@
                         width: 58px;
                         height: 58px;
                         border-radius: 10px;
-                        margin-right: 10px;
+                        margin-right: 22px;
                         &:after{
                             font-size: 16px;
                         }
@@ -169,8 +169,8 @@
                     transition: all 0.3s linear;
 
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        width: 30px;
-                        margin-right: 32px;
+                        width: 34px;
+                        margin-right: 47px;
                     }
                 }
             }
