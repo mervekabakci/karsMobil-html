@@ -1880,14 +1880,6 @@ form#girisyapForm {
     width: 45px;
   }
 }
-form#kayitolForm {
-  padding: 20px 0;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  form#kayitolForm {
-    padding: 75px 25px;
-  }
-}
 
 .formWrapper.type2 {
   padding-top: 40px;
@@ -3322,7 +3314,24 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 {
-    padding-top: 30px;
+    padding-top: 15px;
+  }
+}
+.accMenu.accType2 .accContent .paragraph {
+  padding: 10px 0 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accContent .paragraph {
+    padding: 30px 20px 20px;
+  }
+}
+.accMenu.accType2 .accContent .paragraph span {
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accContent .paragraph span {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 .accMenu.accType2 .accButton {
@@ -3345,7 +3354,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 .accMenu.accType2 .accButton span {
   font-family: "baloo_2medium";
-  font-size: 12px;
+  font-size: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton span {
@@ -3368,14 +3377,27 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   font-size: 14px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accButton span.icon:after {
+    font-size: 44px;
+  }
+}
+.accMenu.accType2 .accButton span.icon:before {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .accMenu.accType2 .accButton span.icon:before {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton span.icon {
-    width: 58px;
-    height: 58px;
+    width: 75px;
+    height: 75px;
     border-radius: 10px;
     margin-right: 22px;
   }
   .accMenu.accType2 .accButton span.icon:after {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 .accMenu.accType2 .accButton > div {
@@ -3399,21 +3421,21 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   }
 }
 .accMenu.accType2 .accButton.type2 {
-  height: 45px;
-  margin-bottom: 5px;
+  height: 40px;
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton.type2 {
-    height: 90px;
+    height: 110px;
     margin-bottom: 5px;
   }
 }
 .accMenu.accType2 .accButton.type2 > div img {
-  width: 12px;
+  width: 20px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .accMenu.accType2 .accButton.type2 > div img {
-    width: 45px;
+    width: 64px;
   }
 }
 .accMenu.accType2 .accButton.active {
@@ -3851,13 +3873,14 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 
 .pageMenuList {
   list-style: none;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #ffffff;
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .pageMenuList {
     border-radius: 30px;
+    padding: 20px 0;
   }
 }
 .pageMenuList li {
@@ -3865,9 +3888,9 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 .pageMenuList li a {
   font-family: "baloo_2semibold";
-  font-size: 16px;
+  font-size: 14px;
   color: #282828;
-  height: 40px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5104,15 +5127,15 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 .paragraph p {
   font-family: "baloo_2medium";
   color: #282828;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 11px;
+  line-height: 10px;
   padding-bottom: 10px;
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .paragraph p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 27px;
+    line-height: 34px;
     padding-bottom: 20px;
   }
 }
