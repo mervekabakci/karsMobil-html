@@ -254,6 +254,7 @@ form {
         height: 45px;
         margin-top: 30px;
         width: 100%;
+        cursor: pointer;
         &.roundedNone{
             border-radius: 0;
         }
@@ -516,6 +517,7 @@ form {
     font-size: 16px;
     height: 45px;
     border-radius: 16px;
+    cursor: pointer;
     &.pink{
         background-color: #e13869;
     }
@@ -536,6 +538,7 @@ form {
     height: 25px;
     border-radius: 10px;
     margin: 5px 0;
+    cursor: pointer;
 
     @media screen and (min-width: 768px) and (min-height: 1200px) {
         min-width: 179px;
@@ -574,6 +577,7 @@ form {
     height: 50px;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
     @media screen and (min-width:768px) and (min-height:1200px) {
         font-size: 23.84px;
         height: 80px;
