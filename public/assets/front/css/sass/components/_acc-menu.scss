@@ -99,9 +99,25 @@
         padding-top: 15px;
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            padding-top: 30px;
+            padding-top: 15px;
         }
 
+        .accContent{ 
+            .paragraph{
+                padding: 10px 0 10px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 30px 20px 20px;
+                }
+                span{
+                    font-size: 10px;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+            }
+            
+        }
         .accButton {
             justify-content: space-between;
             background-color: rgba(211, 211, 211, 0.17);
@@ -121,7 +137,7 @@
 
             span {
                 font-family: "baloo_2medium";
-                font-size: 12px;
+                font-size: 10px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     font-size: 26.12px;
@@ -141,14 +157,23 @@
                     margin-right: 5px;
                     &:after{
                         font-size: 14px;
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            font-size: 44px;
+                        }
+                    }
+                    &:before{
+                        font-size: 14px;
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            font-size: 44px;
+                        }
                     }
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        width: 58px;
-                        height: 58px;
+                        width: 75px;
+                        height: 75px;
                         border-radius: 10px;
                         margin-right: 22px;
                         &:after{
-                            font-size: 16px;
+                            font-size: 22px;
                         }
                     }
                 }
@@ -176,18 +201,18 @@
             }
 
             &.type2{
-                height:45px;
-                margin-bottom: 5px;
+                height: 40px;
+                margin-bottom: 0px;
                 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    height: 90px;
-                     margin-bottom: 5px;
+                    height: 110px;
+                    margin-bottom: 5px;
                 }
                 &>div { 
                     img {
-                        width: 12px; 
+                        width: 20px; 
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
-                            width: 45px; 
+                            width: 64px; 
                         }
                     }
                 }
