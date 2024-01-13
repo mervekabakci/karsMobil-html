@@ -4253,10 +4253,87 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     padding-top: 25px;
   }
 }
+.contentWrapper .content.type1 {
+  padding-top: 15px;
+}
+.contentWrapper .content.type1 .titleColumn {
+  padding-bottom: 5px !important;
+  padding-top: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type1 .titleColumn {
+    padding-top: 15px;
+    padding-bottom: 15px !important;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type1 {
+    padding-top: 50px;
+  }
+}
+.contentWrapper .content.type1 p {
+  font-family: "baloo_2medium";
+  color: #282828;
+  font-size: 9.5px;
+  line-height: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type1 p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+.contentWrapper .content.type4 li {
+  font-size: 12px;
+  padding-bottom: 5px;
+  line-height: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type4 li {
+    font-size: 24px;
+    padding-bottom: 5px;
+    line-height: 30px;
+  }
+}
+.contentWrapper .content.type4 li:before {
+  width: 10px;
+  min-width: 10px;
+  margin-right: 3px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type4 li:before {
+    width: 20px;
+    min-width: 20px;
+    margin-right: 10px;
+  }
+}
+.contentWrapper .content.type6, .contentWrapper .content.type5 {
+  padding-top: 22px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type6, .contentWrapper .content.type5 {
+    padding-top: 40px;
+  }
+}
+.contentWrapper .content.type6 p, .contentWrapper .content.type5 p {
+  line-height: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type6 p, .contentWrapper .content.type5 p {
+    line-height: 25px;
+  }
+}
+.contentWrapper .content.type6 .paragraph, .contentWrapper .content.type5 .paragraph {
+  margin-top: 80px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content.type6 {
+    padding-top: 40px;
+  }
+}
 .contentWrapper .content .overflow-scroll-auto {
   padding-left: 22px;
   padding-right: 22px;
-  padding-top: 5px;
   padding-bottom: 150px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -4269,35 +4346,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 .contentWrapper .content .overflow-scroll-auto.type1 {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 15px;
-}
-.contentWrapper .content .overflow-scroll-auto.type1 .titleColumn {
-  padding-bottom: 5px !important;
-  padding-top: 5px;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  .contentWrapper .content .overflow-scroll-auto.type1 .titleColumn {
-    padding-top: 15px;
-    padding-bottom: 15px !important;
-  }
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .overflow-scroll-auto.type1 {
-    padding-top: 50px;
     padding-left: 40px;
     padding-right: 30px;
-  }
-}
-.contentWrapper .content .overflow-scroll-auto.type1 p {
-  font-family: "baloo_2medium";
-  color: #282828;
-  font-size: 9.5px;
-  line-height: 10px;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  .contentWrapper .content .overflow-scroll-auto.type1 p {
-    font-size: 22px;
-    line-height: 30px;
   }
 }
 .contentWrapper .content .overflow-scroll-auto.type2 {
@@ -4330,53 +4383,16 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     padding-right: 30px;
   }
 }
-.contentWrapper .content .overflow-scroll-auto.type4 li {
-  font-size: 12px;
-  padding-bottom: 5px;
-  line-height: 15px;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  .contentWrapper .content .overflow-scroll-auto.type4 li {
-    font-size: 24px;
-    padding-bottom: 5px;
-    line-height: 30px;
-  }
-}
-.contentWrapper .content .overflow-scroll-auto.type4 li:before {
-  width: 10px;
-  min-width: 10px;
-  margin-right: 3px;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  .contentWrapper .content .overflow-scroll-auto.type4 li:before {
-    width: 20px;
-    min-width: 20px;
-    margin-right: 10px;
-  }
-}
 .contentWrapper .content .overflow-scroll-auto.type6, .contentWrapper .content .overflow-scroll-auto.type5 {
   padding-left: 18px;
   padding-right: 18px;
   text-align: justify;
-  padding-top: 22px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .overflow-scroll-auto.type6, .contentWrapper .content .overflow-scroll-auto.type5 {
     padding-left: 47px;
     padding-right: 47px;
-    padding-top: 40px;
   }
-}
-.contentWrapper .content .overflow-scroll-auto.type6 p, .contentWrapper .content .overflow-scroll-auto.type5 p {
-  line-height: 14px;
-}
-@media screen and (min-width: 768px) and (min-height: 1200px) {
-  .contentWrapper .content .overflow-scroll-auto.type6 p, .contentWrapper .content .overflow-scroll-auto.type5 p {
-    line-height: 25px;
-  }
-}
-.contentWrapper .content .overflow-scroll-auto.type6 .paragraph, .contentWrapper .content .overflow-scroll-auto.type5 .paragraph {
-  margin-top: 80px;
 }
 .contentWrapper .content .overflow-scroll-auto.type6 {
   padding-left: 18px;
@@ -4386,7 +4402,6 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   .contentWrapper .content .overflow-scroll-auto.type6 {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 40px;
   }
 }
 .contentWrapper .content .top-info {
