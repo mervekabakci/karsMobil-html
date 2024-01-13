@@ -5232,4 +5232,7 @@ h5 {
 }
 .grid.quad a {
   flex-direction: column;
+}
+.grid.quad a img {
+  opacity: 0.46;
 }/*# sourceMappingURL=app.css.map */
