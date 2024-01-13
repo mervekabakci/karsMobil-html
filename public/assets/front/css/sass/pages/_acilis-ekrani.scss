@@ -40,8 +40,9 @@
         height: 40vh;
         object-fit: cover;
         bottom: 0;
-        right: -465px;
+        right: 0;
         z-index: -1;
+        opacity: 0.36;
     }
     .langButtons {
         display: flex;
@@ -53,8 +54,8 @@
             font-size: 16px;
             color: #0a3c60;
             background-color: #ffffff;
-            border-radius: 46px;
-            width: calc(50% - 30px);
+            border-radius: 12px;
+            width: calc(50% - 10px);
             height: 45px;
             display: flex;
             align-items: center;
@@ -63,10 +64,11 @@
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 height: 200px;
                 font-size: 46.52px;
+                width: calc(50% - 30px);
+                border-radius: 46px;
             }
         }
     }
-
 
     &.progression {
         background-color: rgba(0, 0, 0, 0);
@@ -102,6 +104,17 @@
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 43.52px;
+        }
+    }
+    .bottom {
+        span {
+            &.slogan{
+
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 42.52px;
+                    line-height: 43px;
+                }
+            }
         }
     }
 }
@@ -168,7 +181,7 @@
         min-height: 300px;
         height: calc(100% - 140px);
         width: 100%;
-        position:relative;
+        position: relative;
         .item {
             display: none;
             flex-direction: column;
@@ -180,18 +193,18 @@
             text-align: center;
             font-size: 18px;
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
-            right:0;
+            right: 0;
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 height: calc(100% - 100px);
                 padding-bottom: 7.8vh;
             }
-            &.active{
+            &.active {
                 display: flex;
             }
             .desc {
-                padding-top:30px;
+                padding-top: 30px;
                 .slideCaption {
                     font-size: 16px;
                     padding-bottom: 16px;
@@ -248,7 +261,7 @@
             width: 110px;
             height: 16px;
         }
-        & + a{
+        & + a {
             margin-left: 16px !important;
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 margin-left: 46px !important;
