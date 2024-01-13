@@ -1424,7 +1424,7 @@ form {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form {
-    padding: 20px 0;
+    padding: 40px 0;
   }
 }
 form label {
@@ -1437,7 +1437,7 @@ form label {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form label {
-    font-size: 27.5px;
+    font-size: 35.5px;
     padding-bottom: 10px;
   }
 }
@@ -1457,9 +1457,9 @@ form input {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form input {
-    font-size: 27.9px;
     border-radius: 30px;
-    height: 110px;
+    font-size: 33.9px;
+    height: 135px;
   }
 }
 form input:focus {
@@ -1485,7 +1485,7 @@ form .inputColumn {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .inputColumn {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 }
 form .inputColumn .eyeButton {
@@ -1496,9 +1496,9 @@ form .inputColumn .eyeButton {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .inputColumn .eyeButton {
-    right: 45px;
-    top: 95px;
-    width: 42px;
+    right: 83px;
+    top: 133px;
+    width: 45px;
   }
 }
 form .inputColumn .eyeButton img {
@@ -1531,9 +1531,9 @@ form .inputColumn .note {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .inputColumn .note {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 25px;
-    padding: 30px 100px 50px;
+    padding: 30px 140px 50px;
   }
 }
 form .inputColumn:not(.show) input[type=password] {
@@ -1567,10 +1567,10 @@ form .otherButton {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .otherButton {
-    font-size: 27.5px;
     border-radius: 30px;
-    height: 110px;
-    padding: 0 40px;
+    font-size: 33.9px;
+    height: 135px;
+    padding: 0 65px;
   }
 }
 form .otherButton img {
@@ -1578,7 +1578,7 @@ form .otherButton img {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .otherButton img {
-    width: 50px;
+    width: 55px;
   }
 }
 form .otherButton span {
@@ -1586,7 +1586,15 @@ form .otherButton span {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .otherButton span {
-    padding-left: 70px;
+    padding-left: 90px;
+  }
+}
+form .checkWrapper {
+  padding: 30px 0 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form .checkWrapper {
+    padding: 85px 40px 50px;
   }
 }
 form .form-invalid-message {
@@ -1599,7 +1607,7 @@ form .form-invalid-message {
   padding: 10px 25px;
 }
 form .form-invalid-message img {
-  width: 34px;
+  width: 25px;
   margin-right: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
@@ -1608,8 +1616,8 @@ form .form-invalid-message img {
   }
 }
 form .form-invalid-message span {
-  font-size: 16px;
-  line-height: 15px;
+  font-size: 11px;
+  line-height: 12px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   form .form-invalid-message span {
@@ -1803,6 +1811,14 @@ form.type2 .letsSignUp a {
     font-size: 26.5px;
   }
 }
+form#kayitolForm {
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  form#kayitolForm {
+    padding: 75px 25px;
+  }
+}
 
 .formWrapper.type2 {
   padding-top: 40px;
@@ -1892,8 +1908,8 @@ form.type2 .letsSignUp a {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .fixBtn {
-    font-size: 29.9px;
-    height: 113px;
+    font-size: 33.9px;
+    height: 142px;
     border-radius: 30px;
   }
 }
@@ -2083,8 +2099,8 @@ form.type2 .letsSignUp a {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .check-container.radio .text {
-    font-size: 24.33px;
-    line-height: 35px;
+    font-size: 28.33px;
+    line-height: 40px;
   }
 }
 .check-container.radio .text strong,
@@ -2951,15 +2967,16 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   width: 100vw;
   max-width: 1080px;
   margin: 0 auto;
-  height: 94%;
   bottom: 0;
   top: auto;
   transform: translateY(calc(100% + 2px));
-  border-radius: 60px 60px 0 0;
+  height: 80%;
+  border-radius: 45px 45px 0 0;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.canvas-bottom {
-    border-radius: 100px 100px 0 0;
+    border-radius: 155px 155px 0 0;
+    height: 86%;
   }
 }
 .off-canvas.canvas-bottom .canvas-body {
@@ -2968,16 +2985,18 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.canvas-bottom .canvas-body {
-    padding: 40px 100px;
+    padding: 85px 100px;
     padding-bottom: 150px;
   }
 }
 .off-canvas.canvas-bottom .canvas-body .canvas-head .title {
   font-size: 24px;
+  line-height: 30px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .off-canvas.canvas-bottom .canvas-body .canvas-head .title {
-    font-size: 60px;
+    font-size: 70px;
+    line-height: 70px;
   }
 }
 .off-canvas.canvas-bottom.active {
@@ -3101,7 +3120,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   #sifremi-unuttum.off-canvas.canvas-bottom .canvas-head p {
-    font-size: 25px;
+    font-size: 31px;
     line-height: 30px;
     padding: 0 50px;
   }
@@ -3116,7 +3135,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   #sifremi-unuttum .question-icon {
-    width: 130px;
+    width: 160px;
     top: -65px;
   }
 }
@@ -3643,8 +3662,40 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   place-content: normal;
   padding: 0 20px;
 }
+.customPopup#approval .popup-container .popup-content {
+  height: 73%;
+  place-content: normal;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#approval .popup-container .popup-content {
+    height: 55%;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#approval .popup-container .popup-content .alertContainer img {
+    width: 170px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#approval .popup-container .popup-content .alertContainer p.title {
+    font-size: 88px !important;
+  }
+}
+.customPopup#approval .popup-container .popup-content .alertContainer p.desc {
+  padding: 30px 0 0;
+  font-size: 15px;
+  line-height: 18px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .customPopup#approval .popup-container .popup-content .alertContainer p.desc {
+    padding: 30px 0 0;
+    font-size: 43px;
+    line-height: 58px;
+  }
+}
 .customPopup.log-out .popup-container.between .popup-content {
   width: 90%;
+  margin-top: 0;
 }
 .customPopup.log-out .popup-container.between .popup-content .alertContainer {
   padding: 20px 40px;
@@ -3664,7 +3715,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup.log-out .popup-container.between .popup-content .alertContainer p {
-    font-size: 36px;
+    font-size: 47px;
     line-height: 35px;
     padding: 0 50px;
   }
@@ -3689,15 +3740,15 @@ footer .footer a.bottom-menu-2 .imageWrapper {
   color: #ffffff;
   border-radius: 10px;
   height: 45px;
-  margin-top: 30px;
+  margin-top: 25px;
   width: 100%;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .customPopup.log-out .popup-container.between .popup-content .alertContainer .close-btn {
     height: 109px;
     border-radius: 25px;
-    font-size: 25.96px;
-    margin-top: 60px;
+    font-size: 32.96px;
+    margin-top: 65px;
   }
 }
 
@@ -4565,6 +4616,11 @@ footer .footer a.bottom-menu-2 .imageWrapper {
     width: 35px;
   }
 }
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .content .searchSuccessHead {
+    padding-top: 30px;
+  }
+}
 .contentWrapper .content .searchSuccessHead span {
   font-family: "baloo_2semibold";
   color: rgba(64, 64, 64, 0.46);
@@ -4572,7 +4628,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .searchSuccessHead span {
-    font-size: 19.47px;
+    font-size: 26.47px;
   }
 }
 .contentWrapper .content .searchSuccessHead span.searchSuccesWord {
@@ -4585,7 +4641,7 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .searchSuccessHead span.searchSuccesWord {
-    font-size: 28.23px;
+    font-size: 37.23px;
     line-height: 30px;
     padding-bottom: 0;
   }
@@ -4601,9 +4657,10 @@ footer .footer a.bottom-menu-2 .imageWrapper {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .searchSuccessHead blockquote {
-    font-size: 19.68px;
+    font-size: 25.68px;
     border-radius: 10px;
     padding: 10px 25px;
+    margin-top: 19px;
   }
 }
 .contentWrapper .content .searchSuccessHead blockquote .searchSuccesWord {
