@@ -324,11 +324,13 @@
                 padding-left: 18px;
                 padding-right: 18px;
                 text-align: justify;
-
+                padding-top: 23px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     padding-left: 47px;
                     padding-right: 47px;
+                    padding-top: 60px;
                 }
+
             }
 
             &.type6 {
@@ -338,6 +340,7 @@
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     padding-left: 30px;
                     padding-right: 30px;
+                    padding-top: 0;
                 }
             }
         }
@@ -1048,7 +1051,7 @@
         font-family: "baloo_2medium";
         color: #282828;
         font-size: 11px;
-        line-height: 18px;
+        line-height: 14px;
         padding-bottom: 10px;
         margin-bottom: 0;
 

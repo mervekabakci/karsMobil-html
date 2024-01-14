@@ -543,23 +543,41 @@
 .cards .card .card-body .title {
   color: #292929;
   font-family: "baloo_2extrabold";
-  font-size: 28.21px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards .card .card-body .title {
+    font-size: 28.21px;
+  }
 }
 .cards .card .card-body .adress {
   font-family: "baloo_2medium";
-  font-size: 22.82px;
-  line-height: 22.82px;
+  font-size: 12px;
+  line-height: 12px;
   color: rgba(41, 41, 41, 0.42);
 }
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards .card .card-body .adress {
+    font-size: 22.82px;
+    line-height: 22.82px;
+  }
+}
 .cards .card .card-body .fixBtn {
-  height: 45px;
-  border-radius: 6px;
-  font-size: 22.22px;
-  width: 220px;
+  height: 20px;
+  border-radius: 4px;
+  font-size: 10px;
+  width: 90px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards .card .card-body .fixBtn {
+    font-size: 22.22px;
+    width: 200px;
+    height: 45px;
+  }
 }
 .cards.type1 {
   display: flex;
@@ -578,11 +596,35 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type1 .card {
-    padding: 29px 32px;
+    padding: 29px 20px;
+  }
+}
+.cards.type1 .card .card-body {
+  padding-top: 5px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type1 .card .card-body {
+    padding-top: 25px;
+  }
+}
+.cards.type1 .card .card-body .adress {
+  padding: 5px 0 10px 0;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type1 .card .card-body .adress {
+    padding: 5px 0 10px 0;
+  }
+}
+.cards.type1 .card .card-body .favorite img {
+  width: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type1 .card .card-body .favorite img {
+    width: 30px;
   }
 }
 .cards.type1 .card .imageWrapper {
-  border-radius: 24px;
+  border-radius: 10px;
   will-change: transform;
   aspect-ratio: 4/4;
 }
@@ -781,7 +823,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type3 .card {
-    padding: 15px 0;
+    padding: 15px 10px;
   }
 }
 .cards.type3 .card .card-buttons {
@@ -797,7 +839,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type3 .card .shareButton {
-    font-size: 17.07px;
+    font-size: 19.07px;
     line-height: 23px;
   }
 }
@@ -842,7 +884,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type3 .card .card-text .audioName {
-    font-size: 29.4px;
+    font-size: 35.4px;
     line-height: 30px;
   }
 }
@@ -883,7 +925,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type3 .card .audioPlayWrapper img {
-    width: 60px;
+    width: 70px;
   }
 }
 .cards.type4 {
@@ -1009,7 +1051,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type6 {
-    padding-top: 0;
+    padding-top: 40px;
   }
 }
 .cards.type6 .card {
@@ -1020,14 +1062,14 @@
   justify-content: space-between;
   height: 90px;
   overflow: hidden;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type6 .card {
     padding: 20px 10px;
     border-width: 3px;
     border-radius: 30px;
-    height: 215px;
+    height: 265px;
     margin-bottom: 22px;
   }
 }
@@ -1039,15 +1081,20 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type6 .card .imageWrapper {
-    width: 175px;
-    min-width: 175px;
-    height: 185px;
+    width: 200px;
+    min-width: 200px;
+    height: 222px;
     border-radius: 20px;
   }
 }
 .cards.type6 .card .card-text {
   flex: 1;
   padding: 0 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .cards.type6 .card .card-text {
+    padding: 0 60px;
+  }
 }
 .cards.type6 .card .card-text .title {
   font-family: "baloo_2extrabold";
@@ -1057,7 +1104,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type6 .card .card-text .title {
-    font-size: 45.89px;
+    font-size: 52.89px;
     line-height: 15px;
   }
 }
@@ -1074,7 +1121,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type6 .card .card-text .desc .item {
-    padding: 0;
+    padding: 5px 0;
   }
 }
 .cards.type6 .card .card-text .desc .item span {
@@ -1097,7 +1144,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type6 .card .card-text .desc .item span.bold {
-    font-size: 24.47px;
+    font-size: 28.47px;
   }
 }
 .cards.type6 .card .card-buttons {
@@ -1120,7 +1167,7 @@
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type6 .card .card-buttons .button {
     margin-right: -20px;
-    width: 105px;
+    width: 150px;
   }
 }
 .cards.type6 .card .card-buttons .button img {
@@ -1395,14 +1442,15 @@
   justify-content: center;
   margin-bottom: 10px;
   border: 1px dashed #c0c0c0;
-  height: 100px;
+  height: 90px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .addRouteButton {
     padding: 20px;
     border-width: 3px;
     border-radius: 30px;
-    height: 215px;
+    height: 260px;
     margin-bottom: 30px;
   }
 }
@@ -1418,7 +1466,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .addRouteButton span {
-    font-size: 34.47px;
+    font-size: 40.47px;
   }
 }
 .addRouteButton .plusButton {
@@ -1436,8 +1484,8 @@
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .addRouteButton .plusButton {
     font-size: 39.52px;
-    width: 58px;
-    height: 58px;
+    width: 70px;
+    height: 70px;
     border-width: 3px;
     border-radius: 5px;
     margin-right: 33px;
@@ -2056,18 +2104,18 @@ select {
   justify-content: center;
   background-color: rgba(214, 214, 214, 0.29);
   padding: 10px;
-  min-width: 50px;
+  min-width: 45px;
   height: 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 5px 0;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .fixBtn2 {
     min-width: 179px;
-    height: 50px;
+    height: 72px;
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 32px 0;
   }
 }
 .fixBtn2 img {
@@ -4977,11 +5025,13 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   padding-left: 18px;
   padding-right: 18px;
   text-align: justify;
+  padding-top: 23px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .overflow-scroll-auto.type6, .contentWrapper .content .overflow-scroll-auto.type5 {
     padding-left: 47px;
     padding-right: 47px;
+    padding-top: 60px;
   }
 }
 .contentWrapper .content .overflow-scroll-auto.type6 {
@@ -4992,6 +5042,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   .contentWrapper .content .overflow-scroll-auto.type6 {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 0;
   }
 }
 .contentWrapper .content .top-info {
@@ -5658,7 +5709,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   font-family: "baloo_2medium";
   color: #282828;
   font-size: 11px;
-  line-height: 18px;
+  line-height: 14px;
   padding-bottom: 10px;
   margin-bottom: 0;
 }
