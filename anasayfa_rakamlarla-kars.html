@@ -61,11 +61,11 @@
                         <span> SAYFA MENÜSÜ</span>
                     </div>
                     <div class="content">
-                        <div class="overflow-scroll-auto type4">
-                            <div class="titleColumn">
-                                <a href="javascript:;" class="backButton" onclick="history.back()"><img src="public/assets/images/statics/icons/left-arrow.png" alt=""><span>GERİ DÖN</span></a>
-                                <h4>Rakamlarla Kars</h4>
-                            </div>
+                        <div class="titleColumn">
+                            <a href="javascript:;" class="backButton" onclick="history.back()"><img src="public/assets/images/statics/icons/left-arrow.png" alt=""><span>GERİ DÖN</span></a>
+                            <h4>Rakamlarla Kars</h4>
+                        </div>
+                        <div class="overflow-scroll-auto">
                             <div class="paragraph">
                                 <p>Kars, zengin kültürel mirası ve coğrafi yapısının ve iklimin şekillendirdiği doğal güzellikleriyle büyük bir turizm potansiyeline sahiptir.</p>
                                 <p>Doğunun gizemli şehri Kars, keşfedilmeyi bekleyen değerleriyle her geçen gün daha çok turist tarafından merak ediliyor.</p>
@@ -85,13 +85,13 @@
                             <div class="counterWrapper">
                                 <div class="item">
                                     <img src="public/assets/images/statics/icons/shopping-bag-2.png" alt="">
-                                    <span class="counter">78.833</span>
+                                    <span class="counter" data-target="78333">78.833</span>
                                     <div class="info">Kars'a <strong>Gelen Turist</strong> Sayısı</div>
                                 </div>
 
                                 <div class="item">
                                     <img src="public/assets/images/statics/icons/placeholder-2.png" alt="">
-                                    <span class="counter2">215.000</span>
+                                    <span class="counter2" data-target="215000">215.000</span>
                                     <div class="info"><strong>Doğu Ekspresi</strong> ile <strong>Kars'a Gelen </strong> Yolcu Sayısı</div>
                                 </div>
                             </div>
@@ -137,6 +137,7 @@
                 </div>
             </footer>
 
+         
             <!----Profil Ekranı canvas baslangıc-->
             <div id="profileCanvas" class="profileCanvas off-canvas">
                 <div class="profileInfo">
@@ -148,12 +149,19 @@
                     <a href="javascript:;" class="profile-email">ahmetyilmaz@gmail.com</a>
                 </div>
                 <div class="profileContent">
-                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png" alt="">
+                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png"
+                        alt="">
                     <div class="profileMenu">
-                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-user.png" alt=""><span>Profil bilgilerim</span></a>
-                        <a href="javascript:;" class="plus"><img src="public/assets/images/statics/icons/profile-pin-plus.png" alt=""><span>Rota Oluştur</span></a>
-                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-pin.png" alt=""><span>Rotalarım</span></a>
-                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-cikis.png" alt=""><span>Çıkış Yap</span></a>
+                        <a href="javascript:;"><img src="public/assets/images/statics/icons/profil-user.png"
+                                alt=""><span>Profil bilgilerim</span></a>
+                        <a href="rota-olustur-1.html" class="plus"><img
+                                src="public/assets/images/statics/icons/profile-pin-plus.png" alt=""><span>Rota
+                                Oluştur</span></a>
+                        <a href="anasayfa_rotalar.html"><img src="public/assets/images/statics/icons/profil-pin.png"
+                                alt=""><span>Rotalarım</span></a>
+                        <a href="anasayfa_cikis-yap-uyari.html"><img
+                                src="public/assets/images/statics/icons/profil-cikis.png" alt=""><span>Çıkış
+                                Yap</span></a>
                         <a href="javascript:;" class="language"><span>EN</span></a>
                     </div>
                     <div class="bottom">
@@ -177,27 +185,31 @@
                     </div>
                 </div>
                 <div class="profileContent">
-                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png" alt="">
+                    <img class="logoBgBottom" src="public/assets/images/media/acilis-ekrani/acilis-bottom-bg.png"
+                        alt="">
                     <div class="profileMenu accMenu">
-                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Karsı Tanıyalım</span></a>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Karsı
+                                Tanıyalım</span></a>
                         <div class="accContent">
                             <ul>
-                                <li><a href="kars-hikayeleri.html">Kars Hikayeleri</a></li>
-                                <li><a href="kars-turkuleri.html">Kars Türküleri</a></li>
-                                <li><a href="rakamlarla-kars.html">Rakamlarla Kars</a></li>
-                                <li><a href="tarihte-kars.html">Tarihte Kars</a></li>
+                                <li><a href="anasayfa_kars-hikayeleri.html">Kars Hikayeleri</a></li>
+                                <li><a href="anasayfa_kars-turkuleri.html">Kars Türküleri</a></li>
+                                <li><a href="anasayfa_rakamlarla-kars.html">Rakamlarla Kars</a></li>
+                                <li><a href="anasayfa_tarihte-kars.html">Tarihte Kars</a></li>
                             </ul>
                         </div>
-                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Faydalı Bilgiler</span></a>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Faydalı
+                                Bilgiler</span></a>
                         <div class="accContent">
                             <ul>
-                                <li><a href="arac-kiralama.html">Araç Kiralama</a></li>
-                                <li><a href="faydali-linkler.html">Faydalı Linkler</a></li>
-                                <li><a href="nobetci-eczaneler.html">Nöbetçi Eczaneler</a></li>
-                                <li><a href="onemli-telefonlar.html">Önemli Telefonlar</a></li>
+                                <li><a href="anasayfa_arac-kiralama.html">Araç Kiralama</a></li>
+                                <li><a href="anasayfa_faydali-linkler.html">Faydalı Linkler</a></li>
+                                <li><a href="anasayfa_nobetci-eczaneler.html">Nöbetçi Eczaneler</a></li>
+                                <li><a href="anasayfa_onemli-telefonlar.html">Önemli Telefonlar</a></li>
                             </ul>
                         </div>
-                        <a href="javascript:;" class="accButton active"><span class="icon"></span><span>Galeri</span></a>
+                        <a href="javascript:;" class="accButton active"><span
+                                class="icon"></span><span>Galeri</span></a>
                         <div class="accContent active">
                             <ul>
                                 <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
@@ -207,7 +219,8 @@
                                 <li><a href="javascript:;">Şehir Kameraları</a></li>
                             </ul>
                         </div>
-                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Projemizi Tanı!</span></a>
+                        <a href="javascript:;" class="accButton"><span class="icon"></span><span>Projemizi
+                                Tanı!</span></a>
                         <div class="accContent">
                             <ul>
                                 <li><a href="javascript:;">Fotoğraf Galerisi</a></li>
@@ -238,6 +251,39 @@
                 </div>
             </div>
             <!----Menu Ekranı canvas bitiş-->
+        
+
+            <!---Düz Sayfa Menüsü-->
+            <div id="pageMenuPopup" class="customPopup">
+                <div class="popup-container">
+                    <div class="popup-content">
+                        <div class="popup-head">
+                            <span class="title">SAYFA MENÜSÜ</span>
+                        </div>
+                        <div class="popup-body">
+                            <div class="pageMenuWrapper">
+                                <ul class="pageMenuList">
+                                    <li><a href="anasayfa_tarihte-kars.html">Tarihte Kars</a></li>
+                                    <li><a href="javascript:;">Kars Şehir Dokusu</a></li>
+                                    <li><a href="javascript:;">Kars'ı Keşfet</a></li>
+                                    <li><a href="anasayfa_rakamlarla-kars.html">Rakamlarla Kars</a></li>
+                                    <li><a href="javascript:;">Etkinlik Takvimi</a></li>
+                                    <li><a href="anasayfa_kars-turkuleri.html">Kars Türküleri</a></li>
+                                    <li><a href="javascript:;">Kars'tan Yolu Geçenler</a></li>
+                                    <li><a href="anasayfa_kars-hikayeleri.html">Kars Hikayeleri</a></li>
+                                    <li><a href="javascript:;">Kars'a Ne Zaman Gelinir?</a></li>
+                                    <li><a href="javascript:;">UNESCO Kültür Mirası</a></li>
+                                    <li><a href="javascript:;">Kars'ta Kültür</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <div class="close-btn">KAPAT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 
 
             <!---canvaslarda kullanılır--->
@@ -251,5 +297,36 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="public/assets/front/js/app.js"></script>
+    <script>
+        function startCountAnimation() {
+            let counters = document.querySelectorAll('.counter, .counter2');
+
+            counters.forEach(function (counter) {
+                let targetValue = parseInt(counter.dataset.target);
+
+                let startCounting = false;
+                let currentValue = 0;
+
+                let interval = setInterval(function () {
+                    if (currentValue <= targetValue) {
+                        counter.innerText = formatNumber(currentValue);
+                        currentValue += Math.ceil(targetValue / 100);
+                    } else {
+                        counter.innerText = formatNumber(targetValue);
+                        clearInterval(interval);
+                    }
+                }, 30);
+            });
+        }
+
+        function formatNumber(number) {
+            return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        // Start counting when the document is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            startCountAnimation();
+        });
+    </script>
 </body>
 </html>
