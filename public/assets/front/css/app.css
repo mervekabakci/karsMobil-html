@@ -823,7 +823,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type3 .card {
-    padding: 15px 10px;
+    padding: 22px 10px;
   }
 }
 .cards.type3 .card .card-buttons {
@@ -839,7 +839,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type3 .card .shareButton {
-    font-size: 19.07px;
+    font-size: 19.4px;
     line-height: 23px;
   }
 }
@@ -858,7 +858,7 @@
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type3 .card .shareButton img {
-    width: 22px;
+    width: 25px;
   }
 }
 .cards.type3 .card .shareWrapper {
@@ -1197,7 +1197,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 90px;
+  height: 100px;
   overflow: hidden;
   margin-bottom: 7px;
 }
@@ -1226,19 +1226,21 @@
   font-size: 12px;
   line-height: 10px;
   text-align: center;
+  padding: 5px 0;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.type7 .card .caption {
     font-size: 28px;
     line-height: 45px;
     padding-top: 10px;
+    padding-bottom: 0;
   }
 }
 .cards.type7 .card .card-text {
   flex: 1;
   padding: 0 20px;
   font-size: 12px;
-  line-height: 10px;
+  line-height: 13px;
   text-align: center;
   font-family: "baloo_2semibold";
   color: #9d9d9d;
@@ -1254,7 +1256,7 @@
 }
 .cards.overlay-info .card .card-top {
   width: 100%;
-  height: 100px;
+  height: 130px;
   overflow: hidden;
   border-radius: 10px;
   position: relative;
@@ -1262,7 +1264,7 @@
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .cards.overlay-info .card .card-top {
     width: 100%;
-    height: 245px;
+    height: 296px;
     border-radius: 30px;
   }
 }
@@ -2147,7 +2149,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 11px;
   height: 50px;
   border-radius: 10px;
   margin-top: 20px;
@@ -4369,6 +4371,11 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .timeline .item .badge img {
+    width: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) and (min-width: 768px) and (min-height: 1200px) {
+  .timeline .item .badge img {
     width: 32px;
   }
 }
@@ -4390,15 +4397,32 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
     height: calc(100% - 30px);
   }
 }
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .timeline .item:not(:last-child) .badge:before {
+    height: calc(100% - 30px);
+    border: 2px dotted #114367;
+    left: 13px;
+  }
+}
 .timeline .item .desc {
   padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .timeline .item .desc {
+    padding-left: 30px;
+  }
 }
 .timeline .item .desc .title {
   font-family: "baloo_2extrabold";
   font-size: 16px;
   color: #114367;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .timeline .item .desc .title {
+    font-size: 28px;
+  }
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .timeline .item .desc .title {
@@ -4416,6 +4440,12 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
     font-size: 25px;
     line-height: 33px;
     padding-top: 28px;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .timeline .item .desc p {
+    font-size: 28px;
+    line-height: 30px;
   }
 }
 
@@ -4832,6 +4862,14 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
     padding-bottom: 12px;
   }
 }
+#center .titleColumn p {
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  #center .titleColumn p {
+    padding-top: 0;
+  }
+}
 #center .titleColumn .desc p {
   font-family: "baloo_2medium";
   color: #aeaeae;
@@ -5152,6 +5190,7 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
   min-width: 50px;
   height: 50px;
   background-color: #0d3c5f;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (min-height: 1200px) {
   .contentWrapper .content .top-info .filterButton {
@@ -6113,8 +6152,14 @@ h5 {
 }
 .grid.quad {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 150px);
-  grid-gap: 25px;
+  grid-template-rows: repeat(1, 70px);
+  grid-gap: 12px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .grid.quad {
+    grid-template-rows: repeat(1, 150px);
+    grid-gap: 25px;
+  }
 }
 .grid.quad > a, .grid.quad > div {
   height: 100%;
@@ -6124,4 +6169,10 @@ h5 {
 }
 .grid.quad a img {
   opacity: 0.46;
+  width: 15px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .grid.quad a img {
+    width: auto;
+  }
 }/*# sourceMappingURL=app.css.map */
