@@ -4867,6 +4867,10 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
     margin-top: 14px;
   }
 }
+.contentWrapper .titleColumn h4 {
+  width: 48%;
+  text-align: center;
+}
 .contentWrapper .titleColumn .backButton {
   position: absolute;
   position: absolute;
@@ -4905,7 +4909,13 @@ footer .footer a.bottom-menu-2 .imageWrapper img {
 }
 .contentWrapper .titleColumn .buttons {
   position: absolute;
-  right: 0;
+  right: 22px;
+}
+@media screen and (min-width: 768px) and (min-height: 1200px) {
+  .contentWrapper .titleColumn .buttons {
+    left: 60px;
+    top: 21px;
+  }
 }
 .contentWrapper .content {
   height: 100%;
