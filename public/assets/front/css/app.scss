@@ -153,9 +153,12 @@ h5 {
   }
   &.quad{
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 150px);
-    grid-gap: 25px;
-
+    grid-template-rows: repeat(1, 70px);
+      grid-gap: 12px;
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+      grid-template-rows: repeat(1, 150px);
+      grid-gap: 25px;
+   }
     & > a,
     & > div{
       height: 100%; 
@@ -164,6 +167,10 @@ h5 {
       flex-direction: column;
       img{
         opacity: 0.46;
+        width: 15px; 
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+          width: auto;
+       }
       }
     }
   }
