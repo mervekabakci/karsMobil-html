@@ -49,6 +49,7 @@
         .tabContent {
             display: none;
             height: 100%;
+            overflow-x: hidden;
 
             .overflow-scroll-auto {
                 padding-left: 0;
@@ -61,16 +62,32 @@
             }
 
             ul {
-                padding-right: 30px;
+                padding-right: 10px;
+
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding-right: 30px;
+
+                }
 
                 &.list {
                     li {
                         position: relative;
-                        padding-left: 40px;
+                        padding-left: 24px;
+
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            padding-left: 40px;
+
+                        }
 
                         &:before {
                             position: absolute;
                             left: 0;
+                            margin-top: -1px;
+
+                            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                                padding-left: 40px;
+                                margin-top: 2px;
+                            }
                         }
                     }
                 }
@@ -82,8 +99,13 @@
 .routeProps {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -5px;
+    margin-right: -5px;
+
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
 
     .item {
         display: flex;
@@ -92,19 +114,43 @@
         justify-content: center;
         border: 2px solid #e7e7e7;
         border-radius: 6px;
-        width: calc(50% - 20px);
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        padding-left: 20px;
-        height: 90px;
+        width: calc(50% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        height: 70px;
         border-radius: 6px;
+
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            padding-left: 20px;
+            height: 90px;
+            width: calc(50% - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-family: 'baloo_2medium';
+            font-size: 12px;
+
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                font-size: 20px;
+            }
+        }
 
         .favorite {
             display: flex;
             align-items: center;
 
             img {
+                width: 9px;
+
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    width: 24px;
+                }
+
                 &+img {
                     margin-left: 5px;
                 }
@@ -116,19 +162,33 @@
 .onerilenMevsimler {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 -5px;
+
+    @media screen and (min-width: 768px) and (min-height: 1200px) {
+        margin: 0 -15px;
+
+    }
 
     .item {
-        width: 120px;
-        height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 2px solid #e7e7e7;
         font-family: 'baloo_2extrabold';
-        font-size: 17.05px;
         color: #989898;
-        margin: 15px;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        font-size: 10.05px;
+        margin: 5px;
+
+        @media screen and (min-width: 768px) and (min-height: 1200px) {
+            min-width: 120px;
+            width: 120px;
+            height: 120px;
+            font-size: 17.05px;
+            margin: 15px;
+        }
 
         &.active {
             background-color: #d22c58;
