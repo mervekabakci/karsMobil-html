@@ -25,6 +25,12 @@
             padding-bottom: 12px;
         }
 
+        p{
+            padding-top: 10px;
+            @media screen and (min-width: 768px) and (min-height: 1200px) {
+                padding-top: 0;
+            }
+        }
         .desc {
             p {
                 font-family: "baloo_2medium";
@@ -428,8 +434,8 @@
                 margin: 0;
                 min-width: 50px;
                 height: 50px;
-                background-color: #0d3c5f;
-
+                background-color: #0d3c5f; 
+                border-radius: 10px;
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
                     min-width: 111px;
                     height: 100px;
