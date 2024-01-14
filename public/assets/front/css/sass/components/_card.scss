@@ -83,23 +83,35 @@
             .title{
                 color:#292929;
                 font-family: 'baloo_2extrabold';
-                font-size: 28.21px;
+                font-size: 14px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 28.21px;
+                }
             }
             .adress{
                 font-family: 'baloo_2medium';
-                font-size: 22.82px;
-                line-height: 22.82px;
+                font-size: 12px;
+                line-height: 12px;
                 color: rgba(41, 41, 41, 0.42);
+                @media screen and (min-width: 768px) and (min-height: 1200px) { 
+                    font-size: 22.82px;
+                    line-height: 22.82px;
+                }
             }
             .fixBtn{
-                height: 45px;
-                border-radius: 6px;
-                font-size: 22.22px;
-                width: 220px;
+                height: 20px;
+                border-radius: 4px;
+                font-size: 10px;
+                width: 90px;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 auto;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    font-size: 22.22px;
+                    width: 200px;
+                    height: 45px;
+                }
             }
         }
     }
@@ -119,11 +131,32 @@
             position: relative;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                padding: 29px 32px;
+                padding: 29px 20px;
             }
 
+            .card-body{
+                padding-top: 5px;
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding-top: 25px;
+                }
+    
+                .adress{
+                    padding: 5px 0 10px 0;
+                    @media screen and (min-width: 768px) and (min-height: 1200px) {
+                        padding: 5px 0 10px 0;
+                    }
+                }
+                .favorite{
+                    img{
+                        width: 10px;
+                        @media screen and (min-width: 768px) and (min-height: 1200px) {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
             .imageWrapper {
-                border-radius: 24px;
+                border-radius: 10px;
                 will-change: transform;
                 aspect-ratio: 4/4;
 
@@ -335,7 +368,7 @@
             padding: 5px 0;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                padding: 15px 0;
+                padding: 15px 10px;
             }
 
             .card-buttons {
@@ -351,7 +384,7 @@
                 font-size: 10px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    font-size: 17.07px;
+                    font-size:19.07px;
                     line-height: 23px;
                 }
 
@@ -398,7 +431,7 @@
                     line-height: 15px;
 
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        font-size: 29.4px;
+                        font-size: 35.4px;
                         line-height: 30px;
                     }
                 }
@@ -439,7 +472,7 @@
                     width: 24px;
 
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        width: 60px;
+                        width: 70px;
                     }
                 }
             }
@@ -573,7 +606,7 @@
         padding-top: 5px;
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            padding-top: 0;
+            padding-top: 40px;
         }
 
         .card {
@@ -584,13 +617,13 @@
             justify-content: space-between;
             height: 90px;
             overflow: hidden;
-            margin-bottom: 7px;
+            margin-bottom: 11px;
 
             @media screen and (min-width: 768px) and (min-height: 1200px) {
                 padding: 20px 10px;
                 border-width: 3px;
                 border-radius: 30px;
-                height: 215px;
+                height: 265px;
                 margin-bottom: 22px;
             }
 
@@ -601,9 +634,9 @@
                 border-radius: 10px;
 
                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                    width: 175px;
-                    min-width: 175px;
-                    height: 185px;
+                    width: 200px;
+                    min-width: 200px;
+                    height: 222px;
                     border-radius: 20px;
                 }
             }
@@ -611,7 +644,9 @@
             .card-text {
                 flex: 1;
                 padding: 0 20px;
-
+                @media screen and (min-width: 768px) and (min-height: 1200px) {
+                    padding: 0 60px;
+                }
                 .title {
                     font-family: "baloo_2extrabold";
                     color: #194769;
@@ -619,7 +654,7 @@
                     line-height: 10px;
 
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
-                        font-size: 45.89px;
+                        font-size: 52.89px;
                         line-height: 15px;
                     }
                 }
@@ -635,7 +670,7 @@
                         padding: 1px 0;
 
                         @media screen and (min-width: 768px) and (min-height: 1200px) {
-                            padding: 0;
+                            padding: 5px 0;
                         }
 
                         span {
@@ -656,7 +691,7 @@
                                 font-size: 11px;
 
                                 @media screen and (min-width: 768px) and (min-height: 1200px) {
-                                    font-size: 24.47px;
+                                    font-size:28.47px;
                                 }
                             }
                         }
@@ -682,7 +717,7 @@
 
                     @media screen and (min-width: 768px) and (min-height: 1200px) {
                         margin-right: -20px;
-                        width: 105px;
+                        width: 150px;
                     }
 
                     img {
@@ -970,13 +1005,13 @@
     justify-content: center;
     margin-bottom: 10px;
     border: 1px dashed #c0c0c0;
-    height: 100px;
-
+    height: 90px;
+    border-radius: 10px;
     @media screen and (min-width: 768px) and (min-height: 1200px) {
         padding: 20px;
         border-width: 3px;
-        border-radius: 30px;
-        height: 215px;
+        border-radius: 30px; 
+        height: 260px;
         margin-bottom: 30px;
     }
 
@@ -993,7 +1028,7 @@
         font-size: 14px;
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
-            font-size: 34.47px;
+            font-size: 40.47px;
         }
     }
 
@@ -1011,8 +1046,8 @@
 
         @media screen and (min-width: 768px) and (min-height: 1200px) {
             font-size: 39.52px;
-            width: 58px;
-            height: 58px;
+            width: 70px;
+            height: 70px;
             border-width: 3px;
             border-radius: 5px;
             margin-right: 33px;
