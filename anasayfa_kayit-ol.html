@@ -44,7 +44,7 @@
                         <img src="public/assets/images/statics/icons/user-icon.png" alt="">
                         <span>PROFIL</span>
                     </a>
-                    <a href="javascript:;" class="logo"><img src="public/assets/images/statics/logo-light.png" alt=""></a>
+                    <a href="acilis-ekrani-index.html" class="logo"><img src="public/assets/images/statics/logo-light.png" alt=""></a>
                     <a href="javascript:;" class="menuButton">
                         <img src="public/assets/images/statics/icons/menu-btn.png" alt="">
                         <span>MENU</span>
@@ -219,63 +219,65 @@
 
             <!----Kayıt ol canvas baslangıc-->
             <div id="kayitolCanvas" class="menuCanvas off-canvas canvas-bottom active">
-                <div class="canvas-body overflow-scroll-auto">
+                <div class="canvas-body">
                     <div class="canvas-head">
                         <span class="title">Aramıza Hoşgeldin!</span>
                         <p>Kars’ın eşsiz doğası, tarihi, kültürü ve lezzetlerini keşfedebilmeniz
                             için en doğru yerdesiniz!</p>
                     </div>
                     <div class="formWrapper">
-                        <form id="kayitolForm" action="action.php" novalidate>
-                            <div class="form-invalid-message">
-                                <img src="public/assets/images/statics/icons/danger.png" alt="">
-                                <span class="error-message">Eksik yada hatalı bir e-posta adresi girdiniz.</span>
-                            </div>
-                            <div class="inputColumn">
-                                <label for="name">Adınız Soyadınız</label>
-                                <input type="text" name="name" class="textMask" placeholder="Lütfen Adınızı Soyadınızı Giriniz" required>
-                            </div>
-                            <div class="inputColumn">
-                                <label for="email">E-Posta Adresiniz</label>
-                                <input type="email" name="email" class="emailMask" placeholder="Lütfen E-Posta Adresinizi Giriniz" required>
-                            </div>
-                            <div class="inputColumn">
-                                <label for="phone">Cep Telefonu Numaranız</label>
-                                <input type="text" class="phoneMask" name="phone" placeholder="Lütfen Cep Telefonu Numaranızı Giriniz" required>
-                            </div>
-                            <div class="inputColumn">
-                                <label for="password">Parolanız</label>
-                                <input type="password" class="password" name="password" placeholder="" value="dashsas" required>
-                                <span class="eyeButton"><img src="public/assets/images/statics/icons/eye.png" alt=""></span>
-                            </div>
-                            <div class="inputColumn">
-                                <label for="passwordagain">Parola Doğrulama</label>
-                                <input type="password" class="password" name="passwordagain" placeholder="" value="dashsas" required>
-                                <span class="eyeButton"><img src="public/assets/images/statics/icons/eye.png" alt=""></span>
-                                <span class="note">Şifreler en az altı karakter uzunluğunda olmalı, hem harf 
-                                    hem de rakam içermeli ve boşluk içermemelidir.</span>
-                            </div>
+                        <div class="overflow-scroll-auto">
+                            <form id="kayitolForm" action="action.php" novalidate>
+                                <div class="form-invalid-message">
+                                    <img src="public/assets/images/statics/icons/danger.png" alt="">
+                                    <span class="error-message">Eksik yada hatalı bir e-posta adresi girdiniz.</span>
+                                </div>
+                                <div class="inputColumn">
+                                    <label for="name">Adınız Soyadınız</label>
+                                    <input type="text" name="name" class="textMask" placeholder="Lütfen Adınızı Soyadınızı Giriniz" required>
+                                </div>
+                                <div class="inputColumn">
+                                    <label for="email">E-Posta Adresiniz</label>
+                                    <input type="email" name="email" class="emailMask" placeholder="Lütfen E-Posta Adresinizi Giriniz" required>
+                                </div>
+                                <div class="inputColumn">
+                                    <label for="phone">Cep Telefonu Numaranız</label>
+                                    <input type="text" class="phoneMask" name="phone" placeholder="Lütfen Cep Telefonu Numaranızı Giriniz" required>
+                                </div>
+                                <div class="inputColumn">
+                                    <label for="password">Parolanız</label>
+                                    <input type="password" class="password" name="password" placeholder="" value="dashsas" required>
+                                    <span class="eyeButton"><img src="public/assets/images/statics/icons/eye.png" alt=""></span>
+                                </div>
+                                <div class="inputColumn">
+                                    <label for="passwordagain">Parola Doğrulama</label>
+                                    <input type="password" class="password" name="passwordagain" placeholder="" value="dashsas" required>
+                                    <span class="eyeButton"><img src="public/assets/images/statics/icons/eye.png" alt=""></span>
+                                    <span class="note">Şifreler en az altı karakter uzunluğunda olmalı, hem harf 
+                                        hem de rakam içermeli ve boşluk içermemelidir.</span>
+                                </div>
 
-                            <button class="otherButton"><img src="public/assets/images/statics/icons/google.png" alt=""><span>Google Hesabınız İle Kayıt Olun</span></button>
-                            <div class="checkWrapper">
+                                <a href="anasayfa_kayitol-basarili.html" class="otherButton"><img src="public/assets/images/statics/icons/google.png" alt=""><span>Google Hesabınız İle Kayıt Olun</span></a>
+                                <div class="checkWrapper">
 
-                                <label class="check-container radio">
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                    <span class="text">Kayıt işlemine devam ederek, <a href="javascript:;">Genel Şartlar ve Koşulları</a> kabul
-                                        etmiş sayılırsınız.</span>
-                                </label>
-                                <label class="check-container radio">
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                    <span class="text">Kampanya ve fırsat e - postaları almak istiyorum. 
-                                        Aboneliğinizi dilediğiniz zaman iptal edebilirsiniz. 
-                                        Daha fazla bilgi almak için, <a href="javascript:;">gizlilik bildirimimizi </a>okuyun.</span>
-                                </label>
-                            </div>
+                                    <label class="check-container radio">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                        <span class="text">Kayıt işlemine devam ederek, <a href="javascript:;">Genel Şartlar ve Koşulları</a> kabul
+                                            etmiş sayılırsınız.</span>
+                                    </label>
+                                    <label class="check-container radio">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                        <span class="text">Kampanya ve fırsat e - postaları almak istiyorum. 
+                                            Aboneliğinizi dilediğiniz zaman iptal edebilirsiniz. 
+                                            Daha fazla bilgi almak için, <a href="javascript:;">gizlilik bildirimimizi </a>okuyun.</span>
+                                    </label>
+                                </div>
 
-                            <button class="fixBtn" type="submit">KAYIT OL</button>
-                        </form>
+                                <button class="fixBtn" type="submit">KAYIT OL</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -93,8 +93,13 @@ function togglePlay(button) {
       if (otherAudio !== currentAudio) {
           otherAudio.pause();
           otherAudio.currentTime = 0; // Kaldığı yerden devam etmemesi için currentTime'i sıfırla
+
+          var otherButton = otherAudio.closest('.audioPlayWrapper').querySelector('.audioPlayButton');
+            otherButton.classList.remove('active');
       }
   });
+
+   button.classList.toggle('active');
 
   if (currentAudio.paused) {
       currentAudio.play();
@@ -132,6 +137,17 @@ function formatTime(timeInSeconds) {
 
   return minutes + ':' + seconds;
 }
+// Event listener for audio end
+document.addEventListener('DOMContentLoaded', function () {
+  var audioElements = document.querySelectorAll('.audio-element');
+  audioElements.forEach(function (audio) {
+      audio.addEventListener('ended', function () {
+          // Remove "active" class from the corresponding card's play button
+          var button = audio.closest('.audioPlayWrapper').querySelector('.audioPlayButton');
+          button.classList.remove('active');
+      });
+  });
+});
 /**Kars turkulerınde play butonu ıcın bitiş */
 
 
