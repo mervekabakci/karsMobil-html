@@ -291,7 +291,7 @@
             right: 22px;
             
             @media screen and (min-width: 768px) and (min-height: 1200px) {
-                left: 60px;
+                right: 60px;
                 top: 21px;
             }
         }
@@ -1026,6 +1026,7 @@
     font-family: "baloo_2extrabold";
     color: #ffffff;
     width: 100vw;
+    max-width: 1080px;
     height: 70px;
     position: absolute;
     bottom: 0;
